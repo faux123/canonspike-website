@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Paul Reioux — VP of Engineering &amp; Product. 25+ years building software across defense, consumer, and enterprise."/>
+  <meta name="robots" content="noindex, nofollow"/>
+  <title>Paul Reioux</title>
+
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Grain overlay (CSS-driven, no image) -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Noise SVG filter definition -->
+  <svg class="svg-filters" aria-hidden="true" focusable="false">
+    <defs>
+      <filter id="grain-filter">
+        <feTurbulence type="fractalNoise" baseFrequency="0.68" numOctaves="4" stitchTiles="stitch" result="noise"/>
+        <feColorMatrix type="saturate" values="0" in="noise" result="mono"/>
+        <feBlend in="SourceGraphic" in2="mono" mode="overlay"/>
+      </filter>
+    </defs>
+  </svg>
+
+  <main>
+
+    <!-- ─── HERO ─── -->
+    <section id="hero" class="section-hero">
+      <div class="hero-inner">
+
+        <div class="hero-photo-wrap fade-in" data-delay="0">
+          <img
+            src="images/profile.svg"
+            alt="Paul Reioux"
+            class="hero-photo"
+            width="180"
+            height="180"
+          />
+        </div>
+
+        <div class="hero-text">
+          <h1 class="hero-name fade-in" data-delay="1">Paul Reioux</h1>
+
+          <div class="hero-meta fade-in" data-delay="2">
+            <span class="hero-title-label">VP of Engineering &amp; Product</span>
+            <span class="hero-dot" aria-hidden="true">·</span>
+            <a href="https://seismic.co" target="_blank" rel="noopener noreferrer" class="hero-company">Seismic</a>
+          </div>
+
+          <p class="hero-tagline fade-in" data-delay="3">
+            Engineering with depth.<br/>Product with purpose.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="scroll-hint fade-in" data-delay="4" aria-hidden="true">
+        <span class="scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- ─── ABOUT ─── -->
+    <section id="about" class="section-content">
+      <div class="section-inner">
+        <div class="section-label fade-in">About</div>
+        <div class="section-divider-line fade-in"></div>
+
+        <p class="body-text fade-in">
+          25&plus; years building software across domains that couldn't be more different —
+          satellite systems at BAE Systems, consumer mobile apps that reached the top of the charts,
+          enterprise platforms serving global sales teams. I shipped several top&#8209;10 mobile applications
+          in their day, and learned what it means to build for millions of people at once.
+        </p>
+
+        <p class="body-text fade-in">
+          Today I lead engineering and product at
+          <a href="https://seismic.co" target="_blank" rel="noopener noreferrer" class="text-link">Seismic</a>,
+          focused on the platform that helps modern sales organizations work smarter.
+          The breadth of that journey shapes every decision I make: technically rigorous,
+          product&#8209;minded, and always oriented toward real&#8209;world impact.
+        </p>
+      </div>
+    </section>
+
+    <hr class="gold-rule fade-in"/>
+
+    <!-- ─── CURRENTLY ─── -->
+    <section id="currently" class="section-content">
+      <div class="section-inner">
+        <div class="section-label fade-in">Currently</div>
+        <div class="section-divider-line fade-in"></div>
+
+        <ul class="currently-list">
+          <li class="currently-item fade-in">
+            <span class="currently-icon" aria-hidden="true">
+              <!-- Building icon -->
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1" y="8" width="14" height="7" stroke="currentColor" stroke-width="1.2" rx="0.5"/>
+                <path d="M4 8V5.5C4 3.015 12 3.015 12 5.5V8" stroke="currentColor" stroke-width="1.2"/>
+                <rect x="6.5" y="10" width="3" height="5" stroke="currentColor" stroke-width="1.2"/>
+              </svg>
+            </span>
+            <span>Leading engineering and product at <a href="https://seismic.co" target="_blank" rel="noopener noreferrer" class="text-link">Seismic</a> — building the platform sales teams depend on.</span>
+          </li>
+          <li class="currently-item fade-in">
+            <span class="currently-icon" aria-hidden="true">
+              <!-- Ping pong icon (paddle) -->
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="9.5" cy="6.5" r="4.5" stroke="currentColor" stroke-width="1.2"/>
+                <path d="M6.1 9.9L1.5 14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="3.5" cy="3.5" r="1.5" stroke="currentColor" stroke-width="1"/>
+              </svg>
+            </span>
+            <span>Playing table tennis whenever possible — it's the best sport that most people overlook.</span>
+          </li>
+          <li class="currently-item fade-in">
+            <span class="currently-icon" aria-hidden="true">
+              <!-- Controller icon -->
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1" y="4" width="14" height="8" rx="3" stroke="currentColor" stroke-width="1.2"/>
+                <path d="M5 8H7M6 7V9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+                <circle cx="10.5" cy="7.5" r="0.75" fill="currentColor"/>
+                <circle cx="12" cy="9" r="0.75" fill="currentColor"/>
+              </svg>
+            </span>
+            <span>Gaming in the margins — the best way to think without thinking.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <hr class="gold-rule fade-in"/>
+
+    <!-- ─── CONTACT ─── -->
+    <section id="contact" class="section-content section-contact">
+      <div class="section-inner">
+        <div class="section-label fade-in">Connect</div>
+        <div class="section-divider-line fade-in"></div>
+
+        <p class="body-text body-text--center fade-in">
+          The best place to find me.
+        </p>
+
+        <div class="contact-cta fade-in">
+          <a
+            href="https://www.linkedin.com/in/paulreioux"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-linkedin"
+            aria-label="Paul Reioux on LinkedIn"
+          >
+            <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-copy">&copy; <span id="year"></span> Paul Reioux</span>
+      <span class="footer-ox" title="Year of the Ox" aria-label="Year of the Ox">&#29275;</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

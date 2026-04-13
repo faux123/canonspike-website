@@ -1,0 +1,577 @@
+/* ─────────────────────────────────────────────────────────────────
+   CANONSPIKE.COM — Personal landing page for Paul Reioux
+   Design: dark editorial luxury · Chinese Ox palette
+   Colors: near-black · antique gold · forest green · off-white
+   ───────────────────────────────────────────────────────────────── */
+
+/* ── 1. Custom Properties ── */
+:root {
+  --color-bg:           #0a0a0a;
+  --color-bg-raised:    #111110;
+  --color-gold:         #C9A84C;
+  --color-gold-dim:     rgba(201, 168, 76, 0.4);
+  --color-gold-glow:    rgba(201, 168, 76, 0.15);
+  --color-green:        #3D7A52;
+  --color-green-dim:    rgba(61, 122, 82, 0.35);
+  --color-text:         #F5F5F0;
+  --color-muted:        #888880;
+  --color-muted-dim:    #55554e;
+
+  --font-display: 'Cormorant Garamond', 'Palatino Linotype', Georgia, serif;
+  --font-body:    'Inter', system-ui, -apple-system, sans-serif;
+
+  --max-w:        680px;
+  --section-pad:  clamp(4rem, 8vw, 7rem);
+  --h-pad:        clamp(1.5rem, 5vw, 3rem);
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out:   cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ── 2. Reset & Base ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: clamp(15px, 1.6vw, 17px);
+  font-weight: 300;
+  line-height: 1.75;
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── 3. Grain Overlay ── */
+/* Animated film grain via SVG feTurbulence rendered as a fixed layer */
+.grain {
+  position: fixed;
+  inset: -20%;
+  width: 140%;
+  height: 140%;
+  pointer-events: none;
+  z-index: 1000;
+  opacity: 0.038;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.72' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  animation: grain-drift 7s steps(10) infinite;
+}
+
+@keyframes grain-drift {
+  0%   { transform: translate(0,    0);    }
+  10%  { transform: translate(-3%,  -4%);  }
+  20%  { transform: translate(4%,   2%);   }
+  30%  { transform: translate(-2%,  5%);   }
+  40%  { transform: translate(3%,   -3%);  }
+  50%  { transform: translate(-5%,  2%);   }
+  60%  { transform: translate(2%,   -2%);  }
+  70%  { transform: translate(-3%,  4%);   }
+  80%  { transform: translate(5%,   -2%);  }
+  90%  { transform: translate(-2%,  3%);   }
+  100% { transform: translate(0,    0);    }
+}
+
+/* Hide the SVG filter defs — they only exist for the DOM filter reference */
+.svg-filters {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* ── 4. Scroll Animation System ── */
+.fade-in {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity  0.85s var(--ease-out-expo),
+    transform 0.85s var(--ease-out-expo);
+  transition-delay: calc(var(--delay, 0) * 110ms);
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── 5. Hero Section ── */
+.section-hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(5rem, 12vw, 9rem) var(--h-pad) clamp(4rem, 8vw, 6rem);
+  text-align: center;
+}
+
+/* Radial vignette behind hero */
+.section-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 70% 60% at 50% 45%,
+      rgba(201, 168, 76, 0.04) 0%,
+      transparent 70%),
+    radial-gradient(ellipse 50% 50% at 50% 100%,
+      rgba(0, 0, 0, 0.5) 0%,
+      transparent 70%);
+  pointer-events: none;
+}
+
+.hero-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(1.8rem, 4vw, 2.8rem);
+  width: 100%;
+  max-width: var(--max-w);
+  position: relative;
+}
+
+/* ── Profile Photo ── */
+.hero-photo-wrap {
+  position: relative;
+}
+
+.hero-photo {
+  display: block;
+  width: clamp(130px, 20vw, 175px);
+  height: clamp(130px, 20vw, 175px);
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-gold);
+  box-shadow:
+    0 0 0 6px var(--color-bg),
+    0 0 0 7px var(--color-gold-dim),
+    0 0 40px var(--color-gold-glow),
+    0 0 80px rgba(201, 168, 76, 0.06);
+  transition: box-shadow 0.5s var(--ease-in-out);
+}
+
+.hero-photo:hover {
+  box-shadow:
+    0 0 0 6px var(--color-bg),
+    0 0 0 7px var(--color-gold),
+    0 0 50px rgba(201, 168, 76, 0.25),
+    0 0 100px rgba(201, 168, 76, 0.1);
+}
+
+/* ── Name ── */
+.hero-name {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 9vw, 5.5rem);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.05;
+  color: var(--color-text);
+  /* Subtle gold shimmer on the name */
+  background: linear-gradient(
+    135deg,
+    var(--color-text) 0%,
+    #e8e3d8 35%,
+    var(--color-text) 65%,
+    #ccc7bc 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Meta line: title · company ── */
+.hero-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero-title-label {
+  font-family: var(--font-body);
+  font-size: clamp(0.65rem, 1.5vw, 0.75rem);
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.hero-dot {
+  color: var(--color-gold-dim);
+  font-size: 0.9rem;
+  user-select: none;
+}
+
+.hero-company {
+  font-family: var(--font-body);
+  font-size: clamp(0.65rem, 1.5vw, 0.75rem);
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-gold-dim);
+  padding-bottom: 1px;
+  transition: color 0.25s, border-color 0.25s;
+}
+
+.hero-company:hover {
+  color: #e0c06a;
+  border-color: #e0c06a;
+}
+
+/* ── Tagline ── */
+.hero-tagline {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(1.1rem, 2.8vw, 1.4rem);
+  font-weight: 400;
+  color: var(--color-muted);
+  line-height: 1.6;
+  max-width: 36ch;
+  letter-spacing: 0.01em;
+}
+
+/* ── Scroll hint ── */
+.scroll-hint {
+  position: absolute;
+  bottom: clamp(1.5rem, 4vw, 2.5rem);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scroll-line {
+  display: block;
+  width: 1px;
+  height: 50px;
+  background: linear-gradient(to bottom, var(--color-gold-dim), transparent);
+  animation: scroll-pulse 2.2s ease-in-out infinite;
+}
+
+@keyframes scroll-pulse {
+  0%, 100% { opacity: 0.3; transform: scaleY(1); }
+  50%       { opacity: 0.9; transform: scaleY(1.1); }
+}
+
+/* ── 6. Content Sections ── */
+.section-content {
+  padding: var(--section-pad) var(--h-pad);
+  position: relative;
+}
+
+.section-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+
+/* Section label */
+.section-label {
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: 0.75rem;
+}
+
+/* Thin green underline below section label */
+.section-divider-line {
+  width: 32px;
+  height: 1px;
+  background: var(--color-green);
+  margin-bottom: 2.2rem;
+  opacity: 0.7;
+}
+
+/* ── 7. Gold Rule Divider ── */
+.gold-rule {
+  border: none;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-gold-dim) 20%,
+    var(--color-gold) 50%,
+    var(--color-gold-dim) 80%,
+    transparent
+  );
+  position: relative;
+}
+
+/* Center diamond on the rule */
+.gold-rule::after {
+  content: '◆';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.5rem;
+  color: var(--color-gold);
+  background: var(--color-bg);
+  padding: 0 0.5rem;
+  line-height: 1;
+}
+
+/* ── 8. Body Text ── */
+.body-text {
+  font-family: var(--font-body);
+  font-size: clamp(0.92rem, 1.8vw, 1rem);
+  font-weight: 300;
+  line-height: 1.85;
+  color: var(--color-muted);
+  color: #9a9a93;
+  max-width: 60ch;
+  margin-bottom: 1.4rem;
+}
+
+.body-text:last-child {
+  margin-bottom: 0;
+}
+
+.body-text--center {
+  text-align: center;
+  max-width: 100%;
+  color: var(--color-muted);
+}
+
+.text-link {
+  color: var(--color-gold);
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-gold-dim);
+  padding-bottom: 1px;
+  transition: color 0.25s, border-color 0.25s;
+}
+
+.text-link:hover {
+  color: #dab85a;
+  border-color: #dab85a;
+}
+
+/* ── 9. Currently List ── */
+.currently-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.currently-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  font-family: var(--font-body);
+  font-size: clamp(0.92rem, 1.8vw, 1rem);
+  font-weight: 300;
+  line-height: 1.7;
+  color: #9a9a93;
+}
+
+.currently-icon {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  margin-top: 0.25em;
+  color: var(--color-green);
+  opacity: 0.85;
+}
+
+/* ── 10. Contact Section ── */
+.section-contact .section-inner {
+  text-align: center;
+}
+
+.contact-cta {
+  margin-top: 2.2rem;
+}
+
+.btn-linkedin {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.8rem 2.2rem;
+  border: 1px solid var(--color-gold-dim);
+  border-radius: 2px;
+  color: var(--color-gold);
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  transition:
+    color       0.35s var(--ease-in-out),
+    border-color 0.35s var(--ease-in-out),
+    box-shadow  0.35s var(--ease-in-out);
+}
+
+/* Fill sweep on hover */
+.btn-linkedin::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--color-gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s var(--ease-in-out);
+  z-index: 0;
+}
+
+.btn-linkedin:hover::before {
+  transform: scaleX(1);
+}
+
+.btn-linkedin:hover {
+  color: var(--color-bg);
+  border-color: var(--color-gold);
+  box-shadow: 0 0 30px rgba(201, 168, 76, 0.2);
+}
+
+.btn-icon,
+.btn-linkedin span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-linkedin .btn-icon {
+  flex-shrink: 0;
+  transition: color 0.35s var(--ease-in-out);
+}
+
+/* ── 11. Footer ── */
+.site-footer {
+  padding: 2.5rem var(--h-pad) 3rem;
+}
+
+.footer-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.footer-copy {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  color: var(--color-muted-dim);
+  letter-spacing: 0.08em;
+}
+
+.footer-ox {
+  font-size: 1.1rem;
+  color: var(--color-muted-dim);
+  opacity: 0.5;
+  cursor: default;
+  user-select: none;
+  transition: opacity 0.3s, color 0.3s;
+}
+
+.footer-ox:hover {
+  opacity: 0.9;
+  color: var(--color-gold);
+}
+
+/* ── 12. Subtle background texture behind the bg ── */
+/* Very faint vertical rhythm lines for texture */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 39px,
+      rgba(255, 255, 255, 0.012) 39px,
+      rgba(255, 255, 255, 0.012) 40px
+    );
+  pointer-events: none;
+  z-index: 0;
+}
+
+main, footer {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── 13. Responsive ── */
+@media (min-width: 700px) {
+  .hero-name {
+    font-size: clamp(4rem, 7vw, 5.5rem);
+  }
+
+  .body-text {
+    font-size: 1rem;
+  }
+
+  .hero-photo {
+    width: 175px;
+    height: 175px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-content {
+    padding-top: calc(var(--section-pad) * 1.1);
+    padding-bottom: calc(var(--section-pad) * 1.1);
+  }
+}
+
+/* ── 14. Reduced motion ── */
+@media (prefers-reduced-motion: reduce) {
+  .fade-in {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .grain {
+    animation: none;
+  }
+
+  .scroll-line {
+    animation: none;
+    opacity: 0.4;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ── 15. Focus styles ── */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ── 16. Selection ── */
+::selection {
+  background: var(--color-gold);
+  color: var(--color-bg);
+}
