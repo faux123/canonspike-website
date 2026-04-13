@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#1c1c1a"/>
+      <stop offset="100%" stop-color="#090909"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C9A84C" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#C9A84C" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="clip">
+      <circle cx="100" cy="100" r="96"/>
+    </clipPath>
+    <filter id="noise-filter" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.72" numOctaves="4" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix type="saturate" values="0" in="noise" result="grey"/>
+      <feBlend in="SourceGraphic" in2="grey" mode="overlay" result="blend"/>
+      <feComposite in="blend" in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+
+  <!-- Base fill -->
+  <circle cx="100" cy="100" r="96" fill="url(#bg)"/>
+
+  <!-- Noise texture layer -->
+  <rect width="200" height="200" clip-path="url(#clip)" fill="#888" opacity="0.035" filter="url(#noise-filter)"/>
+
+  <!-- Subtle gold glow center -->
+  <circle cx="100" cy="100" r="96" fill="url(#glow)"/>
+
+  <!-- Decorative arc — top left, forest green -->
+  <path d="M 28 68 A 78 78 0 0 1 132 18" stroke="#3D7A52" stroke-width="0.8" fill="none" opacity="0.45"/>
+
+  <!-- Decorative arc — bottom right, forest green -->
+  <path d="M 172 132 A 78 78 0 0 1 68 182" stroke="#3D7A52" stroke-width="0.8" fill="none" opacity="0.45"/>
+
+  <!-- Small diamond accent top -->
+  <polygon points="100,14 103,17 100,20 97,17" fill="#C9A84C" opacity="0.6"/>
+
+  <!-- "PR" initials -->
+  <text x="100" y="118"
+        font-family="Georgia, 'Palatino Linotype', 'Book Antiqua', serif"
+        font-size="62"
+        font-weight="400"
+        fill="#C9A84C"
+        text-anchor="middle"
+        letter-spacing="-1"
+        opacity="0.92">PR</text>
+
+  <!-- Outer gold ring -->
+  <circle cx="100" cy="100" r="96" fill="none" stroke="#C9A84C" stroke-width="1.5" opacity="0.65"/>
+
+  <!-- Inner hairline ring -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#C9A84C" stroke-width="0.5" opacity="0.2"/>
+</svg>
