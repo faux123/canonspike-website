@@ -154,7 +154,6 @@ body {
   height: clamp(130px, 20vw, 175px);
   border-radius: 50%;
   object-fit: cover;
-  object-position: 47% 66%;
   border: 2px solid var(--color-gold);
   box-shadow:
     0 0 0 6px var(--color-bg),
