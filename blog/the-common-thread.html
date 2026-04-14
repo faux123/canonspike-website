@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="On learning, adapting, and going architecturally deep across radically different industries — by Paul Reioux."/>
+  <meta name="robots" content="noindex, nofollow"/>
+  <title>The Common Thread — Paul Reioux</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="../style.css"/>
+  <style>
+    .post-body {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 var(--h-pad) 6rem;
+    }
+    .post-header {
+      padding: 5rem var(--h-pad) 3rem;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    .post-header-label {
+      font-family: var(--font-body);
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--color-muted);
+      margin-bottom: 1.2rem;
+    }
+    .post-header-label a {
+      color: var(--color-muted);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .post-header-label a:hover { color: var(--color-gold); }
+    .post-h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 6vw, 3.2rem);
+      font-weight: 500;
+      color: var(--color-text);
+      line-height: 1.15;
+      margin: 0 0 1.2rem;
+    }
+    .post-date {
+      font-family: var(--font-body);
+      font-size: 0.75rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--color-muted);
+    }
+    .post-divider {
+      border: none;
+      border-top: 1px solid var(--color-gold-dim);
+      margin: 2.5rem 0;
+    }
+    .post-body p {
+      font-family: var(--font-body);
+      font-size: 1rem;
+      line-height: 1.85;
+      color: var(--color-text);
+      margin: 0 0 1.6rem;
+    }
+    .post-body h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.2rem, 3vw, 1.6rem);
+      font-weight: 500;
+      color: var(--color-gold);
+      margin: 3rem 0 1rem;
+      font-style: italic;
+    }
+    .post-body .lead {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: var(--color-text);
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--font-body);
+      font-size: 0.75rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--color-gold);
+      text-decoration: none;
+      margin-top: 3rem;
+      transition: opacity 0.2s ease;
+    }
+    .back-link:hover { opacity: 0.7; }
+  </style>
+</head>
+<body>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <svg class="svg-filters" aria-hidden="true" focusable="false">
+    <defs>
+      <filter id="grain-filter">
+        <feTurbulence type="fractalNoise" baseFrequency="0.68" numOctaves="4" stitchTiles="stitch" result="noise"/>
+        <feColorMatrix type="saturate" values="0" in="noise" result="mono"/>
+        <feBlend in="SourceGraphic" in2="mono" mode="overlay"/>
+      </filter>
+    </defs>
+  </svg>
+
+  <article>
+
+    <header class="post-header">
+      <div class="post-header-label"><a href="../index.html">← Paul Reioux</a> &nbsp;·&nbsp; Writing</div>
+      <h1 class="post-h1">The Common Thread</h1>
+      <div class="post-date">April 2026</div>
+    </header>
+
+    <div class="post-body">
+      <hr class="post-divider"/>
+
+      <p class="lead">
+        I've spent 25 years building software across industries that have almost nothing in common with each other.
+        Satellite ground systems at a defense contractor. Consumer mobile apps that hit the top of the charts. Enterprise
+        software serving global sales organizations. If you looked at those three careers on paper, you'd be forgiven for
+        thinking they belonged to three different people.
+      </p>
+
+      <p>
+        They don't. And the reason they don't is the thing I keep coming back to: the work was never really about the
+        domain. It was always about the architecture — understanding the deep structure of how a system, an industry, or
+        an organization actually works, not how it presents itself on the surface.
+      </p>
+
+      <h2>Going architecturally deep</h2>
+
+      <p>
+        At BAE Systems, writing software for satellite ground systems, I wasn't just learning a codebase. I was learning
+        how defense programs are structured — the acquisition cycle, the way requirements cascade from mission need to
+        software spec, the tolerance for failure (near zero) and the tolerance for change (also near zero). You could not
+        be effective there without understanding why every process existed, not just what it asked you to do.
+      </p>
+
+      <p>
+        When I moved into consumer mobile, the surface looked completely different — fast cycles, viral loops, app store
+        rankings, retention curves. But the underlying question was the same: what is the actual architecture of this
+        system? In mobile, the system was the user. You had to understand human attention at a structural level. What
+        makes someone open an app again? What creates the habit? I didn't learn that by reading theory. I learned it by
+        shipping, watching the numbers, and asking why until the model in my head matched what the data was telling me.
+        Several top-10 apps later, I had a working theory.
+      </p>
+
+      <p>
+        Enterprise software at Seismic was a third architecture entirely — one organized around organizational behavior,
+        sales motion, and the economics of large B2B deals. The constraints are different again. Enterprise software
+        doesn't go viral. It gets bought by a committee and deployed to thousands of people who didn't ask for it. That
+        means the architecture of adoption matters as much as the architecture of the product. I had to rebuild my mental
+        model from scratch, and I did.
+      </p>
+
+      <h2>The real skill is learning how to learn an industry</h2>
+
+      <p>
+        What I've come to understand is that depth isn't domain-specific. The capacity to go deep — to resist the
+        shortcut of surface knowledge, to keep asking why until you hit the load-bearing structures of how something
+        works — that transfers. It's slower at first. You spend the first year in a new industry feeling like you're
+        behind. You are behind. But you're building something most people in that industry never build: an outsider's
+        ability to see the whole system at once, combined with an insider's understanding of why it works the way it does.
+      </p>
+
+      <p>
+        That combination is genuinely rare. People who grew up in an industry often can't see its assumptions anymore.
+        People who observe from the outside never get close enough to the real mechanisms. The engineer who has done both,
+        in multiple industries, becomes something different: someone who can walk into a new domain and compress what
+        would normally take a decade of experience into a year of very focused learning.
+      </p>
+
+      <h2>Leadership follows the same pattern</h2>
+
+      <p>
+        The same principle applies to leading people. Managing a team of defense-program engineers is structurally
+        different from managing a consumer product team, which is structurally different again from leading engineering
+        across a global enterprise software company. The org charts look similar. The actual work of leadership — what
+        motivates people, what creates trust, what breaks it, how decisions should be made — is shaped by the industry
+        context in ways that matter enormously.
+      </p>
+
+      <p>
+        I've had to rebuild my leadership model each time too. And each rebuild has made the model more robust, because
+        I've had to separate the principles that are universal from the ones that are situational. The universal ones are
+        fewer than most management books suggest. The situational ones are more important than most leaders acknowledge.
+      </p>
+
+      <h2>What I'd tell someone earlier in their career</h2>
+
+      <p>
+        Don't optimize for staying in a lane. The people who become genuinely hard to replace are the ones who have
+        operated effectively in contexts that most specialists haven't touched. Every time you go deep in a new domain,
+        you're not starting over — you're adding another dimension to a model that keeps getting more useful.
+      </p>
+
+      <p>
+        The discomfort of not knowing is the point. It's where the real learning happens. Get comfortable being the
+        person who asks the obvious questions, because in a new industry, the obvious questions are the ones nobody
+        who grew up there thinks to answer anymore.
+      </p>
+
+      <p>
+        The thread running through all of it — satellites, apps, enterprise software — isn't a technology or a skill set.
+        It's a posture: stay curious, go deep, and trust that the architecture of one thing always teaches you something
+        about the architecture of everything else.
+      </p>
+
+      <a href="../index.html" class="back-link">← Back</a>
+    </div>
+
+  </article>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-copy">&copy; <span id="year"></span> Paul Reioux</span>
+      <span class="footer-ox" title="Year of the Ox" aria-label="Year of the Ox">&#29275;</span>
+    </div>
+  </footer>
+
+  <script src="../main.js"></script>
+</body>
+</html>
