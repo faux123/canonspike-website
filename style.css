@@ -402,6 +402,10 @@ body {
 
 .contact-cta {
   margin-top: 2.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
 }
 
 .btn-linkedin {
