@@ -2,7 +2,16 @@
    CANONSPIKE.COM — Personal landing page for Paul Reioux
    Design: dark editorial luxury · Chinese Ox palette
    Colors: near-black · antique gold · forest green · off-white
+   Modern CSS: @property, scroll-driven animations, color-mix(),
+   text-wrap, CSS nesting, container queries, backdrop-filter
    ───────────────────────────────────────────────────────────────── */
+
+/* ── Animatable custom properties via @property ── */
+@property --shimmer-pos {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: -100%;
+}
 
 /* ── 1. Custom Properties ── */
 :root {
@@ -26,6 +35,7 @@
 
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-in-out:   cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 /* ── 2. Reset & Base ── */
@@ -54,7 +64,6 @@ body {
 }
 
 /* ── 3. Grain Overlay ── */
-/* Animated film grain via SVG feTurbulence rendered as a fixed layer */
 .grain {
   position: fixed;
   inset: -20%;
@@ -82,16 +91,8 @@ body {
   100% { transform: translate(0,    0);    }
 }
 
-/* Hide the SVG filter defs — they only exist for the DOM filter reference */
-.svg-filters {
-  position: absolute;
-  width: 0;
-  height: 0;
-  overflow: hidden;
-  pointer-events: none;
-}
-
 /* ── 4. Scroll Animation System ── */
+/* JS IntersectionObserver fallback adds .visible class */
 .fade-in {
   opacity: 0;
   transform: translateY(28px);
@@ -106,6 +107,20 @@ body {
   transform: translateY(0);
 }
 
+/* CSS scroll-driven animation: replaces IO where supported */
+@supports (animation-timeline: view()) {
+  .fade-in:not([data-delay]) {
+    animation: scroll-reveal linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 30%;
+  }
+
+  @keyframes scroll-reveal {
+    from { opacity: 0; transform: translateY(28px); }
+    to   { opacity: 1; transform: translateY(0);    }
+  }
+}
+
 /* ── 5. Hero Section ── */
 .section-hero {
   position: relative;
@@ -118,7 +133,6 @@ body {
   text-align: center;
 }
 
-/* Radial vignette behind hero */
 .section-hero::before {
   content: '';
   position: absolute;
@@ -160,7 +174,7 @@ body {
     0 0 0 7px var(--color-gold-dim),
     0 0 40px var(--color-gold-glow),
     0 0 80px rgba(201, 168, 76, 0.06);
-  transition: box-shadow 0.5s var(--ease-in-out);
+  transition: box-shadow 0.5s var(--ease-in-out), transform 0.5s var(--ease-in-out);
 }
 
 .hero-photo:hover {
@@ -169,9 +183,15 @@ body {
     0 0 0 7px var(--color-gold),
     0 0 50px rgba(201, 168, 76, 0.25),
     0 0 100px rgba(201, 168, 76, 0.1);
+  transform: scale(1.03);
 }
 
-/* ── Name ── */
+/* ── Animated shimmer on hero name via @property ── */
+@keyframes name-shimmer {
+  from { --shimmer-pos: -100%; }
+  to   { --shimmer-pos: 200%;  }
+}
+
 .hero-name {
   font-family: var(--font-display);
   font-size: clamp(3rem, 9vw, 5.5rem);
@@ -179,17 +199,20 @@ body {
   letter-spacing: -0.01em;
   line-height: 1.05;
   color: var(--color-text);
-  /* Subtle gold shimmer on the name */
+  text-wrap: balance;
   background: linear-gradient(
-    135deg,
+    120deg,
     var(--color-text) 0%,
-    #e8e3d8 35%,
-    var(--color-text) 65%,
-    #ccc7bc 100%
+    #e8e3d8 25%,
+    var(--color-gold) var(--shimmer-pos),
+    #e8e3d8 75%,
+    var(--color-text) 100%
   );
+  background-size: 200% 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  animation: name-shimmer 6s ease-in-out infinite;
 }
 
 /* ── Meta line: title · company ── */
@@ -232,6 +255,8 @@ body {
 .hero-company:hover {
   color: #e0c06a;
   border-color: #e0c06a;
+  color: color-mix(in oklch, var(--color-gold) 70%, white);
+  border-color: color-mix(in oklch, var(--color-gold) 70%, white);
 }
 
 /* ── Tagline ── */
@@ -244,6 +269,7 @@ body {
   line-height: 1.6;
   max-width: 36ch;
   letter-spacing: 0.01em;
+  text-wrap: balance;
 }
 
 /* ── Scroll hint ── */
@@ -281,7 +307,6 @@ body {
   margin: 0 auto;
 }
 
-/* Section label */
 .section-label {
   font-family: var(--font-body);
   font-size: 0.68rem;
@@ -292,7 +317,6 @@ body {
   margin-bottom: 0.75rem;
 }
 
-/* Thin green underline below section label */
 .section-divider-line {
   width: 32px;
   height: 1px;
@@ -318,9 +342,8 @@ body {
   position: relative;
 }
 
-/* Center diamond on the rule */
 .gold-rule::after {
-  content: '◆';
+  content: '\25C6';
   position: absolute;
   top: 50%;
   left: 50%;
@@ -341,6 +364,7 @@ body {
   color: #9a9a93;
   max-width: 60ch;
   margin-bottom: 1.4rem;
+  text-wrap: pretty;
 }
 
 .body-text:last-child {
@@ -362,8 +386,195 @@ body {
 }
 
 .text-link:hover {
-  color: #dab85a;
-  border-color: #dab85a;
+  color: #e0c06a;
+  border-color: #e0c06a;
+  color: color-mix(in oklch, var(--color-gold) 70%, white);
+  border-color: color-mix(in oklch, var(--color-gold) 70%, white);
+}
+
+/* ── 8b. Career Timeline ── */
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+  container-type: inline-size;
+}
+
+/* Animated timeline spine */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 8px;
+  bottom: 8px;
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    var(--color-gold),
+    #83914f 50%,
+    var(--color-gold-dim)
+  );
+  background: linear-gradient(
+    to bottom,
+    var(--color-gold),
+    color-mix(in oklch, var(--color-gold) 50%, var(--color-green)) 50%,
+    var(--color-gold-dim)
+  );
+}
+
+/* Scroll-driven drawing of timeline spine */
+@supports (animation-timeline: view()) {
+  .timeline::before {
+    animation: draw-line linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 80%;
+  }
+
+  @keyframes draw-line {
+    from { clip-path: inset(0 0 100% 0); }
+    to   { clip-path: inset(0 0 0% 0);   }
+  }
+}
+
+.timeline-entry {
+  position: relative;
+  padding-bottom: 2.8rem;
+  transition: transform 0.3s var(--ease-out-expo);
+}
+
+.timeline-entry:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-entry:hover {
+  transform: translateX(4px);
+}
+
+/* Glass card effect on hover */
+.timeline-content {
+  padding: 1rem 1.2rem;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  transition:
+    background 0.4s var(--ease-in-out),
+    border-color 0.4s var(--ease-in-out),
+    box-shadow 0.4s var(--ease-in-out);
+}
+
+.timeline-entry:hover .timeline-content {
+  background: rgba(17, 17, 16, 0.8);
+  border-color: rgba(201, 168, 76, 0.15);
+  background: color-mix(in oklch, var(--color-bg-raised) 80%, transparent);
+  border-color: color-mix(in oklch, var(--color-gold) 15%, transparent);
+  box-shadow: 0 4px 30px rgba(201, 168, 76, 0.06);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -2rem;
+  top: 1.15rem;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 1.5px solid var(--color-gold);
+  background: var(--color-bg);
+  z-index: 2;
+  transition: transform 0.3s var(--ease-out-expo), box-shadow 0.3s var(--ease-in-out);
+}
+
+.timeline-entry:first-child .timeline-marker {
+  background: var(--color-gold);
+  box-shadow: 0 0 12px var(--color-gold-glow);
+}
+
+.timeline-entry:hover .timeline-marker {
+  transform: scale(1.4);
+  box-shadow: 0 0 16px var(--color-gold-glow);
+}
+
+.timeline-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.25rem;
+}
+
+.timeline-company {
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 2.8vw, 1.5rem);
+  font-weight: 500;
+  color: var(--color-text);
+  letter-spacing: 0.01em;
+  text-wrap: balance;
+}
+
+.timeline-period {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.timeline-role {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: 0.8rem;
+}
+
+.timeline-highlights {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.timeline-highlights li {
+  font-family: var(--font-body);
+  font-size: clamp(0.88rem, 1.7vw, 0.95rem);
+  font-weight: 300;
+  line-height: 1.7;
+  color: #9a9a93;
+  padding-left: 1rem;
+  position: relative;
+  text-wrap: pretty;
+}
+
+.timeline-highlights li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--color-green);
+  opacity: 0.7;
+  transition: transform 0.3s var(--ease-out-expo), opacity 0.3s;
+}
+
+.timeline-entry:hover .timeline-highlights li::before {
+  transform: scale(1.5);
+  opacity: 1;
+}
+
+/* Container query: compact layout on narrow viewports */
+@container (max-width: 400px) {
+  .timeline-header {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
 }
 
 /* ── 9. Currently List ── */
@@ -383,6 +594,7 @@ body {
   font-weight: 300;
   line-height: 1.7;
   color: #9a9a93;
+  text-wrap: pretty;
 }
 
 .currently-icon {
@@ -446,6 +658,7 @@ body {
   line-height: 1.7;
   color: var(--color-muted);
   margin: 0;
+  text-wrap: pretty;
 }
 
 .contact-cta {
@@ -478,7 +691,6 @@ body {
     box-shadow  0.35s var(--ease-in-out);
 }
 
-/* Fill sweep on hover */
 .btn-connect::before {
   content: '';
   position: absolute;
@@ -546,8 +758,7 @@ body {
   color: var(--color-gold);
 }
 
-/* ── 12. Subtle background texture behind the bg ── */
-/* Very faint vertical rhythm lines for texture */
+/* ── 12. Background texture ── */
 body::after {
   content: '';
   position: fixed;
@@ -606,6 +817,7 @@ main, footer, article {
   color: var(--color-text);
   line-height: 1.15;
   margin: 0 0 1.2rem;
+  text-wrap: balance;
 }
 
 .post-date {
@@ -628,6 +840,7 @@ main, footer, article {
   line-height: 1.85;
   color: var(--color-text);
   margin: 0 0 1.6rem;
+  text-wrap: pretty;
 }
 
 .post-body h2 {
@@ -637,6 +850,7 @@ main, footer, article {
   color: var(--color-gold);
   margin: 3rem 0 1rem;
   font-style: italic;
+  text-wrap: balance;
 }
 
 .post-body .lead {
@@ -696,9 +910,34 @@ main, footer, article {
     animation: none;
   }
 
+  .hero-name {
+    animation: none;
+    background-image: none;
+    background-color: transparent;
+    -webkit-text-fill-color: initial;
+    color: var(--color-text);
+  }
+
   .scroll-line {
     animation: none;
     opacity: 0.4;
+  }
+
+  .timeline-entry,
+  .timeline-marker,
+  .timeline-content,
+  .timeline-highlights li::before {
+    transition: none;
+  }
+
+  .fade-in,
+  .fade-in:not([data-delay]) {
+    animation: none !important;
+  }
+
+  .timeline::before {
+    animation: none !important;
+    clip-path: none;
   }
 
   html {
@@ -718,4 +957,9 @@ button:focus-visible {
 ::selection {
   background: var(--color-gold);
   color: var(--color-bg);
+}
+
+/* ── 17. View Transitions ── */
+@view-transition {
+  navigation: auto;
 }
