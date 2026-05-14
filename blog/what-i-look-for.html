@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="On evaluating engineering teams, navigating build-vs-buy decisions, and the patterns that separate companies that ship from companies that stall — by Paul Reioux."/>
+  <meta name="robots" content="index, follow"/>
+  <title>What I Look For — Paul Reioux</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="../style.css"/>
+</head>
+<body>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <svg class="svg-filters" aria-hidden="true" focusable="false">
+    <defs>
+      <filter id="grain-filter">
+        <feTurbulence type="fractalNoise" baseFrequency="0.68" numOctaves="4" stitchTiles="stitch" result="noise"/>
+        <feColorMatrix type="saturate" values="0" in="noise" result="mono"/>
+        <feBlend in="SourceGraphic" in2="mono" mode="overlay"/>
+      </filter>
+    </defs>
+  </svg>
+
+  <main>
+  <article>
+
+    <header class="post-header">
+      <div class="post-header-label"><a href="../">Paul Reioux</a> &nbsp;·&nbsp; Writing</div>
+      <h1 class="post-h1">What I Look For</h1>
+      <div class="post-date">May 2026</div>
+    </header>
+
+    <div class="post-body">
+      <hr class="post-divider"/>
+
+      <p class="lead">
+        Over the past three decades, I've evaluated engineering organizations from the inside as a
+        builder and from the outside as an advisor. The patterns that separate companies that ship
+        from companies that stall are remarkably consistent, regardless of industry, team size, or
+        technology stack.
+      </p>
+
+      <p>
+        When someone asks me to look at their engineering organization, whether as a board advisor,
+        a fractional CTO, or during a due diligence review, I'm not checking for a specific
+        technology choice or a particular org chart shape. I'm checking for a handful of structural
+        signals that predict whether this team can execute over the next 12 to 24 months. Here's
+        what those signals are.
+      </p>
+
+      <h2>Does the team know why they're building what they're building?</h2>
+
+      <p>
+        This sounds obvious. It isn't. I've walked into organizations where the engineering team is
+        executing at full speed on a roadmap that nobody can trace back to a customer problem or a
+        business outcome. Features get built because they were on a list. The list exists because
+        someone wrote it six months ago. Nobody remembers why.
+      </p>
+
+      <p>
+        The fix isn't more process. It's a lighter-weight version of the same discipline I apply to
+        my own projects: before you write code, write a one-page document that answers what problem
+        you're solving, who has it, and how you'll know the solution worked. Call it a PRD, call it
+        a brief, call it a napkin. The format doesn't matter. The act of forcing clarity before
+        committing engineering resources is what matters.
+      </p>
+
+      <p>
+        Teams that skip this step tend to ship features. Teams that do this step tend to ship
+        outcomes. The difference compounds over years.
+      </p>
+
+      <h2>Can they tell you what's hard?</h2>
+
+      <p>
+        A healthy engineering team knows where its own pain is. They can tell you which parts of the
+        system are fragile, which deployments make them nervous, which dependencies keep breaking,
+        which decisions they'd make differently if they could go back. When I hear clear, specific
+        answers to "what's the hardest part of your system right now?", I know the team has
+        self-awareness. That's a better predictor of future success than any metric.
+      </p>
+
+      <p>
+        When I hear vague answers, or worse, "everything's fine," that's a warning sign. Every
+        engineering system has hard parts. If the team can't name them, they either haven't looked or
+        they're afraid to say. Both are problems a board should want to understand.
+      </p>
+
+      <h2>Build vs. buy: the decision that reveals everything</h2>
+
+      <p>
+        How a company approaches build-vs-buy decisions tells you more about their engineering
+        culture than almost anything else. I've seen teams build custom solutions for problems that
+        have mature open-source answers, burning months of engineering time to produce something
+        worse than what they could have adopted in a week. I've also seen teams buy their way into
+        vendor lock-in that costs them more in the long run than building would have.
+      </p>
+
+      <p>
+        The right framework isn't "always build" or "always buy." It's: does this team have a
+        consistent, repeatable way of making that decision? Do they check what already exists before
+        designing from scratch? Do they evaluate the total cost of ownership, not just the
+        implementation cost? Do they distinguish between problems that are core to their business
+        (build) and problems that are commodity (buy)?
+      </p>
+
+      <p>
+        I apply this same discipline to my own work. Before I design a custom integration, I spend
+        time checking whether someone already solved the problem. It's a 15-minute habit that has
+        saved me hundreds of hours over the years. Companies that institutionalize this habit ship
+        faster and maintain less.
+      </p>
+
+      <h2>AI adoption: what boards actually need to understand</h2>
+
+      <p>
+        Every board conversation I've been part of in the past two years has included the question:
+        "What are we doing with AI?" Most of those conversations go wrong in the same way. The
+        board wants to hear that the company is "using AI." The team either oversells what they've
+        done or undersells what's possible. Neither outcome is useful.
+      </p>
+
+      <p>
+        What I look for instead is whether the company has figured out where AI creates genuine
+        leverage and where it doesn't. AI is not a strategy. It's a capability. The question isn't
+        "are you using AI?" It's "where in your value chain does AI reduce cost, increase speed, or
+        enable something that was previously impossible, and have you validated that with real usage
+        data?"
+      </p>
+
+      <p>
+        I use AI extensively in my own engineering workflow. I've built a multi-layer agent
+        architecture that handles everything from automated infrastructure monitoring to adversarial
+        code review using competing model families as second opinions. But the thing that makes it
+        work is not the AI itself. It's the engineering process I've wrapped around it: requirements
+        definition, architectural planning, implementation, QA, deployment. The AI accelerates each
+        stage. It doesn't replace any of them.
+      </p>
+
+      <p>
+        Companies that treat AI as a magic wand tend to produce demos. Companies that treat AI as
+        an accelerator inside a disciplined process tend to produce results. Boards should be asking
+        which one their company is.
+      </p>
+
+      <h2>The team question</h2>
+
+      <p>
+        Technology decisions are reversible. Team decisions are not, at least not cheaply. When I
+        evaluate an engineering organization, I spend as much time understanding the people dynamics
+        as I do the architecture.
+      </p>
+
+      <p>
+        Can the team ship without the founder or CTO in the room? Is there a clear decision-making
+        framework, or does every technical question escalate to the same person? Can individual
+        contributors explain the system they're working on, or do they only know their slice? Are
+        the senior engineers teaching, or are they just doing?
+      </p>
+
+      <p>
+        I've built engineering organizations from zero four times: at DAQRI, at Virgin Hyperloop, at
+        Prism Labs, and at Seismic. Each time, the hardest part wasn't hiring. It was building the
+        culture where the team could operate independently and make good decisions without me. The
+        organizations that survive their founders are the ones where that transfer happened
+        successfully.
+      </p>
+
+      <h2>What I bring to the table</h2>
+
+      <p>
+        The value of having operated across defense, consumer, AR, transportation, health-tech, and
+        enterprise SaaS isn't that I know all those industries. It's that I've learned to see
+        through them. The structural patterns repeat: how organizations make decisions, where
+        engineering bottlenecks actually live, what "done" means versus what the team reports as
+        done, how to evaluate whether a technical bet will pay off or burn runway.
+      </p>
+
+      <p>
+        A board advisor who has only worked in one industry brings deep domain knowledge but limited
+        pattern vocabulary. Someone who has operated in six industries, built teams from scratch in
+        four of them, and shipped products at every scale from embedded real-time systems to
+        consumer mobile to global SaaS brings a different kind of pattern recognition. Not better,
+        but complementary. And in a board context, where the job is to ask the right questions rather
+        than to write the code, that breadth of pattern recognition is exactly the tool that's
+        needed.
+      </p>
+
+      <a href="../" class="back-link">← Back</a>
+    </div>
+
+  </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-copy">&copy; <span id="year"></span> Paul Reioux</span>
+      <span class="footer-ox" title="Year of the Ox" aria-label="Year of the Ox">&#29275;</span>
+    </div>
+  </footer>
+
+  <script src="../main.js"></script>
+</body>
+</html>

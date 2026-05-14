@@ -73,13 +73,69 @@
     }, { passive: true });
   }
 
+  function initContactForm() {
+    var toggle = document.getElementById('show-contact-form');
+    var form = document.getElementById('contact-form');
+    if (!toggle || !form) return;
+
+    toggle.addEventListener('click', function () {
+      var open = form.hidden;
+      form.hidden = !open;
+      toggle.setAttribute('aria-expanded', String(open));
+      if (open) form.querySelector('input[name="name"]').focus();
+    });
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var btn = form.querySelector('.btn-submit');
+      var status = form.querySelector('.form-status');
+      btn.disabled = true;
+      btn.textContent = 'Sending…';
+      status.textContent = '';
+      status.className = 'form-status';
+
+      var data = {
+        name: form.querySelector('[name="name"]').value,
+        email: form.querySelector('[name="email"]').value,
+        message: form.querySelector('[name="message"]').value,
+        _hp: form.querySelector('[name="_hp"]').value,
+      };
+
+      fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      })
+        .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, body: j }; }); })
+        .then(function (res) {
+          if (res.ok) {
+            status.textContent = 'Message sent. I’ll be in touch.';
+            form.reset();
+          } else {
+            status.textContent = res.body.error || 'Something went wrong.';
+            status.className = 'form-status error';
+          }
+          btn.disabled = false;
+          btn.textContent = 'Send';
+        })
+        .catch(function () {
+          status.textContent = 'Network error. Try again.';
+          status.className = 'form-status error';
+          btn.disabled = false;
+          btn.textContent = 'Send';
+        });
+    });
+  }
+
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', function () {
       initScrollAnimations();
       initPhotoParallax();
+      initContactForm();
     });
   } else {
     initScrollAnimations();
     initPhotoParallax();
+    initContactForm();
   }
 })();

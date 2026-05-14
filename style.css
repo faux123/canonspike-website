@@ -577,6 +577,160 @@ body {
   }
 }
 
+/* ── 8c. Advisory Section ── */
+.advisory-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.advisory-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  font-family: var(--font-body);
+  font-size: clamp(0.88rem, 1.7vw, 0.95rem);
+  font-weight: 300;
+  line-height: 1.7;
+  color: #9a9a93;
+  padding: 1rem 1.2rem;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  transition:
+    background 0.4s var(--ease-in-out),
+    border-color 0.4s var(--ease-in-out),
+    box-shadow 0.4s var(--ease-in-out);
+}
+
+.advisory-item:hover {
+  background: rgba(17, 17, 16, 0.8);
+  border-color: rgba(201, 168, 76, 0.15);
+  background: color-mix(in oklch, var(--color-bg-raised) 80%, transparent);
+  border-color: color-mix(in oklch, var(--color-gold) 15%, transparent);
+  box-shadow: 0 4px 30px rgba(201, 168, 76, 0.06);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+
+.advisory-icon {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  margin-top: 0.25em;
+  color: var(--color-gold);
+  opacity: 0.85;
+}
+
+.advisory-heading {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 2.2vw, 1.15rem);
+  font-weight: 500;
+  color: var(--color-text);
+  margin-bottom: 0.3rem;
+}
+
+.advisory-desc {
+  display: block;
+  text-wrap: pretty;
+}
+
+.advisory-cta {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+/* ── 8d. Contact Form ── */
+.contact-form {
+  max-width: 480px;
+  margin: 2rem auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact-form[hidden] {
+  display: none;
+}
+
+.hp-field {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  pointer-events: none;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-field label {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.form-field input,
+.form-field textarea {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: var(--color-text);
+  background: rgba(17, 17, 16, 0.6);
+  background: color-mix(in oklch, var(--color-bg-raised) 60%, transparent);
+  border: 1px solid var(--color-muted-dim);
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  transition: border-color 0.3s var(--ease-in-out), box-shadow 0.3s var(--ease-in-out);
+  outline: none;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  border-color: var(--color-gold-dim);
+  box-shadow: 0 0 0 2px rgba(201, 168, 76, 0.1);
+}
+
+.form-field textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.btn-submit {
+  align-self: center;
+  cursor: pointer;
+  background: none;
+  margin-top: 0.5rem;
+}
+
+.btn-submit:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.form-status {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  text-align: center;
+  color: var(--color-green);
+  margin: 0;
+  min-height: 1.5em;
+}
+
+.form-status.error {
+  color: #c44;
+}
+
 /* ── 9. Currently List ── */
 .currently-list {
   list-style: none;
@@ -677,6 +831,8 @@ body {
   border: 1px solid var(--color-gold-dim);
   border-radius: 2px;
   color: var(--color-gold);
+  background: none;
+  cursor: pointer;
   text-decoration: none;
   font-family: var(--font-body);
   font-size: 0.8rem;

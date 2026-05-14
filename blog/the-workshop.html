@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="On running a multi-node homelab, building AI agent infrastructure, and why personal projects deserve the same engineering rigor as production software — by Paul Reioux."/>
+  <meta name="robots" content="index, follow"/>
+  <title>The Workshop — Paul Reioux</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="../style.css"/>
+</head>
+<body>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <svg class="svg-filters" aria-hidden="true" focusable="false">
+    <defs>
+      <filter id="grain-filter">
+        <feTurbulence type="fractalNoise" baseFrequency="0.68" numOctaves="4" stitchTiles="stitch" result="noise"/>
+        <feColorMatrix type="saturate" values="0" in="noise" result="mono"/>
+        <feBlend in="SourceGraphic" in2="mono" mode="overlay"/>
+      </filter>
+    </defs>
+  </svg>
+
+  <main>
+  <article>
+
+    <header class="post-header">
+      <div class="post-header-label"><a href="../">Paul Reioux</a> &nbsp;·&nbsp; Writing</div>
+      <h1 class="post-h1">The Workshop</h1>
+      <div class="post-date">May 2026</div>
+    </header>
+
+    <div class="post-body">
+      <hr class="post-divider"/>
+
+      <p class="lead">
+        I keep a second engineering organization at home. It runs on a four-node Proxmox cluster
+        spread across my office, hosts close to fifty containers, and manages everything from
+        network security to AI agent orchestration. Nobody asked me to build it. I built it because
+        the problems were interesting and the constraints were real.
+      </p>
+
+      <p>
+        People hear "homelab" and picture a Raspberry Pi running Pi-hole. That's fine. But what I've
+        been building over the past several years is closer to a small production environment: high
+        availability, proper network segmentation, automated health monitoring, and the kind of
+        infrastructure decisions that you normally only make when someone is paying you.
+      </p>
+
+      <h2>The cluster</h2>
+
+      <p>
+        Four Proxmox nodes, each with a different hardware profile chosen for specific workloads.
+        One handles compute-heavy tasks on a 12th-gen Intel. Another runs network infrastructure
+        including a pfSense VM and Home Assistant. The other two split general-purpose services
+        and monitoring workloads. Between them, they host roughly fifty LXC containers,
+        each isolated, each with its own resource allocation, each purpose-built.
+      </p>
+
+      <p>
+        The network itself runs through a pfSense firewall with proper VLAN segmentation, dual
+        AdGuard DNS servers for redundancy, and a Tailscale mesh for secure remote access. I treat
+        my home network the way I'd treat a corporate one: defense in depth, no single points of
+        failure where it matters, and zero trust for anything coming from the outside.
+      </p>
+
+      <p>
+        This is not just tinkering. It's the same infrastructure-as-code discipline I apply at work,
+        except the blast radius is my house and the SLA is my own patience.
+      </p>
+
+      <h2>The AI layer</h2>
+
+      <p>
+        The most architecturally ambitious piece of the lab is a dedicated mini PC running a
+        three-layer AI agent stack. I call the layers OpenClaw, SwarmClaw, and Hermes. Each does
+        something different, and the separation of concerns between them was hard-won through weeks
+        of iteration.
+      </p>
+
+      <p>
+        <strong>OpenClaw</strong> is the substrate: a gateway that handles TLS, multi-tenancy,
+        device authentication, and messaging bridges to services like Telegram and Signal. It's
+        always-on and always reachable. Think of it as the platform layer, the thing that everything
+        else builds on top of.
+      </p>
+
+      <p>
+        <strong>SwarmClaw</strong> is the orchestrator: a multi-agent runtime that can fan out
+        parallel tasks, manage queues, and coordinate work across different AI backends. It talks
+        to OpenClaw's gateway over WebSocket, routes tasks to the right model tier, and provides
+        the interface for dispatching complex multi-step automations.
+      </p>
+
+      <p>
+        <strong>Hermes</strong> is the worker: an autonomous agent built on NousResearch's framework,
+        designed for long-horizon tasks that require sustained reasoning. SwarmClaw dispatches work
+        to Hermes through an OpenAI-compatible API layer backed by a LiteLLM router that manages
+        five model tiers, from local Gemma inference on a Radeon dGPU all the way up to cloud models
+        when the task demands it.
+      </p>
+
+      <p>
+        The reason this architecture exists instead of a simpler "just call an API" setup is
+        economics and control. Local models handle the bulk of routine work: health checks, log
+        analysis, morning infrastructure briefs. Cloud models are reserved for the tasks that
+        actually require their capability. The system automatically routes based on complexity,
+        and the local tier runs on hardware I own, at a marginal cost of electricity.
+      </p>
+
+      <p>
+        The three-piece split emerged from failure. I originally built a custom bridge to connect
+        these systems. It kept hitting protocol-level bugs: connection state leaks, permission
+        deadlocks, stream-reader failures. After a few weeks of patching, I applied my own rule:
+        check if someone already solved this. SwarmClaw was the pre-built answer the community
+        had already converged on. I archived my custom bridge and moved on.
+      </p>
+
+      <h2>FauxClock / KEP</h2>
+
+      <p>
+        Separate from the homelab, I've maintained an Android app for years called FauxClock
+        (also known as KEP, short for Kernel Enhancement Platform). It started as a kernel-level
+        performance tuner back when I was deep in the Android custom kernel community on XDA
+        Developers, and it has evolved into something more like an all-in-one performance utility:
+        CPU/GPU frequency management, thermal controls, display calibration, memory tuning, I/O
+        scheduling.
+      </p>
+
+      <p>
+        FauxClock runs as a root app, which means it operates at a layer most Android developers
+        never touch. It talks directly to sysfs and procfs, adjusts kernel parameters in real time,
+        and has to handle the fragmentation of root solutions across Magisk, KernelSU, and APatch,
+        each of which has different security models and different ways of granting superuser access.
+      </p>
+
+      <p>
+        It's a passion project, but I treat it like a product. There's a real user base. There are
+        real compatibility constraints across dozens of device configurations. And the consequences
+        of getting it wrong are real too: a bad thermal policy can throttle a device, a bad memory
+        parameter can trigger the low-memory killer, and a bad I/O setting can degrade storage
+        performance in ways the user won't notice until their apps start stuttering.
+      </p>
+
+      <h2>The engineering philosophy</h2>
+
+      <p>
+        Here's the thing that ties all of this together: I apply the same engineering process to
+        personal projects that I apply to professional ones. The scale is different. The rigor is not.
+      </p>
+
+      <p>
+        Every significant feature, whether it's a new agent capability for the homelab or a new
+        tuning mode in FauxClock, starts with a PRD. What is the problem? Who is affected? What
+        does success look like? Then an architecture document: how will this work, what are the
+        dependencies, what's the data flow, where are the failure modes? Then implementation. Then
+        QA. Then deployment.
+      </p>
+
+      <p>
+        I use AI heavily in this process. Claude handles implementation, code review, infrastructure
+        changes, and even runs adversarial reviews against its own work using a different model
+        family as a second opinion. But the process around the AI is traditional software
+        engineering, and that's the part that matters. The AI is fast. The AI is capable. The AI
+        is also wrong sometimes. The engineering process is what catches the errors before they
+        become problems.
+      </p>
+
+      <p>
+        A concrete example: when I ship a change to FauxClock, the sequence is a product review
+        defining the feature, an architectural plan identifying the affected components, an
+        implementation pass, a dedicated QA pass that builds and installs on a physical device,
+        and then an adversarial code review from a competing model before the PR gets merged.
+        That's five distinct stages for an app that only I technically need to maintain. But the
+        discipline is what keeps the codebase healthy over years, not months.
+      </p>
+
+      <p>
+        The same applies to the homelab. When the AI agent stack proposes an infrastructure change,
+        it doesn't just execute. It classifies the change by reversibility: read-only observations
+        run autonomously, reversible writes run with logging, and anything irreversible requires
+        my explicit approval via a push notification. That classification model didn't emerge from
+        theory. It emerged from the time an automated process made a change I didn't expect, and I
+        had to spend an evening undoing it.
+      </p>
+
+      <h2>Why bother</h2>
+
+      <p>
+        The honest answer is that my homelab and personal projects exist for two reasons.
+      </p>
+
+      <p>
+        The first is that they're a sandbox for ideas I want to bring to work. The three-layer
+        agent architecture I built at home is the blueprint for what I'm replicating in a corporate
+        context. Every integration bug I hit at home is one I won't hit in production. Every
+        architectural decision I validated at home is one I can propose at work with conviction
+        rather than speculation.
+      </p>
+
+      <p>
+        The second is that, done right, this infrastructure gives me time back. The morning brief
+        that runs at 8 AM on my agent stack hits every Proxmox node, checks service health, flags
+        anything degraded, and presents me with a summary and proposed actions before I've finished
+        coffee. That's 20 minutes of manual checking I no longer do. Multiply that pattern across
+        enough routine tasks and the investment starts paying for itself in the only currency that
+        matters to me: time with my family.
+      </p>
+
+      <p>
+        Engineering for yourself, with the same standards you'd apply for anyone else, is how you
+        stay sharp. The homelab is my workshop. FauxClock is my craft project. And the process I
+        wrap around both of them is the same one I've spent 28 years refining in every industry
+        I've worked in.
+      </p>
+
+      <a href="../" class="back-link">← Back</a>
+    </div>
+
+  </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-copy">&copy; <span id="year"></span> Paul Reioux</span>
+      <span class="footer-ox" title="Year of the Ox" aria-label="Year of the Ox">&#29275;</span>
+    </div>
+  </footer>
+
+  <script src="../main.js"></script>
+</body>
+</html>
