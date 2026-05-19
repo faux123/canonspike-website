@@ -13,7 +13,7 @@ export async function onRequestPost(context) {
       return new Response(JSON.stringify({ ok: true }), { status: 200, headers });
     }
 
-    const name = (body.name || "").trim().slice(0, 200);
+    const name = (body.name || "").replace(/[\r\n]/g, " ").trim().slice(0, 200);
     const email = (body.email || "").trim().slice(0, 200);
     const message = (body.message || "").trim().slice(0, 2000);
 
@@ -31,11 +31,20 @@ export async function onRequestPost(context) {
       );
     }
 
+    const ntfyToken = context.env.NTFY_TOKEN;
+    if (!ntfyToken) {
+      return new Response(
+        JSON.stringify({ error: "Server misconfigured." }),
+        { status: 500, headers }
+      );
+    }
+
     const ntfyBody = `From: ${name}\nEmail: ${email}\n\n${message}`;
 
     await fetch("https://ntfy.canonspike.com/canonspike-contact", {
       method: "POST",
       headers: {
+        "Authorization": `Bearer ${ntfyToken}`,
         "Title": `Advisory inquiry from ${name}`,
         "Priority": "4",
         "Tags": "briefcase",
