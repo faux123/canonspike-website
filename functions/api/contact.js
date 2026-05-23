@@ -13,9 +13,14 @@ export async function onRequestPost(context) {
       return new Response(JSON.stringify({ ok: true }), { status: 200, headers });
     }
 
-    const name = (body.name || "").replace(/[\r\n]/g, " ").trim().slice(0, 200);
-    const email = (body.email || "").trim().slice(0, 200);
-    const message = (body.message || "").trim().slice(0, 2000);
+    const ts = Number(body._ts);
+    if (!ts || Date.now() - ts < 3000 || Date.now() - ts > 3600000) {
+      return new Response(JSON.stringify({ ok: true }), { status: 200, headers });
+    }
+
+    const name = String(body.name || "").replace(/[\r\n]/g, " ").trim().slice(0, 200);
+    const email = String(body.email || "").trim().slice(0, 200);
+    const message = String(body.message || "").trim().slice(0, 2000);
 
     if (!name || !email || !message) {
       return new Response(

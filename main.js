@@ -78,11 +78,16 @@
     var form = document.getElementById('contact-form');
     if (!toggle || !form) return;
 
+    var formOpenedAt = 0;
+
     toggle.addEventListener('click', function () {
       var open = form.hidden;
       form.hidden = !open;
       toggle.setAttribute('aria-expanded', String(open));
-      if (open) form.querySelector('input[name="name"]').focus();
+      if (open) {
+        formOpenedAt = Date.now();
+        form.querySelector('input[name="name"]').focus();
+      }
     });
 
     form.addEventListener('submit', function (e) {
@@ -99,6 +104,7 @@
         email: form.querySelector('[name="email"]').value,
         message: form.querySelector('[name="message"]').value,
         _hp: form.querySelector('[name="_hp"]').value,
+        _ts: formOpenedAt,
       };
 
       fetch('/api/contact', {
