@@ -50,6 +50,7 @@
 <li><span class="badge b-home">Built on</span><p>The device I own and test every release on.</p></li>
 <li><span class="badge b-ok">Works</span><p>Passed the FauxVkTest driver check or finished its speed test, or a player reports playing games with it.</p></li>
 <li><span class="badge b-part">Partly works</span><p>The driver loads, but some tests failed or did not finish.</p></li>
+<li><span class="badge b-no">Does not work</span><p>Someone tried it on this device and it failed.</p></li>
 <li><span class="badge b-try">Not tested yet</span><p>Same kind of graphics chip, so it may work. Nobody has reported back.</p></li>
 </ul>
 
@@ -120,11 +121,13 @@
 <p>Built on the Retroid Pocket 4 Pro (MediaTek Dimensity 1100, Mali-G77).</p></div>
 <div class="get"><a class="btn" href="https://github.com/faux123/panvk-faux123-driver-rp4pro/releases" rel="noopener">Download</a><span class="ver">Latest public release v0.16.0</span></div></div>
 <div class="dbody">
-<p class="say">Built for the RP4 Pro, and the best candidate for other MediaTek handhelds and phones with Mali-G77 graphics. FauxVkDB has results from the RP4 Pro only so far. If you run it on another device, a FauxVkTest upload puts your device on this list.</p>
+<p class="say">Built for the RP4 Pro, and the best candidate for other MediaTek handhelds and phones with Mali-G77 graphics. Sharing the chip is not enough on its own: a Galaxy Note20 Ultra owner reported it does not work on that phone. If you run it on another device, a FauxVkTest upload puts your device on this list.</p>
 <div><p class="label">Graphics chips it has run on</p>
 <div class="chips"><span class="gpu home">Mali-G77</span></div></div>
 <div><p class="label">Devices</p><ul class="devs">
 <li class="is-home"><span class="dev">Retroid Pocket 4 Pro</span><span class="chip-name">Mali-G77</span><span class="badge b-home">Built on</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/63">Test result</a></span></li>
+<li><span class="dev">Samsung Galaxy Note20 Ultra (Exynos)</span><span class="chip-name">Mali-G77</span><span class="badge b-no">Does not work</span><span class="src"><a href="https://www.reddit.com/r/EmulationOnAndroid/comments/1wznv0c/mali_custom_drivers_for_rp4_pro_rg556_and/pefm2ov/" rel="noopener">Player report</a></span>
+<p class="note">Same graphics chip family, but the driver did not work there. A matching chip is a good sign, not a promise.</p></li>
 </ul></div>
 <div class="try"><div><span class="badge b-try">Not tested yet</span><ul><li>Other devices with Mali-G77 graphics (MediaTek Dimensity 1000 to 1200)</li><li>The standard Retroid Pocket 4 (Dimensity 900, Mali-G68)</li></ul></div></div>
 </div></article>
