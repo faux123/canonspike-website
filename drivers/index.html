@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>faux123 graphics drivers: which devices each one runs on</title>
-<meta name="description" content="Five custom Android graphics drivers by faux123 (Turnip for Adreno, PanVK for Mali). See the device each one was built on, and every other device it has been seen running on.">
+<title>faux123 graphics drivers: which graphics chips each one runs on</title>
+<meta name="description" content="Five custom Android graphics drivers by faux123 (Turnip for Adreno, PanVK for Mali). See which graphics chips each one targets, and every chip it has been seen running on.">
 <meta name="theme-color" content="#0B1620">
 <link rel="canonical" href="https://canonspike.com/drivers/">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
@@ -25,24 +25,24 @@
 <main><div class="wrap">
 
 <section class="hero">
-<h1>One driver, <span class="grad">many devices</span></h1>
+<h1>One driver, <span class="grad">a family of chips</span></h1>
 <p class="sub">A graphics driver is the software that lets games draw on your device's graphics chip. I build each of my drivers on one device I own. Players then try them on their own phones and handhelds, and some of those work too.</p>
-<p class="sub">This page shows, for each driver, the device it was built on and every other device it has been seen running on, with a link to the proof.</p>
+<p class="sub">This page shows, for each driver, the graphics chip family it targets and every chip it has been seen running on, with a link to the proof.</p>
 </section>
 
 <h2 id="glance">At a glance</h2>
-<p class="sub">The number is how many different devices each driver has been seen working on so far. Tap a driver to see the list.</p>
+<p class="sub">Each driver targets one family of graphics chips. The number is how many different chips in that family and beyond it have been seen running the driver so far. Tap a driver to see the chips and the proof.</p>
 <div class="glance">
-<a class="card fam-adreno" href="#turnip"><span class="name">Turnip</span><span class="home">Built on the AYN Odin 3</span>
-<span class="count">9<small>devices</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Wide: most Adreno chips</span></a>
-<a class="card fam-mali" href="#pixel7"><span class="name">PanVK for Pixel 7</span><span class="home">Built on the Google Pixel 7</span>
-<span class="count">3<small>devices</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="word">Pixel family</span></a>
-<a class="card fam-mali" href="#ace"><span class="name">PanVK for Ace</span><span class="home">Built on the GameForce Ace</span>
-<span class="count">3<small>devices</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="word">Several Mali chips</span></a>
-<a class="card fam-mali" href="#rp4pro"><span class="name">PanVK for RP4 Pro</span><span class="home">Built on the Retroid Pocket 4 Pro</span>
-<span class="count">1<small>device on record</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></span><span class="word">Mali-G77 devices</span></a>
-<a class="card fam-mali" href="#rg556"><span class="name">PanVK for RG556</span><span class="home">Built on the Anbernic RG556</span>
-<span class="count">2<small>devices</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="word">Narrow: not for MediaTek</span></a>
+<a class="card fam-adreno" href="#turnip"><span class="name">Turnip for Adreno 600, 700, 800</span><span class="home">Qualcomm Snapdragon graphics</span>
+<span class="count">5<small>chips</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Adreno 660 to 840</span></a>
+<a class="card fam-mali" href="#pixel7"><span class="name">PanVK for Mali&#8209;G710 and G715</span><span class="home">Google Tensor graphics</span>
+<span class="count">2<small>chips</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="word">Mali-G710, G715</span></a>
+<a class="card fam-mali" href="#ace"><span class="name">PanVK for Mali&#8209;G610</span><span class="home">Rockchip graphics, and more</span>
+<span class="count">3<small>chips</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="word">Mali-G57, G610, G720</span></a>
+<a class="card fam-mali" href="#rp4pro"><span class="name">PanVK for Mali&#8209;G77</span><span class="home">MediaTek Dimensity graphics</span>
+<span class="count">1<small>chip on record</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></span><span class="word">Mali-G77</span></a>
+<a class="card fam-mali" href="#rg556"><span class="name">PanVK for Mali&#8209;G57 and G68</span><span class="home">Unisoc and Exynos, not MediaTek</span>
+<span class="count">2<small>chips</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="word">Mali-G57, G68</span></a>
 </div>
 
 <h2 id="badges">What the labels mean</h2>
@@ -59,7 +59,7 @@
 
 <!-- TURNIP -->
 <article class="card driver fam-adreno" id="turnip">
-<div class="dhead"><div class="who"><p class="kicker">Turnip · Adreno</p><h2>Turnip by faux123</h2>
+<div class="dhead"><div class="who"><p class="kicker">Turnip · Adreno</p><h2>Turnip for Adreno 600, 700, and 800 series</h2>
 <p>For Qualcomm Snapdragon devices. Built on the AYN Odin 3 (Adreno 830).</p></div>
 <div class="get"><a class="btn" href="https://github.com/faux123/turnip-faux123-driver/releases" rel="noopener">Download</a><span class="ver">Latest public release v1.1.7</span></div></div>
 <div class="dbody">
@@ -82,7 +82,7 @@
 
 <!-- PIXEL 7 -->
 <article class="card driver fam-mali" id="pixel7">
-<div class="dhead"><div class="who"><p class="kicker">PanVK · Mali</p><h2>PanVK for Pixel 7</h2>
+<div class="dhead"><div class="who"><p class="kicker">PanVK · Mali</p><h2>PanVK for Mali-G710 and G715</h2>
 <p>Built on the Google Pixel 7 (Tensor G2, Mali-G710).</p></div>
 <div class="get"><a class="btn" href="https://github.com/faux123/panvk-faux123-driver-pixel7/releases" rel="noopener">Download</a><span class="ver">Latest public release v0.11.0</span></div></div>
 <div class="dbody">
@@ -99,7 +99,7 @@
 
 <!-- ACE -->
 <article class="card driver fam-mali" id="ace">
-<div class="dhead"><div class="who"><p class="kicker">PanVK · Mali</p><h2>PanVK for GameForce Ace</h2>
+<div class="dhead"><div class="who"><p class="kicker">PanVK · Mali</p><h2>PanVK for Mali-G610</h2>
 <p>Built on the GameForce Ace (Rockchip RK3588S, Mali-G610).</p></div>
 <div class="get"><a class="btn" href="https://github.com/faux123/panvk-faux123-driver-ace/releases" rel="noopener">Download</a><span class="ver">Latest public release v0.39.0</span></div></div>
 <div class="dbody">
@@ -117,7 +117,7 @@
 
 <!-- RP4 PRO -->
 <article class="card driver fam-mali" id="rp4pro">
-<div class="dhead"><div class="who"><p class="kicker">PanVK · Mali</p><h2>PanVK for Retroid Pocket 4 Pro</h2>
+<div class="dhead"><div class="who"><p class="kicker">PanVK · Mali</p><h2>PanVK for Mali-G77</h2>
 <p>Built on the Retroid Pocket 4 Pro (MediaTek Dimensity 1100, Mali-G77).</p></div>
 <div class="get"><a class="btn" href="https://github.com/faux123/panvk-faux123-driver-rp4pro/releases" rel="noopener">Download</a><span class="ver">Latest public release v0.16.0</span></div></div>
 <div class="dbody">
@@ -134,7 +134,7 @@
 
 <!-- RG556 -->
 <article class="card driver fam-mali" id="rg556">
-<div class="dhead"><div class="who"><p class="kicker">PanVK · Mali</p><h2>PanVK for Anbernic RG556</h2>
+<div class="dhead"><div class="who"><p class="kicker">PanVK · Mali</p><h2>PanVK for Mali-G57 and G68</h2>
 <p>Built on the Anbernic RG556 (Unisoc T820, Mali-G57).</p></div>
 <div class="get"><a class="btn" href="https://github.com/faux123/panvk-faux123-driver-rg556/releases" rel="noopener">Download</a><span class="ver">Latest public release v0.15.0</span></div></div>
 <div class="dbody">
