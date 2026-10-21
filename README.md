@@ -50,3 +50,16 @@ python3 -m http.server 8000
 2. Source: **Deploy from a branch**
 3. Branch: `main`, folder: `/ (root)`
 4. Add custom domain in the Pages settings
+
+## Drivers page languages (2026-10-21)
+
+`/drivers/` is in English plus the nine FauxVkDB languages: `/drivers/es/`, `it`, `fr`, `de`, `ja`,
+`pt` (Brazil), `zh-cn`, `zh-tw`, `id`. The rest of canonspike.com is English only.
+
+- `drivers/index.html` is the source. `i18n/en.txt` lists every piece of its text, one per line;
+  `i18n/<lang>.txt` holds the same lines translated, in the same order.
+- After changing English text: `python3 tool/i18n.py extract`, change the same line numbers in every
+  `i18n/<lang>.txt`, then `python3 tool/i18n.py build`, commit, and `bash tool/deploy.sh`.
+- Device and chip names carry `translate="no"`, and each release tag sits in `<span class="tag">`, so
+  `releases.js` swaps only the tag and a new fallback version needs `build` but no translation.
+- The translations were written by Claude and no native speaker has read them.
