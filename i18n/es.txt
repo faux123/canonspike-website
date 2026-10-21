@@ -1,0 +1,119 @@
+Drivers gráficos de faux123: en qué chips gráficos funciona cada uno
+Cinco drivers gráficos personalizados para Android de faux123 (Turnip para Adreno, PanVK para Mali). Mira para qué chips gráficos está pensado cada uno y en cuáles se ha visto funcionando.
+<a class="brand" href="/drivers/">faux123 <b>drivers</b></a>
+Drivers
+Apps
+FauxVkDB
+Un driver, <span class="grad">toda una familia de chips</span>
+Un driver gráfico es el software que permite a los juegos dibujar en el chip gráfico de tu dispositivo. Desarrollo cada uno de mis drivers en un único dispositivo que tengo. Después los jugadores los prueban en sus propios móviles y consolas portátiles, y en algunos también funcionan.
+Esta página muestra, para cada driver, la familia de chips gráficos a la que va dirigido y todos los chips en los que se ha visto funcionando, con un enlace a la prueba.
+De un vistazo
+Cada driver está pensado para una familia de chips gráficos. El número indica cuántos chips distintos, de esa familia y de fuera de ella, se han visto funcionando con el driver hasta ahora. Toca un driver para ver los chips y las pruebas.
+<span class="name">Turnip para Adreno 600, 700, 800</span><span class="home">Gráficos Qualcomm Snapdragon</span> <span class="count">5<small>chips</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Adreno 660 a 840</span>
+<span class="name">PanVK para Mali&#8209;G710, G715 y G720</span><span class="home">Gráficos Google Tensor</span> <span class="count">2<small>chips</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="word">Mali-G710, G715</span>
+<span class="name">PanVK para Mali&#8209;G610 y G615</span><span class="home">Gráficos Rockchip y más</span> <span class="count">3<small>chips</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="word">Mali-G57, G610, G720</span>
+<span class="name">PanVK para Mali&#8209;G77</span><span class="home">Gráficos MediaTek Dimensity</span> <span class="count">1<small>chip registrado</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></span><span class="word">Mali-G77</span>
+<span class="name">PanVK para Mali&#8209;G57 y G68</span><span class="home">Unisoc y Exynos, no MediaTek</span> <span class="count">2<small>chips</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="word">Mali-G57, G68</span>
+Qué significan las etiquetas
+<span class="badge b-home">Desarrollado en</span>
+El dispositivo que tengo y en el que pruebo cada versión.
+<span class="badge b-ok">Funciona</span>
+Pasó la comprobación del driver de FauxVkTest o terminó su prueba de velocidad, o un jugador cuenta que juega con él.
+<span class="badge b-part">Funciona en parte</span>
+El driver carga, pero algunas pruebas fallaron o no terminaron.
+<span class="badge b-no">No funciona</span>
+Alguien lo probó en este dispositivo y falló.
+<span class="badge b-try">Sin probar aún</span>
+Mismo tipo de chip gráfico, así que puede funcionar. Nadie ha dado su opinión todavía.
+Los drivers
+Turnip es para móviles y consolas portátiles con un chip Qualcomm Snapdragon (gráficos Adreno). PanVK es para chips con gráficos Arm Mali, que usan MediaTek, Google Tensor, Rockchip, Samsung Exynos y Unisoc.
+Turnip · Adreno
+Turnip para la serie Adreno 600, 700 y 800
+Para dispositivos Qualcomm Snapdragon. Desarrollado en la AYN Odin 3 (Adreno 830).
+<a class="btn" href="https://github.com/faux123/turnip-faux123-driver/releases" rel="noopener">Descargar</a><span class="ver">Última versión pública
+Es el que llega a más dispositivos. Turnip se comunica igual con todos los chips Adreno modernos, así que el mismo archivo ha funcionado en cinco generaciones de gráficos Snapdragon, desde los móviles Galaxy de 2021 hasta las consolas portátiles más nuevas.
+Chips gráficos en los que ha funcionado
+Dispositivos
+<span class="badge b-home">Desarrollado en</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/4">Resultado de la prueba</a></span>
+<span class="badge b-ok">Funciona</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/604">Resultado de la prueba</a></span>
+<span class="badge b-ok">Funciona</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/641">Prueba de velocidad</a></span>
+<span class="badge b-ok">Funciona</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/235">Resultado de la prueba</a></span>
+<span class="badge b-ok">Funciona</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/102">Prueba de velocidad</a></span>
+<span class="badge b-ok">Funciona</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/32">Resultado de la prueba</a></span>
+<span class="badge b-ok">Funciona</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/459">Prueba de velocidad</a></span>
+<span class="badge b-ok">Funciona</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/47">Resultado de la prueba</a></span>
+<span class="badge b-ok">Funciona</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/30">Resultado de la prueba</a></span>
+Cualquier otro dispositivo con gráficos Adreno de la serie 600, 700 u 800
+Incluye la Retroid Pocket 5, la Retroid Pocket Mini y la AYN Odin 2
+PanVK · Mali
+PanVK para Mali-G710, G715 y G720
+Desarrollado en el Google Pixel 7 (Tensor G2, Mali-G710).
+<a class="btn" href="https://github.com/faux123/panvk-faux123-driver-pixel7/releases" rel="noopener">Descargar</a><span class="ver">Última versión pública
+Hecho para un solo móvil, y ya funciona en las dos generaciones siguientes. Usuarios del Pixel 8a y el Pixel 9 lo han cargado y han pasado la comprobación completa del driver en sus chips Mali-G715, más nuevos.
+<span class="badge b-home">Desarrollado en</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/464">Resultado de la prueba</a></span>
+<span class="badge b-ok">Funciona</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/744">Resultado de la prueba</a></span>
+<span class="badge b-ok">Funciona</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/560">Resultado de la prueba</a></span>
+Pixel 7 Pro y Pixel 7a (mismo chip que el Pixel 7)
+Pixel 8, Pixel 8 Pro y Pixel 9 Pro (misma familia de chips que el Pixel 8a y el Pixel 9)
+PanVK para Mali-G610 y G615
+Desarrollado en la GameForce Ace (Rockchip RK3588S, Mali-G610).
+<a class="btn" href="https://github.com/faux123/panvk-faux123-driver-ace/releases" rel="noopener">Descargar</a><span class="ver">Última versión pública
+El que más ha sorprendido. Los jugadores lo han cargado en móviles con chips Mali muy distintos: un POCO X7 Pro pasó la comprobación del driver en su Mali-G720, y un Oppo A6 5G consiguió que cargara en un modesto Mali-G57.
+<span class="badge b-home">Desarrollado en</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/35">Resultado de la prueba</a></span>
+<span class="badge b-ok">Funciona</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/227">Resultado de la prueba</a></span>
+<span class="badge b-part">Funciona en parte</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/542">Resultado de la prueba</a></span>
+Pasó casi toda la comprobación del driver (fallaron 3 elementos). La prueba de velocidad no terminó.
+Otros dispositivos Rockchip RK3588 y RK3588S
+Otros dispositivos con gráficos Mali-G610
+PanVK para Mali-G77
+Desarrollado en la Retroid Pocket 4 Pro (MediaTek Dimensity 1100, Mali-G77).
+<a class="btn" href="https://github.com/faux123/panvk-faux123-driver-rp4pro/releases" rel="noopener">Descargar</a><span class="ver">Última versión pública
+Hecho para la RP4 Pro, y el mejor candidato para otras consolas portátiles MediaTek y móviles con gráficos Mali-G77. Compartir el chip no basta por sí solo: un usuario de un Galaxy Note20 Ultra informó de que no funciona en ese móvil. Si lo usas en otro dispositivo, al subir un resultado de FauxVkTest tu dispositivo se añade a esta lista.
+<span class="badge b-home">Desarrollado en</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/63">Resultado de la prueba</a></span>
+<span class="badge b-no">No funciona</span><span class="src"><a href="https://www.reddit.com/r/EmulationOnAndroid/comments/1wznv0c/mali_custom_drivers_for_rp4_pro_rg556_and/pefm2ov/" rel="noopener">Informe de un jugador</a></span>
+Misma familia de chips gráficos, pero el driver no funcionó ahí. Que el chip coincida es buena señal, no una garantía.
+Otros dispositivos con gráficos Mali-G77 (MediaTek Dimensity 1000 a 1200)
+La Retroid Pocket 4 normal (Dimensity 900, Mali-G68)
+PanVK para Mali-G57 y G68
+Desarrollado en la Anbernic RG556 (Unisoc T820, Mali-G57).
+<a class="btn" href="https://github.com/faux123/panvk-faux123-driver-rg556/releases" rel="noopener">Descargar</a><span class="ver">Última versión pública
+El más específico de los cinco. Se comunica con el chip gráfico como espera el driver de kernel de Arm, y los dispositivos MediaTek usan otro distinto, así que no funciona en ellos. En un móvil Samsung Exynos sí: un usuario de un Galaxy A16 5G jugó a dos juegos con él.
+<span class="badge b-home">Desarrollado en</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/65">Resultado de la prueba</a></span>
+<span class="badge b-ok">Funciona</span><span class="src"><a href="https://github.com/faux123/panvk-faux123-driver-rg556/issues/1" rel="noopener">Informe de un jugador</a></span>
+Jugó a Friday Night Funkin' y a un mod exigente con Winlator, sin root.
+Otros dispositivos Unisoc T820
+Una RG556 con su software original (la mía lleva un kernel personalizado)
+<span class="badge b-no">No apto para</span>
+Dispositivos MediaTek. Ahí usa el driver de la Retroid Pocket 4 Pro.
+Cómo usar uno
+Descarga el driver. Es un único archivo ZIP. No lo descomprimas.
+Abre un emulador o lanzador de juegos que pueda cargar drivers personalizados (por ejemplo Winlator, GameNative o Eden), busca el ajuste del driver gráfico y elige el archivo ZIP.
+¿Quieres comprobarlo antes, o añadir tu dispositivo a esta página? Haz una comprobación del driver en <a href="https://play.google.com/store/apps/details?id=com.faux.vktest" rel="noopener">FauxVkTest</a> y sube el resultado a <a href="https://fauxvkdb.canonspike.com/">FauxVkDB</a>.
+Estos drivers se ofrecen sin soporte. Un driver puede rendir mejor que el de tu dispositivo en un juego y peor en otro. El driver de tu dispositivo sigue instalado y el resto de apps siguen usándolo.
+Apps del mismo desarrollador
+Un toque en una insignia abre la página de la tienda. Una app marcada con «Próximamente» aún no está en esa tienda.
+FauxVkTest en Google Play
+FauxVkTest
+Comprueba qué hace de verdad tu driver gráfico (Vulkan) y lo rápido que es. Todos los resultados de pruebas de esta página salen de ahí.
+Para Android
+Disponible en Google Play: FauxVkTest
+FauxCooling en GitHub
+FauxCooling
+Mantiene fresco tu dispositivo mientras juegas. Funciona en consolas portátiles AYN y Retroid Pocket, y en cualquier móvil, tablet o portátil con root de otras marcas.
+Para consolas portátiles, móviles y tablets Android
+Descargar en GitHub: FauxCooling
+FauxClockNG en GitHub
+FauxClockNG
+Requiere root. Ajusta a mano las opciones del governor de la CPU, la GPU, la memoria, la E/S y la red.
+Para Android con root
+Descargar en GitHub: FauxClockNG
+RomRoster
+Una sola lista con todos los juegos de todas tus consolas portátiles. Mira qué hay en cada dispositivo.
+Para Android, iPhone e iPad
+<a href="https://play.google.com/store/apps/details?id=com.faux123.romroster" rel="noopener"><img src="/drivers/img/google-play.webp" width="161" height="48" alt="Disponible en Google Play: RomRoster" loading="lazy"></a><span class="appsoon">Próximamente en App Store</span>
+Shellvana
+Un cliente SSH que muestra la salida del terminal como texto legible, no como una cuadrícula diminuta.
+Disponible en Google Play: Shellvana
+Descárgala en App Store: Shellvana
+Drivers de faux123 (Paul Reioux). Los resultados por dispositivo vienen de <a href="https://fauxvkdb.canonspike.com/">FauxVkDB</a>, a fecha de 2026-10-15.
+<a href="/">canonspike.com</a>

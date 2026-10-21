@@ -1,0 +1,63 @@
+{
+  "site_url": "https://canonspike.com",
+  "source_dir": "drivers",
+  "output_dir": "drivers",
+  "pages": [
+    "index.html"
+  ],
+  "legal_pages": [],
+  "note_class": "note",
+  "language_list_before": "</div></footer>",
+  "languages": [
+    {
+      "prefix": "es",
+      "lang": "es",
+      "name": "Español"
+    },
+    {
+      "prefix": "it",
+      "lang": "it",
+      "name": "Italiano"
+    },
+    {
+      "prefix": "fr",
+      "lang": "fr",
+      "name": "Français"
+    },
+    {
+      "prefix": "de",
+      "lang": "de",
+      "name": "Deutsch"
+    },
+    {
+      "prefix": "ja",
+      "lang": "ja",
+      "name": "日本語"
+    },
+    {
+      "prefix": "pt",
+      "lang": "pt-BR",
+      "name": "Português"
+    },
+    {
+      "prefix": "zh-cn",
+      "lang": "zh-Hans",
+      "name": "简体中文"
+    },
+    {
+      "prefix": "zh-tw",
+      "lang": "zh-Hant",
+      "name": "繁體中文"
+    },
+    {
+      "prefix": "id",
+      "lang": "id",
+      "name": "Bahasa Indonesia"
+    }
+  ],
+  "base_path": "/drivers",
+  "localized_links": [
+    "/drivers/"
+  ],
+  "language_menu_after": "</nav>\n"
+}

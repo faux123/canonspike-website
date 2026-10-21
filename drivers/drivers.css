@@ -148,3 +148,20 @@ background:radial-gradient(340px 150px at 0 0,color-mix(in srgb,var(--a1) 15%,tr
 .appsoon{display:inline-flex;align-items:center;min-height:48px;padding:0 16px;border-radius:9px;border:1px dashed color-mix(in srgb,var(--a1) 60%,var(--line));color:var(--muted);font-weight:700;font-size:.92rem;white-space:nowrap}
 @media (max-width:480px){nav{margin-left:-9px}nav a{padding:0 9px;font-size:.95rem}.brand{font-size:1.02rem}.hero{padding:30px 18px 24px}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
+/* Language menu and footer list (2026-10-21), copied from FauxVkDB's .langmenu and .langs. The CSP blocks inline styles, so they live here. */
+.langmenu{position:relative;margin:0;flex:none}
+.langmenu>summary{list-style:none;display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:0 12px;border-radius:999px;color:var(--text);font-weight:600;white-space:nowrap;cursor:pointer;transition:background .15s}
+.langmenu>summary::-webkit-details-marker{display:none}
+.langmenu>summary:hover,.langmenu[open]>summary{background:var(--card2)}
+.langmenu svg{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-width:1.7}
+.langmenu>summary::after{content:"";width:7px;height:7px;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg);margin:-4px 2px 0 1px;opacity:.7}
+.langmenu ul{position:absolute;right:0;top:calc(100% + 6px);z-index:20;margin:0;padding:6px;list-style:none;min-width:11.5rem;max-height:calc(100vh - 84px);overflow-y:auto;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)}
+.langmenu li{margin:0;padding:0}
+.langmenu a{display:flex;align-items:center;min-height:44px;padding:0 12px;border-radius:9px;color:var(--text);text-decoration:none;white-space:nowrap}
+.langmenu a:hover{background:var(--card2)}
+.langmenu a[aria-current]{color:var(--link);font-weight:700}
+.langmenu a[aria-current]::after{content:"\2713";margin-left:auto;padding-left:16px}
+footer.site .langs{display:flex;flex-wrap:wrap;gap:4px 16px;margin-top:10px}
+footer.site .langs a{display:inline-flex;align-items:center;min-height:44px}
+footer.site .langs a[aria-current]{color:var(--text);font-weight:600;text-decoration:none}
+@media (max-width:780px){header.site .wrap:has(.langmenu) nav{order:2;flex:1 0 100%;margin-left:-12px}.langmenu>summary{padding-right:4px}}

@@ -1,0 +1,38 @@
+{
+  "es": {
+    "legal_note": "Esta es una traducción. La versión en inglés es la que prevalece:",
+    "language": "Idioma"
+  },
+  "it": {
+    "legal_note": "Questa è una traduzione. Fa fede la versione inglese:",
+    "language": "Lingua"
+  },
+  "fr": {
+    "legal_note": "Ceci est une traduction. La version anglaise fait foi :",
+    "language": "Langue"
+  },
+  "de": {
+    "legal_note": "Dies ist eine Übersetzung. Maßgeblich ist die englische Fassung:",
+    "language": "Sprache"
+  },
+  "ja": {
+    "legal_note": "これは翻訳です。正式な内容は英語版をご覧ください:",
+    "language": "言語"
+  },
+  "pt": {
+    "legal_note": "Esta é uma tradução. A versão em inglês é a que prevalece:",
+    "language": "Idioma"
+  },
+  "zh-cn": {
+    "legal_note": "本页为译文，以英文版为准：",
+    "language": "语言"
+  },
+  "zh-tw": {
+    "legal_note": "本頁為譯文，以英文版為準：",
+    "language": "語言"
+  },
+  "id": {
+    "legal_note": "Ini adalah terjemahan. Versi bahasa Inggris yang berlaku:",
+    "language": "Bahasa"
+  }
+}

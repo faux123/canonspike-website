@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>faux123 繪圖驅動程式：各自能在哪些圖形晶片上執行</title>
+<meta name="description" content="faux123 製作的五款 Android 自訂繪圖驅動程式（Adreno 用 Turnip，Mali 用 PanVK）。查看每款驅動程式針對哪些圖形晶片，以及目前已確認能執行它的所有晶片。">
+<meta name="theme-color" content="#0B1620">
+<link rel="canonical" href="https://canonspike.com/drivers/zh-tw/">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="stylesheet" href="/drivers/drivers.css">
+<!-- i18n:alternates -->
+<link rel="alternate" hreflang="en" href="https://canonspike.com/drivers/">
+<link rel="alternate" hreflang="es" href="https://canonspike.com/drivers/es/">
+<link rel="alternate" hreflang="it" href="https://canonspike.com/drivers/it/">
+<link rel="alternate" hreflang="fr" href="https://canonspike.com/drivers/fr/">
+<link rel="alternate" hreflang="de" href="https://canonspike.com/drivers/de/">
+<link rel="alternate" hreflang="ja" href="https://canonspike.com/drivers/ja/">
+<link rel="alternate" hreflang="pt-BR" href="https://canonspike.com/drivers/pt/">
+<link rel="alternate" hreflang="zh-Hans" href="https://canonspike.com/drivers/zh-cn/">
+<link rel="alternate" hreflang="zh-Hant" href="https://canonspike.com/drivers/zh-tw/">
+<link rel="alternate" hreflang="id" href="https://canonspike.com/drivers/id/">
+<link rel="alternate" hreflang="x-default" href="https://canonspike.com/drivers/">
+<!-- /i18n:alternates -->
+</head>
+<body>
+<header class="site"><div class="wrap">
+<a class="brand" href="/drivers/zh-tw/">faux123 <b>drivers</b></a>
+<nav aria-label="Main">
+<a href="#drivers">驅動程式</a>
+<a href="#apps">應用程式</a>
+<a href="https://fauxvkdb.canonspike.com/">FauxVkDB</a>
+</nav>
+<!-- i18n:menu --><details class="langmenu" translate="no"><summary aria-label="語言: 繁體中文"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.5 3.9 5.5 3.9 9s-1.3 6.5-3.9 9c-2.6-2.5-3.9-5.5-3.9-9s1.3-6.5 3.9-9z"/></svg><span lang="zh-Hant">繁體中文</span></summary><ul><li><a href="/drivers/" hreflang="en" lang="en">English</a></li><li><a href="/drivers/es/" hreflang="es" lang="es">Español</a></li><li><a href="/drivers/it/" hreflang="it" lang="it">Italiano</a></li><li><a href="/drivers/fr/" hreflang="fr" lang="fr">Français</a></li><li><a href="/drivers/de/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/drivers/ja/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/drivers/pt/" hreflang="pt-BR" lang="pt-BR">Português</a></li><li><a href="/drivers/zh-cn/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="/drivers/zh-tw/" hreflang="zh-Hant" lang="zh-Hant" aria-current="true">繁體中文</a></li><li><a href="/drivers/id/" hreflang="id" lang="id">Bahasa Indonesia</a></li></ul></details><!-- /i18n:menu --></div></header>
+
+<main><div class="wrap">
+
+<section class="hero">
+<h1>一個驅動程式，<span class="grad">適用一整個晶片系列</span></h1>
+<p class="sub">繪圖驅動程式是讓遊戲在你裝置的圖形晶片上繪製畫面的軟體。我的每一款驅動程式，都是在我自己的一台裝置上開發的。接著玩家會拿到自己的手機和掌機上試用，其中一部分也能正常運作。</p>
+<p class="sub">本頁依驅動程式列出它所針對的圖形晶片系列，以及目前已確認能執行它的所有晶片，並附上對應的驗證連結。</p>
+</section>
+
+<h2 id="glance">總覽</h2>
+<p class="sub">每款驅動程式針對一個圖形晶片系列。數字代表該系列內外，目前已確認能執行這款驅動程式的不同晶片數量。點一下驅動程式即可查看晶片與驗證紀錄。</p>
+<div class="glance">
+<a class="card fam-adreno" href="#turnip"><span class="name">適用 Adreno 600、700、800 的 Turnip</span><span class="home">高通 Snapdragon 圖形晶片</span> <span class="count">5<small>款晶片</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Adreno 660 至 840</span></a>
+<a class="card fam-mali" href="#pixel7"><span class="name">適用 Mali&#8209;G710、G715 和 G720 的 PanVK</span><span class="home">Google Tensor 圖形晶片</span> <span class="count">2<small>款晶片</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="word">Mali-G710、G715</span></a>
+<a class="card fam-mali" href="#ace"><span class="name">適用 Mali&#8209;G610 和 G615 的 PanVK</span><span class="home">Rockchip 等圖形晶片</span> <span class="count">3<small>款晶片</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="word">Mali-G57、G610、G720</span></a>
+<a class="card fam-mali" href="#rp4pro"><span class="name">適用 Mali&#8209;G77 的 PanVK</span><span class="home">聯發科 Dimensity 圖形晶片</span> <span class="count">1<small>款晶片有紀錄</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></span><span class="word">Mali-G77</span></a>
+<a class="card fam-mali" href="#rg556"><span class="name">適用 Mali&#8209;G57 和 G68 的 PanVK</span><span class="home">Unisoc 和 Exynos，不含聯發科</span> <span class="count">2<small>款晶片</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="word">Mali-G57、G68</span></a>
+</div>
+
+<h2 id="badges">標籤說明</h2>
+<ul class="legend card">
+<li><span class="badge b-home">開發機</span><p>我自己擁有、每次發布都用來測試的裝置。</p></li>
+<li><span class="badge b-ok">可用</span><p>通過了 FauxVkTest 的驅動程式檢測，或完成了跑分測試，或有玩家回報用它玩過遊戲。</p></li>
+<li><span class="badge b-part">部分可用</span><p>驅動程式能載入，但部分測試失敗或沒有跑完。</p></li>
+<li><span class="badge b-no">不可用</span><p>有人在這台裝置上試過，沒有成功。</p></li>
+<li><span class="badge b-try">尚未測試</span><p>圖形晶片類型相同，所以可能可用，但還沒有人回報。</p></li>
+</ul>
+
+<h2 id="drivers">驅動程式列表</h2>
+<p class="sub">Turnip 適用於搭載高通 Snapdragon 晶片（Adreno 圖形）的手機和掌機。PanVK 適用於 Arm Mali 圖形晶片，聯發科、Google Tensor、Rockchip、三星 Exynos 和 Unisoc 都有採用。</p>
+
+<!-- TURNIP -->
+<article class="card driver fam-adreno" id="turnip">
+<div class="dhead"><div class="who"><p class="kicker">Turnip · Adreno</p><h2>適用 Adreno 600、700、800 系列的 Turnip</h2>
+<p>適用於高通 Snapdragon 裝置。在 AYN Odin 3（Adreno 830）上開發。</p></div>
+<div class="get"><a class="btn" href="https://github.com/faux123/turnip-faux123-driver/releases" rel="noopener">下載</a><span class="ver">最新公開版本 <span class="tag" translate="no">v1.1.9</span></span></div></div>
+<div class="dbody">
+<p class="say">這款涵蓋範圍最廣。Turnip 與每一代現代 Adreno 晶片溝通的方式都相同，所以同一個檔案已經在五代 Snapdragon 圖形晶片上跑過，從 2021 年的 Galaxy 手機到最新的掌機都有。</p>
+<div><p class="label">已確認可執行的圖形晶片</p>
+<div class="chips" translate="no"><span class="gpu">Adreno 660</span><span class="gpu">Adreno 730</span><span class="gpu">Adreno 740</span><span class="gpu home">Adreno 830</span><span class="gpu">Adreno 840</span></div></div>
+<div><p class="label">裝置</p><ul class="devs">
+<li class="is-home"><span class="dev" translate="no">AYN Odin 3</span><span class="chip-name" translate="no">Adreno 830</span><span class="badge b-home">開發機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/4">測試結果</a></span></li>
+<li><span class="dev" translate="no">Samsung Galaxy S26 Ultra</span><span class="chip-name" translate="no">Adreno 840</span><span class="badge b-ok">可用</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/604">測試結果</a></span></li>
+<li><span class="dev" translate="no">POCO F8 Pro</span><span class="chip-name" translate="no">Adreno 830</span><span class="badge b-ok">可用</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/641">跑分測試</a></span></li>
+<li><span class="dev" translate="no">AYN Odin 2 Portal</span><span class="chip-name" translate="no">Adreno 740</span><span class="badge b-ok">可用</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/235">測試結果</a></span></li>
+<li><span class="dev" translate="no">AYN Thor</span><span class="chip-name" translate="no">Adreno 740</span><span class="badge b-ok">可用</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/102">跑分測試</a></span></li>
+<li><span class="dev" translate="no">Samsung Galaxy S23</span><span class="chip-name" translate="no">Adreno 740</span><span class="badge b-ok">可用</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/32">測試結果</a></span></li>
+<li><span class="dev" translate="no">Samsung Galaxy S22 Ultra</span><span class="chip-name" translate="no">Adreno 730</span><span class="badge b-ok">可用</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/459">跑分測試</a></span></li>
+<li><span class="dev" translate="no">Samsung Galaxy S22</span><span class="chip-name" translate="no">Adreno 730</span><span class="badge b-ok">可用</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/47">測試結果</a></span></li>
+<li><span class="dev" translate="no">Samsung Galaxy S21+ 5G</span><span class="chip-name" translate="no">Adreno 660</span><span class="badge b-ok">可用</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/30">測試結果</a></span></li>
+</ul></div>
+<div class="try"><div><span class="badge b-try">尚未測試</span><ul><li>其他搭載 Adreno 600、700 或 800 系列圖形的裝置</li><li>包括 Retroid Pocket 5、Retroid Pocket Mini 和 AYN Odin 2</li></ul></div></div>
+</div></article>
+
+<!-- PIXEL 7 -->
+<article class="card driver fam-mali" id="pixel7">
+<div class="dhead"><div class="who"><p class="kicker">PanVK · Mali</p><h2>適用 Mali-G710、G715 和 G720 的 PanVK</h2>
+<p>在 Google Pixel 7（Tensor G2、Mali-G710）上開發。</p></div>
+<div class="get"><a class="btn" href="https://github.com/faux123/panvk-faux123-driver-pixel7/releases" rel="noopener">下載</a><span class="ver">最新公開版本 <span class="tag" translate="no">v0.11.0</span></span></div></div>
+<div class="dbody">
+<p class="say">原本只為一支手機而做，卻已經能在它之後的兩代機型上執行。Pixel 8a 和 Pixel 9 的使用者成功載入，並在較新的 Mali-G715 晶片上通過了完整的驅動程式檢測。</p>
+<div><p class="label">已確認可執行的圖形晶片</p>
+<div class="chips" translate="no"><span class="gpu home">Mali-G710</span><span class="gpu">Mali-G715</span></div></div>
+<div><p class="label">裝置</p><ul class="devs">
+<li class="is-home"><span class="dev" translate="no">Google Pixel 7</span><span class="chip-name" translate="no">Mali-G710</span><span class="badge b-home">開發機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/464">測試結果</a></span></li>
+<li><span class="dev" translate="no">Google Pixel 9</span><span class="chip-name" translate="no">Mali-G715</span><span class="badge b-ok">可用</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/744">測試結果</a></span></li>
+<li><span class="dev" translate="no">Google Pixel 8a</span><span class="chip-name" translate="no">Mali-G715</span><span class="badge b-ok">可用</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/560">測試結果</a></span></li>
+</ul></div>
+<div class="try"><div><span class="badge b-try">尚未測試</span><ul><li>Pixel 7 Pro 和 Pixel 7a（與 Pixel 7 晶片相同）</li><li>Pixel 8、Pixel 8 Pro 和 Pixel 9 Pro（與 Pixel 8a、Pixel 9 屬於同一晶片系列）</li></ul></div></div>
+</div></article>
+
+<!-- ACE -->
+<article class="card driver fam-mali" id="ace">
+<div class="dhead"><div class="who"><p class="kicker">PanVK · Mali</p><h2>適用 Mali-G610 和 G615 的 PanVK</h2>
+<p>在 GameForce Ace（Rockchip RK3588S、Mali-G610）上開發。</p></div>
+<div class="get"><a class="btn" href="https://github.com/faux123/panvk-faux123-driver-ace/releases" rel="noopener">下載</a><span class="ver">最新公開版本 <span class="tag" translate="no">v0.40.0</span></span></div></div>
+<div class="dbody">
+<p class="say">這款最出乎意料。玩家已在 Mali 晶片差異很大的手機上成功載入：POCO X7 Pro 在 Mali-G720 上通過了驅動程式檢測，Oppo A6 5G 則在小型的 Mali-G57 上成功載入。</p>
+<div><p class="label">已確認可執行的圖形晶片</p>
+<div class="chips" translate="no"><span class="gpu">Mali-G57</span><span class="gpu home">Mali-G610</span><span class="gpu">Mali-G720</span></div></div>
+<div><p class="label">裝置</p><ul class="devs">
+<li class="is-home"><span class="dev" translate="no">GameForce Ace</span><span class="chip-name" translate="no">Mali-G610</span><span class="badge b-home">開發機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/35">測試結果</a></span></li>
+<li><span class="dev" translate="no">POCO X7 Pro</span><span class="chip-name" translate="no">Mali-G720</span><span class="badge b-ok">可用</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/227">測試結果</a></span></li>
+<li><span class="dev" translate="no">Oppo A6 5G</span><span class="chip-name" translate="no">Mali-G57</span><span class="badge b-part">部分可用</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/542">測試結果</a></span>
+<p class="note">通過了大部分驅動程式檢測（3 項未通過）。跑分測試沒有跑完。</p></li>
+</ul></div>
+<div class="try"><div><span class="badge b-try">尚未測試</span><ul><li>其他 Rockchip RK3588 和 RK3588S 裝置</li><li>其他搭載 Mali-G610 圖形晶片的裝置</li></ul></div></div>
+</div></article>
+
+<!-- RP4 PRO -->
+<article class="card driver fam-mali" id="rp4pro">
+<div class="dhead"><div class="who"><p class="kicker">PanVK · Mali</p><h2>適用 Mali-G77 的 PanVK</h2>
+<p>在 Retroid Pocket 4 Pro（聯發科 Dimensity 1100、Mali-G77）上開發。</p></div>
+<div class="get"><a class="btn" href="https://github.com/faux123/panvk-faux123-driver-rp4pro/releases" rel="noopener">下載</a><span class="ver">最新公開版本 <span class="tag" translate="no">v0.17.0</span></span></div></div>
+<div class="dbody">
+<p class="say">為 RP4 Pro 打造，也是其他搭載 Mali-G77 圖形晶片的聯發科掌機和手機的最佳候選。但晶片相同並不一定夠用：有一位 Galaxy Note20 Ultra 的使用者回報，這支手機上無法使用。如果你在其他裝置上執行過，上傳一次 FauxVkTest 的結果，你的裝置就會出現在這份列表中。</p>
+<div><p class="label">已確認可執行的圖形晶片</p>
+<div class="chips" translate="no"><span class="gpu home">Mali-G77</span></div></div>
+<div><p class="label">裝置</p><ul class="devs">
+<li class="is-home"><span class="dev" translate="no">Retroid Pocket 4 Pro</span><span class="chip-name" translate="no">Mali-G77</span><span class="badge b-home">開發機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/63">測試結果</a></span></li>
+<li><span class="dev" translate="no">Samsung Galaxy Note20 Ultra (Exynos)</span><span class="chip-name" translate="no">Mali-G77</span><span class="badge b-no">不可用</span><span class="src"><a href="https://www.reddit.com/r/EmulationOnAndroid/comments/1wznv0c/mali_custom_drivers_for_rp4_pro_rg556_and/pefm2ov/" rel="noopener">玩家回報</a></span>
+<p class="note">圖形晶片系列相同，但驅動程式在這台裝置上無法使用。晶片相同是好兆頭，但不是保證。</p></li>
+</ul></div>
+<div class="try"><div><span class="badge b-try">尚未測試</span><ul><li>其他搭載 Mali-G77 圖形晶片的裝置（聯發科 Dimensity 1000 至 1200）</li><li>標準版 Retroid Pocket 4（Dimensity 900、Mali-G68）</li></ul></div></div>
+</div></article>
+
+<!-- RG556 -->
+<article class="card driver fam-mali" id="rg556">
+<div class="dhead"><div class="who"><p class="kicker">PanVK · Mali</p><h2>適用 Mali-G57 和 G68 的 PanVK</h2>
+<p>在 Anbernic RG556（Unisoc T820、Mali-G57）上開發。</p></div>
+<div class="get"><a class="btn" href="https://github.com/faux123/panvk-faux123-driver-rg556/releases" rel="noopener">下載</a><span class="ver">最新公開版本 <span class="tag" translate="no">v0.16.0</span></span></div></div>
+<div class="dbody">
+<p class="say">五款裡適用範圍最窄的一款。它與圖形晶片溝通的方式，是照 Arm 官方核心驅動程式的預期來設計，而聯發科裝置用的是另一種核心驅動程式，所以在聯發科裝置上無法使用。在三星 Exynos 手機上則可以：有一位 Galaxy A16 5G 的使用者用它玩了兩款遊戲。</p>
+<div><p class="label">已確認可執行的圖形晶片</p>
+<div class="chips" translate="no"><span class="gpu home">Mali-G57</span><span class="gpu">Mali-G68</span></div></div>
+<div><p class="label">裝置</p><ul class="devs">
+<li class="is-home"><span class="dev" translate="no">Anbernic RG556</span><span class="chip-name" translate="no">Mali-G57</span><span class="badge b-home">開發機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/65">測試結果</a></span></li>
+<li><span class="dev" translate="no">Samsung Galaxy A16 5G</span><span class="chip-name" translate="no">Mali-G68</span><span class="badge b-ok">可用</span><span class="src"><a href="https://github.com/faux123/panvk-faux123-driver-rg556/issues/1" rel="noopener">玩家回報</a></span>
+<p class="note">透過 Winlator 玩了 Friday Night Funkin' 和一個高負載的模組，不需要 root。</p></li>
+</ul></div>
+<div class="try"><div><span class="badge b-try">尚未測試</span><ul><li>其他 Unisoc T820 裝置</li><li>執行原廠系統的 RG556（我的那台跑的是自訂核心）</li></ul></div>
+<div class="warn"><span class="badge b-no">不適用</span><ul><li>聯發科裝置。請改用 Retroid Pocket 4 Pro 的驅動程式。</li></ul></div></div>
+</div></article>
+
+<h2 id="how">使用方式</h2>
+<ol class="steps">
+<li class="card"><p>下載驅動程式。它是一個 ZIP 檔，不要解壓縮。</p></li>
+<li class="card"><p>開啟支援載入自訂驅動程式的模擬器或遊戲啟動器（例如 Winlator、GameNative 或 Eden），找到圖形驅動程式的設定，選擇這個 ZIP 檔。</p></li>
+<li class="card"><p>想先檢查一下，或想把你的裝置加進本頁？請在 <a href="https://play.google.com/store/apps/details?id=com.faux.vktest" rel="noopener">FauxVkTest</a> 中執行驅動程式檢測，並把結果上傳到 <a href="https://fauxvkdb.canonspike.com/">FauxVkDB</a>。</p></li>
+</ol>
+<p class="sub">這些驅動程式不提供技術支援。同一款驅動程式可能在某個遊戲裡比裝置內建的驅動程式更好，在另一個遊戲裡更差。裝置內建的驅動程式仍然保留，其他應用程式會繼續使用它。</p>
+
+<section id="apps" class="fam-adreno">
+<h2>同一位開發者的其他應用程式</h2>
+<p class="sub">點一下徽章即可開啟商店頁面。標示「即將推出」的應用程式尚未在該商店上架。</p>
+<div class="grid appgrid">
+<div class="card appcard acc-vktest"><a class="appicon" href="https://play.google.com/store/apps/details?id=com.faux.vktest" rel="noopener"><img src="/drivers/img/fauxvktest.webp" width="76" height="76" alt="Google Play 上的 FauxVkTest" loading="lazy"></a>
+<div class="appbody"><h3>FauxVkTest</h3><p>檢測你的繪圖驅動程式（Vulkan）到底能做什麼、有多快。本頁的所有測試結果都來自它。</p><p class="for">適用於 Android</p></div>
+<p class="appstores"><a href="https://play.google.com/store/apps/details?id=com.faux.vktest" rel="noopener"><img src="/drivers/img/google-play.webp" width="161" height="48" alt="在 Google Play 獲取：FauxVkTest" loading="lazy"></a></p></div>
+<div class="card appcard acc-cooling"><a class="appicon" href="https://github.com/faux123/fauxcooling-public/releases/latest" rel="noopener"><img src="/drivers/img/fauxcooling.webp" width="76" height="76" alt="GitHub 上的 FauxCooling" loading="lazy"></a>
+<div class="appbody"><h3>FauxCooling</h3><p>在你玩遊戲時給裝置降溫。適用於 AYN 和 Retroid Pocket 掌機，以及其他品牌已 root 的手機、平板或掌機。</p><p class="for">適用於 Android 掌機、手機和平板</p></div>
+<p class="appstores"><a href="https://github.com/faux123/fauxcooling-public/releases/latest" rel="noopener"><img src="/drivers/img/github.svg" width="161" height="48" alt="從 GitHub 下載：FauxCooling" loading="lazy"></a></p></div>
+<div class="card appcard acc-clock"><a class="appicon" href="https://github.com/faux123/fauxclock-public/releases/latest" rel="noopener"><img src="/drivers/img/fauxclockng.webp" width="76" height="76" alt="GitHub 上的 FauxClockNG" loading="lazy"></a>
+<div class="appbody"><h3>FauxClockNG</h3><p>需要 root。可手動設定 CPU 調節器、GPU、記憶體、I/O 和網路選項。</p><p class="for">適用於已 root 的 Android</p></div>
+<p class="appstores"><a href="https://github.com/faux123/fauxclock-public/releases/latest" rel="noopener"><img src="/drivers/img/github.svg" width="161" height="48" alt="從 GitHub 下載：FauxClockNG" loading="lazy"></a></p></div>
+<div class="card appcard acc-roster"><span class="appicon"><img src="/drivers/img/romroster.webp" width="76" height="76" alt="" loading="lazy"></span>
+<div class="appbody"><h3>RomRoster</h3><p>把你擁有的所有掌機上的所有遊戲列在一張清單裡，一眼看出哪台裝置上有什麼。</p><p class="for">適用於 Android、iPhone 和 iPad</p></div>
+<p class="appstores"><a href="https://play.google.com/store/apps/details?id=com.faux123.romroster" rel="noopener"><img src="/drivers/img/google-play.webp" width="161" height="48" alt="在 Google Play 獲取：RomRoster" loading="lazy"></a><span class="appsoon">即將登陸 App Store</span></p></div>
+<div class="card appcard acc-shell"><span class="appicon"><img src="/drivers/img/shellvana.webp" width="76" height="76" alt="" loading="lazy"></span>
+<div class="appbody"><h3>Shellvana</h3><p>一個 SSH 用戶端，把終端輸出顯示成易讀的文字，而不是一個小小的字元格子。</p><p class="for">適用於 Android、iPhone 和 iPad</p></div>
+<p class="appstores"><a href="https://play.google.com/store/apps/details?id=com.faux123.shellvana" rel="noopener"><img src="/drivers/img/google-play.webp" width="161" height="48" alt="在 Google Play 獲取：Shellvana" loading="lazy"></a><a href="https://apps.apple.com/app/shellvana/id6803716803" rel="noopener"><img src="/drivers/img/app-store.svg" width="144" height="48" alt="在 App Store 下載：Shellvana" loading="lazy"></a></p></div>
+</div>
+</section>
+
+</div></main>
+
+<footer class="site"><div class="wrap">
+<p>faux123（Paul Reioux）製作的驅動程式。裝置結果來自 <a href="https://fauxvkdb.canonspike.com/">FauxVkDB</a>，截至 2026-10-15。</p>
+<p><a href="/">canonspike.com</a></p>
+<!-- i18n:languages --><nav class="langs" translate="no" aria-label="Languages"><a href="/drivers/" lang="en">English</a><a href="/drivers/es/" lang="es">Español</a><a href="/drivers/it/" lang="it">Italiano</a><a href="/drivers/fr/" lang="fr">Français</a><a href="/drivers/de/" lang="de">Deutsch</a><a href="/drivers/ja/" lang="ja">日本語</a><a href="/drivers/pt/" lang="pt-BR">Português</a><a href="/drivers/zh-cn/" lang="zh-Hans">简体中文</a><a href="/drivers/zh-tw/" lang="zh-Hant" aria-current="true">繁體中文</a><a href="/drivers/id/" lang="id">Bahasa Indonesia</a></nav><!-- /i18n:languages --></div></footer>
+<script src="/drivers/releases.js" defer></script>
+</body>
+</html>

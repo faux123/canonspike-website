@@ -1,0 +1,119 @@
+faux123のグラフィックドライバー：どのグラフィックチップで動くか
+faux123によるAndroid向けカスタムグラフィックドライバー5種（Adreno向けのTurnip、Mali向けのPanVK）。各ドライバーの対象チップと、これまでに動作が確認されたチップをすべて掲載しています。
+<a class="brand" href="/drivers/">faux123 <b>drivers</b></a>
+ドライバー
+アプリ
+FauxVkDB
+1つのドライバーで、<span class="grad">チップファミリーまるごと</span>
+グラフィックドライバーは、ゲームがデバイスのグラフィックチップに描画するためのソフトウェアです。私はドライバーを1つずつ、自分が持っている1台のデバイスで作っています。その後、プレイヤーの皆さんが自分のスマートフォンやゲーム機で試してくれていて、そこで動いた機種もあります。
+このページでは、ドライバーごとに、対象のグラフィックチップファミリーと、これまでに動作が確認されたチップをすべて、確認結果へのリンク付きで紹介します。
+ひと目でわかる一覧
+各ドライバーは、1つのグラフィックチップファミリーを対象にしています。数字は、そのファミリー内外を含め、これまでにこのドライバーの動作が確認されたチップの種類の数です。ドライバーをタップすると、チップと確認結果が見られます。
+<span class="name">Adreno 600・700・800向けTurnip</span><span class="home">Qualcomm Snapdragonのグラフィック</span> <span class="count">5<small>種のチップ</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Adreno 660〜840</span>
+<span class="name">Mali&#8209;G710・G715・G720向けPanVK</span><span class="home">Google Tensorのグラフィック</span> <span class="count">2<small>種のチップ</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="word">Mali-G710、G715</span>
+<span class="name">Mali&#8209;G610・G615向けPanVK</span><span class="home">Rockchipなどのグラフィック</span> <span class="count">3<small>種のチップ</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="word">Mali-G57、G610、G720</span>
+<span class="name">Mali&#8209;G77向けPanVK</span><span class="home">MediaTek Dimensityのグラフィック</span> <span class="count">1<small>種のチップを確認</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></span><span class="word">Mali-G77</span>
+<span class="name">Mali&#8209;G57・G68向けPanVK</span><span class="home">UnisocとExynos（MediaTekは対象外）</span> <span class="count">2<small>種のチップ</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="word">Mali-G57、G68</span>
+ラベルの意味
+<span class="badge b-home">開発機</span>
+私が所有していて、リリースのたびにテストしているデバイスです。
+<span class="badge b-ok">動作する</span>
+FauxVkTestのドライバーチェックに合格した、速度テストが完了した、またはプレイヤーがゲームをプレイできたと報告しているものです。
+<span class="badge b-part">一部動作</span>
+ドライバーは読み込まれますが、一部のテストが失敗したか、完了しませんでした。
+<span class="badge b-no">動作しない</span>
+このデバイスで試した人がいて、動作しませんでした。
+<span class="badge b-try">未テスト</span>
+同じ種類のグラフィックチップなので、動く可能性があります。まだ誰からも報告がありません。
+ドライバー一覧
+Turnipは、Qualcomm Snapdragonチップ（Adrenoグラフィック）を搭載したスマートフォンやゲーム機向けです。PanVKは、MediaTek、Google Tensor、Rockchip、Samsung Exynos、Unisocが採用しているArm Maliグラフィックのチップ向けです。
+Turnip · Adreno
+Adreno 600・700・800シリーズ向けTurnip
+Qualcomm Snapdragon搭載デバイス向けです。AYN Odin 3（Adreno 830）で開発しました。
+<a class="btn" href="https://github.com/faux123/turnip-faux123-driver/releases" rel="noopener">ダウンロード</a><span class="ver">最新の公開版
+最も幅広く使えるドライバーです。Turnipは最近のどのAdrenoチップにも同じ方法でやり取りするため、同じファイルが、2021年のGalaxyスマートフォンから最新のゲーム機まで、5世代のSnapdragonグラフィックで動いています。
+動作が確認されたグラフィックチップ
+デバイス
+<span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/4">テスト結果</a></span>
+<span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/604">テスト結果</a></span>
+<span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/641">速度テスト</a></span>
+<span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/235">テスト結果</a></span>
+<span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/102">速度テスト</a></span>
+<span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/32">テスト結果</a></span>
+<span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/459">速度テスト</a></span>
+<span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/47">テスト結果</a></span>
+<span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/30">テスト結果</a></span>
+Adreno 600・700・800シリーズのグラフィックを搭載したその他のデバイス
+Retroid Pocket 5、Retroid Pocket Mini、AYN Odin 2なども含まれます
+PanVK · Mali
+Mali-G710・G715・G720向けPanVK
+Google Pixel 7（Tensor G2、Mali-G710）で開発しました。
+<a class="btn" href="https://github.com/faux123/panvk-faux123-driver-pixel7/releases" rel="noopener">ダウンロード</a><span class="ver">最新の公開版
+1機種向けに作りましたが、その後の2世代でもすでに動いています。Pixel 8aとPixel 9をお使いの方が読み込みに成功し、より新しいMali-G715チップでドライバーチェックにすべて合格しました。
+<span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/464">テスト結果</a></span>
+<span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/744">テスト結果</a></span>
+<span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/560">テスト結果</a></span>
+Pixel 7 ProとPixel 7a（Pixel 7と同じチップ）
+Pixel 8、Pixel 8 Pro、Pixel 9 Pro（Pixel 8a、Pixel 9と同じチップファミリー）
+Mali-G610・G615向けPanVK
+GameForce Ace（Rockchip RK3588S、Mali-G610）で開発しました。
+<a class="btn" href="https://github.com/faux123/panvk-faux123-driver-ace/releases" rel="noopener">ダウンロード</a><span class="ver">最新の公開版
+意外な広がりを見せたドライバーです。かなり種類の違うMaliチップを積んだスマートフォンで、プレイヤーが読み込みに成功しています。POCO X7 ProはMali-G720でドライバーチェックに合格し、Oppo A6 5Gは小型のMali-G57で読み込めました。
+<span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/35">テスト結果</a></span>
+<span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/227">テスト結果</a></span>
+<span class="badge b-part">一部動作</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/542">テスト結果</a></span>
+ドライバーチェックの大半に合格しました（3項目が失敗）。速度テストは完了しませんでした。
+その他のRockchip RK3588・RK3588Sデバイス
+Mali-G610グラフィックを搭載したその他のデバイス
+Mali-G77向けPanVK
+Retroid Pocket 4 Pro（MediaTek Dimensity 1100、Mali-G77）で開発しました。
+<a class="btn" href="https://github.com/faux123/panvk-faux123-driver-rp4pro/releases" rel="noopener">ダウンロード</a><span class="ver">最新の公開版
+RP4 Pro向けに作ったドライバーで、Mali-G77グラフィックを搭載したほかのMediaTek製ゲーム機やスマートフォンでも、いちばん有力な候補です。ただし、チップが同じというだけでは十分ではありません。Galaxy Note20 Ultraをお使いの方から、そのスマートフォンでは動作しないという報告がありました。ほかのデバイスで試した場合は、FauxVkTestの結果をアップロードしていただければ、お使いのデバイスがこの一覧に載ります。
+<span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/63">テスト結果</a></span>
+<span class="badge b-no">動作しない</span><span class="src"><a href="https://www.reddit.com/r/EmulationOnAndroid/comments/1wznv0c/mali_custom_drivers_for_rp4_pro_rg556_and/pefm2ov/" rel="noopener">プレイヤーの報告</a></span>
+同じグラフィックチップファミリーですが、ドライバーは動作しませんでした。チップが一致するのは良い兆しですが、保証ではありません。
+Mali-G77グラフィックを搭載したその他のデバイス（MediaTek Dimensity 1000〜1200）
+標準のRetroid Pocket 4（Dimensity 900、Mali-G68）
+Mali-G57・G68向けPanVK
+Anbernic RG556（Unisoc T820、Mali-G57）で開発しました。
+<a class="btn" href="https://github.com/faux123/panvk-faux123-driver-rg556/releases" rel="noopener">ダウンロード</a><span class="ver">最新の公開版
+5つの中で対象がいちばん狭いドライバーです。Arm純正のカーネルドライバーが想定する方法でグラフィックチップとやり取りしますが、MediaTekのデバイスは別のカーネルドライバーを使うため、動作しません。Samsung Exynosのスマートフォンでは動作し、Galaxy A16 5Gをお使いの方が2本のゲームをプレイしました。
+<span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/65">テスト結果</a></span>
+<span class="badge b-ok">動作する</span><span class="src"><a href="https://github.com/faux123/panvk-faux123-driver-rg556/issues/1" rel="noopener">プレイヤーの報告</a></span>
+Winlator経由でFriday Night Funkin'と負荷の高いMODをプレイできました。rootは不要です。
+その他のUnisoc T820デバイス
+標準ソフトウェアのままのRG556（私のものはカスタムカーネルで動かしています）
+<span class="badge b-no">非対応</span>
+MediaTekのデバイスは対象外です。その場合はRetroid Pocket 4 Pro用のドライバーを使ってください。
+使い方
+ドライバーをダウンロードします。ZIPファイル1つで、解凍は不要です。
+カスタムドライバーを読み込めるエミュレーターやゲームランチャー（Winlator、GameNative、Edenなど）を開き、グラフィックドライバーの設定を探して、ZIPファイルを選びます。
+先に確認したい場合や、お使いのデバイスをこのページに載せたい場合は、<a href="https://play.google.com/store/apps/details?id=com.faux.vktest" rel="noopener">FauxVkTest</a>でドライバーチェックを実行し、結果を<a href="https://fauxvkdb.canonspike.com/">FauxVkDB</a>にアップロードしてください。
+これらのドライバーにサポートはありません。ゲームによっては、デバイス標準のドライバーより良くなることも、悪くなることもあります。デバイス標準のドライバーはそのまま残り、ほかのアプリは引き続きそれを使います。
+同じ開発者のアプリ
+バッジをタップすると、ストアのページが開きます。「近日公開」と表示されたアプリは、そのストアにはまだ公開されていません。
+Google PlayのFauxVkTest
+FauxVkTest
+お使いのグラフィックドライバー(Vulkan)が実際に何をできるか、どのくらい速いかをチェックします。このページのテスト結果はすべて、このアプリで取得したものです。
+Android向け
+Google Playで入手：FauxVkTest
+GitHubのFauxCooling
+FauxCooling
+プレイ中のデバイスを冷やします。AYNとRetroid Pocketのゲーム機、ほかのブランドのroot化したスマートフォン、タブレット、ゲーム機で使えます。
+Androidのゲーム機、スマートフォン、タブレット向け
+GitHubからダウンロード：FauxCooling
+GitHubのFauxClockNG
+FauxClockNG
+rootが必要です。CPUガバナー、GPU、メモリ、I/O、ネットワークの設定を手動で変更できます。
+root化したAndroid向け
+GitHubからダウンロード：FauxClockNG
+RomRoster
+お持ちのすべてのゲーム機にあるゲームを1つのリストで。どのデバイスに何が入っているかがわかります。
+Android、iPhone、iPad向け
+<a href="https://play.google.com/store/apps/details?id=com.faux123.romroster" rel="noopener"><img src="/drivers/img/google-play.webp" width="161" height="48" alt="Google Playで入手：RomRoster" loading="lazy"></a><span class="appsoon">App Storeで近日公開</span>
+Shellvana
+ターミナルの出力を、小さな格子ではなく読みやすい文章として表示するSSHクライアント。
+Google Playで入手：Shellvana
+App Storeでダウンロード：Shellvana
+faux123（Paul Reioux）によるドライバーです。デバイスの結果は<a href="https://fauxvkdb.canonspike.com/">FauxVkDB</a>から取得したもので、2026-10-15時点の情報です。
+<a href="/">canonspike.com</a>

@@ -1,0 +1,119 @@
+Driver grafis faux123: berjalan di chip grafis mana saja
+Lima driver grafis kustom untuk Android dari faux123 (Turnip untuk Adreno, PanVK untuk Mali). Lihat chip grafis mana yang menjadi target tiap driver, dan di chip apa saja driver itu pernah terlihat berjalan.
+<a class="brand" href="/drivers/">faux123 <b>drivers</b></a>
+Driver
+Aplikasi
+FauxVkDB
+Satu driver, <span class="grad">satu keluarga chip</span>
+Driver grafis adalah perangkat lunak yang membuat game bisa menggambar di chip grafis perangkat Anda. Saya membuat setiap driver di satu perangkat milik saya. Setelah itu pemain mencobanya di ponsel dan handheld mereka sendiri, dan sebagian di antaranya ternyata juga berjalan.
+Halaman ini menampilkan, untuk tiap driver, keluarga chip grafis yang menjadi targetnya dan semua chip tempat driver itu pernah terlihat berjalan, lengkap dengan tautan ke buktinya.
+Sekilas
+Setiap driver menargetkan satu keluarga chip grafis. Angkanya menunjukkan berapa banyak chip berbeda, di dalam keluarga itu maupun di luarnya, yang sejauh ini pernah terlihat menjalankan driver tersebut. Ketuk sebuah driver untuk melihat chip dan buktinya.
+<span class="name">Turnip untuk Adreno 600, 700, 800</span><span class="home">Grafis Qualcomm Snapdragon</span> <span class="count">5<small>chip</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Adreno 660 sampai 840</span>
+<span class="name">PanVK untuk Mali&#8209;G710, G715, dan G720</span><span class="home">Grafis Google Tensor</span> <span class="count">2<small>chip</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="word">Mali-G710, G715</span>
+<span class="name">PanVK untuk Mali&#8209;G610 dan G615</span><span class="home">Grafis Rockchip, dan lainnya</span> <span class="count">3<small>chip</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="word">Mali-G57, G610, G720</span>
+<span class="name">PanVK untuk Mali&#8209;G77</span><span class="home">Grafis MediaTek Dimensity</span> <span class="count">1<small>chip tercatat</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></span><span class="word">Mali-G77</span>
+<span class="name">PanVK untuk Mali&#8209;G57 dan G68</span><span class="home">Unisoc dan Exynos, bukan MediaTek</span> <span class="count">2<small>chip</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="word">Mali-G57, G68</span>
+Arti label
+<span class="badge b-home">Dikembangkan di</span>
+Perangkat milik saya yang saya pakai untuk menguji setiap rilis.
+<span class="badge b-ok">Berfungsi</span>
+Lolos cek driver FauxVkTest atau menyelesaikan tes kecepatannya, atau ada pemain yang melaporkan bermain game dengan driver ini.
+<span class="badge b-part">Berfungsi sebagian</span>
+Driver berhasil dimuat, tetapi beberapa tes gagal atau tidak selesai.
+<span class="badge b-no">Tidak berfungsi</span>
+Ada yang mencobanya di perangkat ini dan gagal.
+<span class="badge b-try">Belum diuji</span>
+Jenis chip grafisnya sama, jadi mungkin berfungsi. Belum ada yang melapor.
+Driver-driver
+Turnip untuk ponsel dan handheld dengan chip Qualcomm Snapdragon (grafis Adreno). PanVK untuk chip dengan grafis Arm Mali, yang dipakai MediaTek, Google Tensor, Rockchip, Samsung Exynos, dan Unisoc.
+Turnip · Adreno
+Turnip untuk seri Adreno 600, 700, dan 800
+Untuk perangkat Qualcomm Snapdragon. Dikembangkan di AYN Odin 3 (Adreno 830).
+<a class="btn" href="https://github.com/faux123/turnip-faux123-driver/releases" rel="noopener">Unduh</a><span class="ver">Rilis publik terbaru
+Inilah yang jangkauannya paling luas. Turnip memakai bahasa yang sama untuk semua chip Adreno modern, jadi satu file yang sama sudah berjalan di lima generasi grafis Snapdragon, dari ponsel Galaxy tahun 2021 sampai handheld terbaru.
+Chip grafis tempat driver ini berjalan
+Perangkat
+<span class="badge b-home">Dikembangkan di</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/4">Hasil tes</a></span>
+<span class="badge b-ok">Berfungsi</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/604">Hasil tes</a></span>
+<span class="badge b-ok">Berfungsi</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/641">Tes kecepatan</a></span>
+<span class="badge b-ok">Berfungsi</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/235">Hasil tes</a></span>
+<span class="badge b-ok">Berfungsi</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/102">Tes kecepatan</a></span>
+<span class="badge b-ok">Berfungsi</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/32">Hasil tes</a></span>
+<span class="badge b-ok">Berfungsi</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/459">Tes kecepatan</a></span>
+<span class="badge b-ok">Berfungsi</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/47">Hasil tes</a></span>
+<span class="badge b-ok">Berfungsi</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/30">Hasil tes</a></span>
+Perangkat lain mana pun dengan grafis Adreno seri 600, 700, atau 800
+Termasuk Retroid Pocket 5, Retroid Pocket Mini, dan AYN Odin 2
+PanVK · Mali
+PanVK untuk Mali-G710, G715, dan G720
+Dikembangkan di Google Pixel 7 (Tensor G2, Mali-G710).
+<a class="btn" href="https://github.com/faux123/panvk-faux123-driver-pixel7/releases" rel="noopener">Unduh</a><span class="ver">Rilis publik terbaru
+Dibuat untuk satu ponsel, dan sudah berjalan di dua generasi berikutnya. Pemilik Pixel 8a dan Pixel 9 sudah memuatnya dan lolos cek driver penuh di chip Mali-G715 mereka yang lebih baru.
+<span class="badge b-home">Dikembangkan di</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/464">Hasil tes</a></span>
+<span class="badge b-ok">Berfungsi</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/744">Hasil tes</a></span>
+<span class="badge b-ok">Berfungsi</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/560">Hasil tes</a></span>
+Pixel 7 Pro dan Pixel 7a (chip-nya sama dengan Pixel 7)
+Pixel 8, Pixel 8 Pro, dan Pixel 9 Pro (satu keluarga chip dengan Pixel 8a dan Pixel 9)
+PanVK untuk Mali-G610 dan G615
+Dikembangkan di GameForce Ace (Rockchip RK3588S, Mali-G610).
+<a class="btn" href="https://github.com/faux123/panvk-faux123-driver-ace/releases" rel="noopener">Unduh</a><span class="ver">Rilis publik terbaru
+Yang paling mengejutkan di antara kelimanya. Pemain berhasil memuatnya di ponsel dengan chip Mali yang sangat berbeda: POCO X7 Pro lolos cek driver di Mali-G720, dan Oppo A6 5G berhasil memuatnya di Mali-G57 yang kecil.
+<span class="badge b-home">Dikembangkan di</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/35">Hasil tes</a></span>
+<span class="badge b-ok">Berfungsi</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/227">Hasil tes</a></span>
+<span class="badge b-part">Berfungsi sebagian</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/542">Hasil tes</a></span>
+Lolos sebagian besar cek driver (3 item gagal). Tes kecepatan tidak selesai.
+Perangkat Rockchip RK3588 dan RK3588S lainnya
+Perangkat lain dengan grafis Mali-G610
+PanVK untuk Mali-G77
+Dikembangkan di Retroid Pocket 4 Pro (MediaTek Dimensity 1100, Mali-G77).
+<a class="btn" href="https://github.com/faux123/panvk-faux123-driver-rp4pro/releases" rel="noopener">Unduh</a><span class="ver">Rilis publik terbaru
+Dibuat untuk RP4 Pro, dan kandidat terbaik untuk handheld MediaTek lain serta ponsel dengan grafis Mali-G77. Chip yang sama saja belum cukup: pemilik Galaxy Note20 Ultra melaporkan driver ini tidak berfungsi di ponsel itu. Jika Anda menjalankannya di perangkat lain, unggahan dari FauxVkTest akan memasukkan perangkat Anda ke daftar ini.
+<span class="badge b-home">Dikembangkan di</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/63">Hasil tes</a></span>
+<span class="badge b-no">Tidak berfungsi</span><span class="src"><a href="https://www.reddit.com/r/EmulationOnAndroid/comments/1wznv0c/mali_custom_drivers_for_rp4_pro_rg556_and/pefm2ov/" rel="noopener">Laporan pemain</a></span>
+Keluarga chip grafisnya sama, tetapi driver tidak berfungsi di sana. Chip yang cocok memang pertanda baik, tetapi bukan jaminan.
+Perangkat lain dengan grafis Mali-G77 (MediaTek Dimensity 1000 sampai 1200)
+Retroid Pocket 4 biasa (Dimensity 900, Mali-G68)
+PanVK untuk Mali-G57 dan G68
+Dikembangkan di Anbernic RG556 (Unisoc T820, Mali-G57).
+<a class="btn" href="https://github.com/faux123/panvk-faux123-driver-rg556/releases" rel="noopener">Unduh</a><span class="ver">Rilis publik terbaru
+Yang paling sempit jangkauannya di antara kelimanya. Driver ini berkomunikasi dengan chip grafis seperti yang diharapkan driver kernel resmi Arm, sedangkan perangkat MediaTek memakai driver yang berbeda, jadi tidak berfungsi di sana. Di ponsel Samsung Exynos berfungsi: pemilik Galaxy A16 5G memainkan dua game dengannya.
+<span class="badge b-home">Dikembangkan di</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/65">Hasil tes</a></span>
+<span class="badge b-ok">Berfungsi</span><span class="src"><a href="https://github.com/faux123/panvk-faux123-driver-rg556/issues/1" rel="noopener">Laporan pemain</a></span>
+Memainkan Friday Night Funkin' dan sebuah mod yang berat lewat Winlator, tanpa root.
+Perangkat Unisoc T820 lainnya
+RG556 dengan software bawaan (punya saya memakai kernel kustom)
+<span class="badge b-no">Bukan untuk</span>
+Perangkat MediaTek. Gunakan driver Retroid Pocket 4 Pro di sana.
+Cara memakai
+Unduh drivernya. Berupa satu file ZIP. Jangan diekstrak.
+Buka emulator atau launcher game yang bisa memuat driver kustom (misalnya Winlator, GameNative, atau Eden), cari pengaturan driver grafisnya, lalu pilih file ZIP tersebut.
+Ingin memeriksanya dulu, atau menambahkan perangkat Anda ke halaman ini? Jalankan cek driver di <a href="https://play.google.com/store/apps/details?id=com.faux.vktest" rel="noopener">FauxVkTest</a> lalu unggah hasilnya ke <a href="https://fauxvkdb.canonspike.com/">FauxVkDB</a>.
+Driver-driver ini tanpa dukungan. Sebuah driver bisa lebih baik daripada driver bawaan perangkat Anda di satu game dan lebih buruk di game lain. Driver bawaan perangkat Anda tetap terpasang, dan semua aplikasi lain tetap memakainya.
+Aplikasi dari pengembang yang sama
+Satu ketukan pada badge membuka halaman toko. Aplikasi bertanda "Segera" belum tersedia di toko tersebut.
+FauxVkTest di Google Play
+FauxVkTest
+Periksa apa yang sebenarnya dilakukan driver grafis (Vulkan) Anda, dan seberapa cepat. Setiap hasil tes di halaman ini berasal dari aplikasi ini.
+Untuk Android
+Temukan di Google Play: FauxVkTest
+FauxCooling di GitHub
+FauxCooling
+Menjaga perangkat Anda tetap dingin saat bermain. Berfungsi di handheld AYN dan Retroid Pocket, serta di ponsel, tablet, atau handheld merek lain yang sudah di-root.
+Untuk handheld, ponsel, dan tablet Android
+Unduh di GitHub: FauxCooling
+FauxClockNG di GitHub
+FauxClockNG
+Perlu root. Atur governor CPU, GPU, memori, I/O, dan opsi jaringan secara manual.
+Untuk Android dengan root
+Unduh di GitHub: FauxClockNG
+RomRoster
+Satu daftar semua game di semua handheld yang Anda miliki. Lihat game mana ada di perangkat mana.
+Untuk Android, iPhone, dan iPad
+<a href="https://play.google.com/store/apps/details?id=com.faux123.romroster" rel="noopener"><img src="/drivers/img/google-play.webp" width="161" height="48" alt="Temukan di Google Play: RomRoster" loading="lazy"></a><span class="appsoon">Segera hadir di App Store</span>
+Shellvana
+Klien SSH yang menampilkan output terminal sebagai teks yang mudah dibaca, bukan kisi kecil.
+Temukan di Google Play: Shellvana
+Download di App Store: Shellvana
+Driver oleh faux123 (Paul Reioux). Hasil perangkat berasal dari <a href="https://fauxvkdb.canonspike.com/">FauxVkDB</a>, per 2026-10-15.
+<a href="/">canonspike.com</a>

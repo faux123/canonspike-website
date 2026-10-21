@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>faux123-Grafiktreiber: auf welchen Grafikchips jeder läuft</title>
+<meta name="description" content="Fünf Custom-Treiber für Android-Grafik von faux123 (Turnip für Adreno, PanVK für Mali). Sieh, auf welche Grafikchips jeder Treiber zielt und auf welchen Chips er bisher gelaufen ist.">
+<meta name="theme-color" content="#0B1620">
+<link rel="canonical" href="https://canonspike.com/drivers/de/">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="stylesheet" href="/drivers/drivers.css">
+<!-- i18n:alternates -->
+<link rel="alternate" hreflang="en" href="https://canonspike.com/drivers/">
+<link rel="alternate" hreflang="es" href="https://canonspike.com/drivers/es/">
+<link rel="alternate" hreflang="it" href="https://canonspike.com/drivers/it/">
+<link rel="alternate" hreflang="fr" href="https://canonspike.com/drivers/fr/">
+<link rel="alternate" hreflang="de" href="https://canonspike.com/drivers/de/">
+<link rel="alternate" hreflang="ja" href="https://canonspike.com/drivers/ja/">
+<link rel="alternate" hreflang="pt-BR" href="https://canonspike.com/drivers/pt/">
+<link rel="alternate" hreflang="zh-Hans" href="https://canonspike.com/drivers/zh-cn/">
+<link rel="alternate" hreflang="zh-Hant" href="https://canonspike.com/drivers/zh-tw/">
+<link rel="alternate" hreflang="id" href="https://canonspike.com/drivers/id/">
+<link rel="alternate" hreflang="x-default" href="https://canonspike.com/drivers/">
+<!-- /i18n:alternates -->
+</head>
+<body>
+<header class="site"><div class="wrap">
+<a class="brand" href="/drivers/de/">faux123 <b>drivers</b></a>
+<nav aria-label="Main">
+<a href="#drivers">Treiber</a>
+<a href="#apps">Apps</a>
+<a href="https://fauxvkdb.canonspike.com/">FauxVkDB</a>
+</nav>
+<!-- i18n:menu --><details class="langmenu" translate="no"><summary aria-label="Sprache: Deutsch"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.5 3.9 5.5 3.9 9s-1.3 6.5-3.9 9c-2.6-2.5-3.9-5.5-3.9-9s1.3-6.5 3.9-9z"/></svg><span lang="de">Deutsch</span></summary><ul><li><a href="/drivers/" hreflang="en" lang="en">English</a></li><li><a href="/drivers/es/" hreflang="es" lang="es">Español</a></li><li><a href="/drivers/it/" hreflang="it" lang="it">Italiano</a></li><li><a href="/drivers/fr/" hreflang="fr" lang="fr">Français</a></li><li><a href="/drivers/de/" hreflang="de" lang="de" aria-current="true">Deutsch</a></li><li><a href="/drivers/ja/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/drivers/pt/" hreflang="pt-BR" lang="pt-BR">Português</a></li><li><a href="/drivers/zh-cn/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="/drivers/zh-tw/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="/drivers/id/" hreflang="id" lang="id">Bahasa Indonesia</a></li></ul></details><!-- /i18n:menu --></div></header>
+
+<main><div class="wrap">
+
+<section class="hero">
+<h1>Ein Treiber, <span class="grad">eine ganze Chip-Familie</span></h1>
+<p class="sub">Ein Grafiktreiber ist die Software, mit der Spiele auf dem Grafikchip deines Geräts zeichnen. Ich baue jeden meiner Treiber auf einem Gerät, das mir gehört. Spieler probieren sie dann auf ihren eigenen Smartphones und Handhelds aus, und manche davon laufen ebenfalls.</p>
+<p class="sub">Diese Seite zeigt für jeden Treiber, auf welche Grafikchip-Familie er zielt und auf welchen Chips er bisher gelaufen ist, jeweils mit Link zum Beleg.</p>
+</section>
+
+<h2 id="glance">Auf einen Blick</h2>
+<p class="sub">Jeder Treiber zielt auf eine Familie von Grafikchips. Die Zahl nennt, auf wie vielen verschiedenen Chips aus dieser Familie und darüber hinaus der Treiber bisher gelaufen ist. Tippe auf einen Treiber, um die Chips und die Belege zu sehen.</p>
+<div class="glance">
+<a class="card fam-adreno" href="#turnip"><span class="name">Turnip für Adreno 600, 700, 800</span><span class="home">Qualcomm-Snapdragon-Grafik</span> <span class="count">5<small>Chips</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Adreno 660 bis 840</span></a>
+<a class="card fam-mali" href="#pixel7"><span class="name">PanVK für Mali&#8209;G710, G715 und G720</span><span class="home">Google-Tensor-Grafik</span> <span class="count">2<small>Chips</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="word">Mali-G710, G715</span></a>
+<a class="card fam-mali" href="#ace"><span class="name">PanVK für Mali&#8209;G610 und G615</span><span class="home">Rockchip-Grafik und mehr</span> <span class="count">3<small>Chips</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="word">Mali-G57, G610, G720</span></a>
+<a class="card fam-mali" href="#rp4pro"><span class="name">PanVK für Mali&#8209;G77</span><span class="home">MediaTek-Dimensity-Grafik</span> <span class="count">1<small>Chip erfasst</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></span><span class="word">Mali-G77</span></a>
+<a class="card fam-mali" href="#rg556"><span class="name">PanVK für Mali&#8209;G57 und G68</span><span class="home">Unisoc und Exynos, nicht MediaTek</span> <span class="count">2<small>Chips</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="word">Mali-G57, G68</span></a>
+</div>
+
+<h2 id="badges">Was die Labels bedeuten</h2>
+<ul class="legend card">
+<li><span class="badge b-home">Entwickelt auf</span><p>Das Gerät, das mir gehört und auf dem ich jede Version teste.</p></li>
+<li><span class="badge b-ok">Läuft</span><p>Hat den FauxVkTest-Treiber-Check bestanden oder den Benchmark abgeschlossen, oder ein Spieler berichtet, dass er damit spielt.</p></li>
+<li><span class="badge b-part">Läuft teilweise</span><p>Der Treiber lädt, aber einige Tests sind fehlgeschlagen oder wurden nicht fertig.</p></li>
+<li><span class="badge b-no">Läuft nicht</span><p>Jemand hat ihn auf diesem Gerät probiert, und er ist fehlgeschlagen.</p></li>
+<li><span class="badge b-try">Noch nicht getestet</span><p>Gleiche Art von Grafikchip, deshalb läuft er vielleicht. Bisher hat sich niemand gemeldet.</p></li>
+</ul>
+
+<h2 id="drivers">Die Treiber</h2>
+<p class="sub">Turnip ist für Smartphones und Handhelds mit einem Qualcomm-Snapdragon-Chip (Adreno-Grafik). PanVK ist für Chips mit Arm-Mali-Grafik, wie sie MediaTek, Google Tensor, Rockchip, Samsung Exynos und Unisoc verbauen.</p>
+
+<!-- TURNIP -->
+<article class="card driver fam-adreno" id="turnip">
+<div class="dhead"><div class="who"><p class="kicker">Turnip · Adreno</p><h2>Turnip für die Adreno-Serien 600, 700 und 800</h2>
+<p>Für Qualcomm-Snapdragon-Geräte. Entwickelt auf dem AYN Odin 3 (Adreno 830).</p></div>
+<div class="get"><a class="btn" href="https://github.com/faux123/turnip-faux123-driver/releases" rel="noopener">Herunterladen</a><span class="ver">Neueste öffentliche Version <span class="tag" translate="no">v1.1.9</span></span></div></div>
+<div class="dbody">
+<p class="say">Dieser Treiber erreicht die meisten Geräte. Turnip spricht mit allen aktuellen Adreno-Chips dieselbe Sprache, deshalb läuft dieselbe Datei auf fünf Generationen von Snapdragon-Grafik, von Galaxy-Smartphones aus dem Jahr 2021 bis zu den neuesten Handhelds.</p>
+<div><p class="label">Grafikchips, auf denen er gelaufen ist</p>
+<div class="chips" translate="no"><span class="gpu">Adreno 660</span><span class="gpu">Adreno 730</span><span class="gpu">Adreno 740</span><span class="gpu home">Adreno 830</span><span class="gpu">Adreno 840</span></div></div>
+<div><p class="label">Geräte</p><ul class="devs">
+<li class="is-home"><span class="dev" translate="no">AYN Odin 3</span><span class="chip-name" translate="no">Adreno 830</span><span class="badge b-home">Entwickelt auf</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/4">Testergebnis</a></span></li>
+<li><span class="dev" translate="no">Samsung Galaxy S26 Ultra</span><span class="chip-name" translate="no">Adreno 840</span><span class="badge b-ok">Läuft</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/604">Testergebnis</a></span></li>
+<li><span class="dev" translate="no">POCO F8 Pro</span><span class="chip-name" translate="no">Adreno 830</span><span class="badge b-ok">Läuft</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/641">Benchmark</a></span></li>
+<li><span class="dev" translate="no">AYN Odin 2 Portal</span><span class="chip-name" translate="no">Adreno 740</span><span class="badge b-ok">Läuft</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/235">Testergebnis</a></span></li>
+<li><span class="dev" translate="no">AYN Thor</span><span class="chip-name" translate="no">Adreno 740</span><span class="badge b-ok">Läuft</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/102">Benchmark</a></span></li>
+<li><span class="dev" translate="no">Samsung Galaxy S23</span><span class="chip-name" translate="no">Adreno 740</span><span class="badge b-ok">Läuft</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/32">Testergebnis</a></span></li>
+<li><span class="dev" translate="no">Samsung Galaxy S22 Ultra</span><span class="chip-name" translate="no">Adreno 730</span><span class="badge b-ok">Läuft</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/459">Benchmark</a></span></li>
+<li><span class="dev" translate="no">Samsung Galaxy S22</span><span class="chip-name" translate="no">Adreno 730</span><span class="badge b-ok">Läuft</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/47">Testergebnis</a></span></li>
+<li><span class="dev" translate="no">Samsung Galaxy S21+ 5G</span><span class="chip-name" translate="no">Adreno 660</span><span class="badge b-ok">Läuft</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/30">Testergebnis</a></span></li>
+</ul></div>
+<div class="try"><div><span class="badge b-try">Noch nicht getestet</span><ul><li>Jedes andere Gerät mit Adreno-Grafik der Serien 600, 700 oder 800</li><li>Dazu gehören das Retroid Pocket 5, das Retroid Pocket Mini und das AYN Odin 2</li></ul></div></div>
+</div></article>
+
+<!-- PIXEL 7 -->
+<article class="card driver fam-mali" id="pixel7">
+<div class="dhead"><div class="who"><p class="kicker">PanVK · Mali</p><h2>PanVK für Mali-G710, G715 und G720</h2>
+<p>Entwickelt auf dem Google Pixel 7 (Tensor G2, Mali-G710).</p></div>
+<div class="get"><a class="btn" href="https://github.com/faux123/panvk-faux123-driver-pixel7/releases" rel="noopener">Herunterladen</a><span class="ver">Neueste öffentliche Version <span class="tag" translate="no">v0.11.0</span></span></div></div>
+<div class="dbody">
+<p class="say">Gebaut für ein einziges Smartphone und läuft schon auf den zwei Generationen danach. Besitzer eines Pixel 8a und eines Pixel 9 haben ihn geladen und den vollständigen Treiber-Check auf ihren neueren Mali-G715-Chips bestanden.</p>
+<div><p class="label">Grafikchips, auf denen er gelaufen ist</p>
+<div class="chips" translate="no"><span class="gpu home">Mali-G710</span><span class="gpu">Mali-G715</span></div></div>
+<div><p class="label">Geräte</p><ul class="devs">
+<li class="is-home"><span class="dev" translate="no">Google Pixel 7</span><span class="chip-name" translate="no">Mali-G710</span><span class="badge b-home">Entwickelt auf</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/464">Testergebnis</a></span></li>
+<li><span class="dev" translate="no">Google Pixel 9</span><span class="chip-name" translate="no">Mali-G715</span><span class="badge b-ok">Läuft</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/744">Testergebnis</a></span></li>
+<li><span class="dev" translate="no">Google Pixel 8a</span><span class="chip-name" translate="no">Mali-G715</span><span class="badge b-ok">Läuft</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/560">Testergebnis</a></span></li>
+</ul></div>
+<div class="try"><div><span class="badge b-try">Noch nicht getestet</span><ul><li>Pixel 7 Pro und Pixel 7a (gleicher Chip wie das Pixel 7)</li><li>Pixel 8, Pixel 8 Pro und Pixel 9 Pro (gleiche Chip-Familie wie das Pixel 8a und das Pixel 9)</li></ul></div></div>
+</div></article>
+
+<!-- ACE -->
+<article class="card driver fam-mali" id="ace">
+<div class="dhead"><div class="who"><p class="kicker">PanVK · Mali</p><h2>PanVK für Mali-G610 und G615</h2>
+<p>Entwickelt auf der GameForce Ace (Rockchip RK3588S, Mali-G610).</p></div>
+<div class="get"><a class="btn" href="https://github.com/faux123/panvk-faux123-driver-ace/releases" rel="noopener">Herunterladen</a><span class="ver">Neueste öffentliche Version <span class="tag" translate="no">v0.40.0</span></span></div></div>
+<div class="dbody">
+<p class="say">Die Überraschung unter den fünf. Spieler haben ihn auf Smartphones mit ganz unterschiedlichen Mali-Chips geladen: Ein POCO X7 Pro hat den Treiber-Check auf seinem Mali-G720 bestanden, und auf einem Oppo A6 5G lief er auf dem kleinen Mali-G57.</p>
+<div><p class="label">Grafikchips, auf denen er gelaufen ist</p>
+<div class="chips" translate="no"><span class="gpu">Mali-G57</span><span class="gpu home">Mali-G610</span><span class="gpu">Mali-G720</span></div></div>
+<div><p class="label">Geräte</p><ul class="devs">
+<li class="is-home"><span class="dev" translate="no">GameForce Ace</span><span class="chip-name" translate="no">Mali-G610</span><span class="badge b-home">Entwickelt auf</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/35">Testergebnis</a></span></li>
+<li><span class="dev" translate="no">POCO X7 Pro</span><span class="chip-name" translate="no">Mali-G720</span><span class="badge b-ok">Läuft</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/227">Testergebnis</a></span></li>
+<li><span class="dev" translate="no">Oppo A6 5G</span><span class="chip-name" translate="no">Mali-G57</span><span class="badge b-part">Läuft teilweise</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/542">Testergebnis</a></span>
+<p class="note">Hat den Großteil des Treiber-Checks bestanden (3 Punkte fehlgeschlagen). Der Benchmark wurde nicht fertig.</p></li>
+</ul></div>
+<div class="try"><div><span class="badge b-try">Noch nicht getestet</span><ul><li>Andere Geräte mit Rockchip RK3588 und RK3588S</li><li>Andere Geräte mit Mali-G610-Grafik</li></ul></div></div>
+</div></article>
+
+<!-- RP4 PRO -->
+<article class="card driver fam-mali" id="rp4pro">
+<div class="dhead"><div class="who"><p class="kicker">PanVK · Mali</p><h2>PanVK für Mali-G77</h2>
+<p>Entwickelt auf dem Retroid Pocket 4 Pro (MediaTek Dimensity 1100, Mali-G77).</p></div>
+<div class="get"><a class="btn" href="https://github.com/faux123/panvk-faux123-driver-rp4pro/releases" rel="noopener">Herunterladen</a><span class="ver">Neueste öffentliche Version <span class="tag" translate="no">v0.17.0</span></span></div></div>
+<div class="dbody">
+<p class="say">Gebaut für das RP4 Pro und der beste Kandidat für andere MediaTek-Handhelds und Smartphones mit Mali-G77-Grafik. Derselbe Chip allein reicht nicht: Ein Besitzer eines Galaxy Note20 Ultra hat gemeldet, dass er auf diesem Smartphone nicht läuft. Wenn du ihn auf einem anderen Gerät nutzt, kommt dein Gerät mit einem FauxVkTest-Upload auf diese Liste.</p>
+<div><p class="label">Grafikchips, auf denen er gelaufen ist</p>
+<div class="chips" translate="no"><span class="gpu home">Mali-G77</span></div></div>
+<div><p class="label">Geräte</p><ul class="devs">
+<li class="is-home"><span class="dev" translate="no">Retroid Pocket 4 Pro</span><span class="chip-name" translate="no">Mali-G77</span><span class="badge b-home">Entwickelt auf</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/63">Testergebnis</a></span></li>
+<li><span class="dev" translate="no">Samsung Galaxy Note20 Ultra (Exynos)</span><span class="chip-name" translate="no">Mali-G77</span><span class="badge b-no">Läuft nicht</span><span class="src"><a href="https://www.reddit.com/r/EmulationOnAndroid/comments/1wznv0c/mali_custom_drivers_for_rp4_pro_rg556_and/pefm2ov/" rel="noopener">Spielerbericht</a></span>
+<p class="note">Gleiche Grafikchip-Familie, aber der Treiber lief dort nicht. Ein passender Chip ist ein gutes Zeichen, aber kein Versprechen.</p></li>
+</ul></div>
+<div class="try"><div><span class="badge b-try">Noch nicht getestet</span><ul><li>Andere Geräte mit Mali-G77-Grafik (MediaTek Dimensity 1000 bis 1200)</li><li>Das normale Retroid Pocket 4 (Dimensity 900, Mali-G68)</li></ul></div></div>
+</div></article>
+
+<!-- RG556 -->
+<article class="card driver fam-mali" id="rg556">
+<div class="dhead"><div class="who"><p class="kicker">PanVK · Mali</p><h2>PanVK für Mali-G57 und G68</h2>
+<p>Entwickelt auf dem Anbernic RG556 (Unisoc T820, Mali-G57).</p></div>
+<div class="get"><a class="btn" href="https://github.com/faux123/panvk-faux123-driver-rg556/releases" rel="noopener">Herunterladen</a><span class="ver">Neueste öffentliche Version <span class="tag" translate="no">v0.16.0</span></span></div></div>
+<div class="dbody">
+<p class="say">Der Treiber mit dem engsten Einsatzbereich. Er spricht mit dem Grafikchip so, wie es Arms eigener Kernel-Treiber erwartet, und MediaTek-Geräte nutzen einen anderen, deshalb läuft er dort nicht. Auf einem Samsung-Exynos-Smartphone klappt es: Ein Besitzer eines Galaxy A16 5G hat damit zwei Spiele gespielt.</p>
+<div><p class="label">Grafikchips, auf denen er gelaufen ist</p>
+<div class="chips" translate="no"><span class="gpu home">Mali-G57</span><span class="gpu">Mali-G68</span></div></div>
+<div><p class="label">Geräte</p><ul class="devs">
+<li class="is-home"><span class="dev" translate="no">Anbernic RG556</span><span class="chip-name" translate="no">Mali-G57</span><span class="badge b-home">Entwickelt auf</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/65">Testergebnis</a></span></li>
+<li><span class="dev" translate="no">Samsung Galaxy A16 5G</span><span class="chip-name" translate="no">Mali-G68</span><span class="badge b-ok">Läuft</span><span class="src"><a href="https://github.com/faux123/panvk-faux123-driver-rg556/issues/1" rel="noopener">Spielerbericht</a></span>
+<p class="note">Friday Night Funkin' und eine anspruchsvolle Mod über Winlator gespielt, ohne Root.</p></li>
+</ul></div>
+<div class="try"><div><span class="badge b-try">Noch nicht getestet</span><ul><li>Andere Geräte mit Unisoc T820</li><li>Ein RG556 mit der Original-Software (meiner läuft mit einem Custom-Kernel)</li></ul></div>
+<div class="warn"><span class="badge b-no">Nicht für</span><ul><li>MediaTek-Geräte. Nimm dort den Treiber für das Retroid Pocket 4 Pro.</li></ul></div></div>
+</div></article>
+
+<h2 id="how">So nutzt du einen Treiber</h2>
+<ol class="steps">
+<li class="card"><p>Lade den Treiber herunter. Es ist eine einzelne ZIP-Datei. Entpacke sie nicht.</p></li>
+<li class="card"><p>Öffne einen Emulator oder Game-Launcher, der Custom-Treiber laden kann (zum Beispiel Winlator, GameNative oder Eden), such die Einstellung für den Grafiktreiber und wähle die ZIP-Datei aus.</p></li>
+<li class="card"><p>Du willst ihn erst prüfen oder dein Gerät auf dieser Seite eintragen? Starte einen Treiber-Check in <a href="https://play.google.com/store/apps/details?id=com.faux.vktest" rel="noopener">FauxVkTest</a> und lade das Ergebnis zu <a href="https://fauxvkdb.canonspike.com/">FauxVkDB</a> hoch.</p></li>
+</ol>
+<p class="sub">Für diese Treiber gibt es keinen Support. Ein Treiber kann in einem Spiel besser sein als der Treiber deines Geräts und in einem anderen schlechter. Der Treiber deines Geräts bleibt installiert, und alle anderen Apps nutzen ihn weiter.</p>
+
+<section id="apps" class="fam-adreno">
+<h2>Apps vom selben Entwickler</h2>
+<p class="sub">Ein Tipp auf ein Badge öffnet die Store-Seite. Eine App mit dem Hinweis "Bald" ist in diesem Store noch nicht verfügbar.</p>
+<div class="grid appgrid">
+<div class="card appcard acc-vktest"><a class="appicon" href="https://play.google.com/store/apps/details?id=com.faux.vktest" rel="noopener"><img src="/drivers/img/fauxvktest.webp" width="76" height="76" alt="FauxVkTest bei Google Play" loading="lazy"></a>
+<div class="appbody"><h3>FauxVkTest</h3><p>Prüfe, was dein Grafiktreiber (Vulkan) wirklich kann und wie schnell er ist. Jedes Testergebnis auf dieser Seite stammt daraus.</p><p class="for">Für Android</p></div>
+<p class="appstores"><a href="https://play.google.com/store/apps/details?id=com.faux.vktest" rel="noopener"><img src="/drivers/img/google-play.webp" width="161" height="48" alt="Jetzt bei Google Play: FauxVkTest" loading="lazy"></a></p></div>
+<div class="card appcard acc-cooling"><a class="appicon" href="https://github.com/faux123/fauxcooling-public/releases/latest" rel="noopener"><img src="/drivers/img/fauxcooling.webp" width="76" height="76" alt="FauxCooling auf GitHub" loading="lazy"></a>
+<div class="appbody"><h3>FauxCooling</h3><p>Hält dein Gerät beim Spielen kühl. Funktioniert auf AYN- und Retroid-Pocket-Handhelds und auf jedem gerooteten Smartphone, Tablet oder Handheld anderer Marken.</p><p class="for">Für Android-Handhelds, Smartphones und Tablets</p></div>
+<p class="appstores"><a href="https://github.com/faux123/fauxcooling-public/releases/latest" rel="noopener"><img src="/drivers/img/github.svg" width="161" height="48" alt="Von GitHub herunterladen: FauxCooling" loading="lazy"></a></p></div>
+<div class="card appcard acc-clock"><a class="appicon" href="https://github.com/faux123/fauxclock-public/releases/latest" rel="noopener"><img src="/drivers/img/fauxclockng.webp" width="76" height="76" alt="FauxClockNG auf GitHub" loading="lazy"></a>
+<div class="appbody"><h3>FauxClockNG</h3><p>Braucht Root. Stelle CPU-Governor, GPU, Speicher, I/O und Netzwerk von Hand ein.</p><p class="for">Für Android mit Root</p></div>
+<p class="appstores"><a href="https://github.com/faux123/fauxclock-public/releases/latest" rel="noopener"><img src="/drivers/img/github.svg" width="161" height="48" alt="Von GitHub herunterladen: FauxClockNG" loading="lazy"></a></p></div>
+<div class="card appcard acc-roster"><span class="appicon"><img src="/drivers/img/romroster.webp" width="76" height="76" alt="" loading="lazy"></span>
+<div class="appbody"><h3>RomRoster</h3><p>Eine Liste aller Spiele auf allen deinen Handhelds. Sieh, was auf welchem Gerät ist.</p><p class="for">Für Android, iPhone und iPad</p></div>
+<p class="appstores"><a href="https://play.google.com/store/apps/details?id=com.faux123.romroster" rel="noopener"><img src="/drivers/img/google-play.webp" width="161" height="48" alt="Jetzt bei Google Play: RomRoster" loading="lazy"></a><span class="appsoon">Bald im App Store</span></p></div>
+<div class="card appcard acc-shell"><span class="appicon"><img src="/drivers/img/shellvana.webp" width="76" height="76" alt="" loading="lazy"></span>
+<div class="appbody"><h3>Shellvana</h3><p>Ein SSH-Client, der Terminal-Ausgaben als lesbaren Text darstellt statt als winziges Raster.</p><p class="for">Für Android, iPhone und iPad</p></div>
+<p class="appstores"><a href="https://play.google.com/store/apps/details?id=com.faux123.shellvana" rel="noopener"><img src="/drivers/img/google-play.webp" width="161" height="48" alt="Jetzt bei Google Play: Shellvana" loading="lazy"></a><a href="https://apps.apple.com/app/shellvana/id6803716803" rel="noopener"><img src="/drivers/img/app-store.svg" width="144" height="48" alt="Laden im App Store: Shellvana" loading="lazy"></a></p></div>
+</div>
+</section>
+
+</div></main>
+
+<footer class="site"><div class="wrap">
+<p>Treiber von faux123 (Paul Reioux). Die Geräteergebnisse stammen aus <a href="https://fauxvkdb.canonspike.com/">FauxVkDB</a>, Stand 2026-10-15.</p>
+<p><a href="/">canonspike.com</a></p>
+<!-- i18n:languages --><nav class="langs" translate="no" aria-label="Languages"><a href="/drivers/" lang="en">English</a><a href="/drivers/es/" lang="es">Español</a><a href="/drivers/it/" lang="it">Italiano</a><a href="/drivers/fr/" lang="fr">Français</a><a href="/drivers/de/" lang="de" aria-current="true">Deutsch</a><a href="/drivers/ja/" lang="ja">日本語</a><a href="/drivers/pt/" lang="pt-BR">Português</a><a href="/drivers/zh-cn/" lang="zh-Hans">简体中文</a><a href="/drivers/zh-tw/" lang="zh-Hant">繁體中文</a><a href="/drivers/id/" lang="id">Bahasa Indonesia</a></nav><!-- /i18n:languages --></div></footer>
+<script src="/drivers/releases.js" defer></script>
+</body>
+</html>
