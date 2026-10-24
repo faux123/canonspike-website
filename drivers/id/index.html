@@ -50,7 +50,7 @@
 <a class="card fam-mali" href="#pixel7"><span class="name">PanVK untuk Mali&#8209;G710, G715, dan G720</span><span class="home">Grafis Google Tensor</span> <span class="count">2<small>chip</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="word">Mali-G710, G715</span></a>
 <a class="card fam-mali" href="#ace"><span class="name">PanVK untuk Mali&#8209;G610 dan G615</span><span class="home">Grafis Rockchip, dan lainnya</span> <span class="count">3<small>chip</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="word">Mali-G57, G610, G720</span></a>
 <a class="card fam-mali" href="#rp4pro"><span class="name">PanVK untuk Mali&#8209;G77</span><span class="home">Grafis MediaTek Dimensity</span> <span class="count">1<small>chip tercatat</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></span><span class="word">Mali-G77</span></a>
-<a class="card fam-mali" href="#rg556"><span class="name">PanVK untuk Mali&#8209;G57 dan G68</span><span class="home">Unisoc dan Exynos, bukan MediaTek</span> <span class="count">2<small>chip</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="word">Mali-G57, G68</span></a>
+<a class="card fam-mali" href="#rg556"><span class="name">PanVK untuk Mali&#8209;G57 dan G68</span><span class="home">grafis Unisoc dan Samsung Exynos</span> <span class="count">2<small>chip</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="word">Mali-G57, G68</span></a>
 </div>
 
 <h2 id="badges">Arti label</h2>
@@ -64,6 +64,7 @@
 
 <h2 id="drivers">Driver-driver</h2>
 <p class="sub">Turnip untuk ponsel dan handheld dengan chip Qualcomm Snapdragon (grafis Adreno). PanVK untuk chip dengan grafis Arm Mali, yang dipakai MediaTek, Google Tensor, Rockchip, Samsung Exynos, dan Unisoc.</p>
+<p class="sub">Sejak v1.0.0, keempat unduhan PanVK berisi driver yang sama: satu file yang mengenali chip Mali tempatnya berjalan dan hanya menyalakan perbaikan yang dibutuhkan chip itu. Setiap unduhan tetap terpisah, jadi pilih yang sesuai dengan chip Anda seperti biasa. Mulai sekarang, keempatnya mendapat setiap rilis baru secara bersamaan.</p>
 
 <!-- TURNIP -->
 <article class="card driver fam-adreno" id="turnip">
@@ -92,13 +93,13 @@
 <article class="card driver fam-mali" id="pixel7">
 <div class="dhead"><div class="who"><p class="kicker">PanVK · Mali</p><h2>PanVK untuk Mali-G710, G715, dan G720</h2>
 <p>Dikembangkan di Google Pixel 7 (Tensor G2, Mali-G710).</p></div>
-<div class="get"><a class="btn" href="https://github.com/faux123/panvk-faux123-driver-pixel7/releases" rel="noopener">Unduh</a><span class="ver">Rilis publik terbaru <span class="tag" translate="no">v0.11.0</span></span></div></div>
+<div class="get"><a class="btn" href="https://github.com/faux123/panvk-faux123-driver-pixel7/releases" rel="noopener">Unduh</a><span class="ver">Rilis publik terbaru <span class="tag" translate="no">v1.0.0</span></span></div></div>
 <div class="dbody">
 <p class="say">Dibuat untuk satu ponsel, dan sudah berjalan di dua generasi berikutnya. Pemilik Pixel 8a dan Pixel 9 sudah memuatnya dan lolos cek driver penuh di chip Mali-G715 mereka yang lebih baru.</p>
 <div><p class="label">Chip grafis tempat driver ini berjalan</p>
 <div class="chips" translate="no"><span class="gpu home">Mali-G710</span><span class="gpu">Mali-G715</span></div></div>
 <div><p class="label">Perangkat</p><ul class="devs">
-<li class="is-home"><span class="dev" translate="no">Google Pixel 7</span><span class="chip-name" translate="no">Mali-G710</span><span class="badge b-home">Dikembangkan di</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/464">Hasil tes</a></span></li>
+<li class="is-home"><span class="dev" translate="no">Google Pixel 7</span><span class="chip-name" translate="no">Mali-G710</span><span class="badge b-home">Dikembangkan di</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1060">Hasil tes</a></span></li>
 <li><span class="dev" translate="no">Google Pixel 9</span><span class="chip-name" translate="no">Mali-G715</span><span class="badge b-ok">Berfungsi</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/744">Hasil tes</a></span></li>
 <li><span class="dev" translate="no">Google Pixel 8a</span><span class="chip-name" translate="no">Mali-G715</span><span class="badge b-ok">Berfungsi</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/560">Hasil tes</a></span></li>
 </ul></div>
@@ -109,13 +110,13 @@
 <article class="card driver fam-mali" id="ace">
 <div class="dhead"><div class="who"><p class="kicker">PanVK · Mali</p><h2>PanVK untuk Mali-G610 dan G615</h2>
 <p>Dikembangkan di GameForce Ace (Rockchip RK3588S, Mali-G610).</p></div>
-<div class="get"><a class="btn" href="https://github.com/faux123/panvk-faux123-driver-ace/releases" rel="noopener">Unduh</a><span class="ver">Rilis publik terbaru <span class="tag" translate="no">v0.40.0</span></span></div></div>
+<div class="get"><a class="btn" href="https://github.com/faux123/panvk-faux123-driver-ace/releases" rel="noopener">Unduh</a><span class="ver">Rilis publik terbaru <span class="tag" translate="no">v1.0.0</span></span></div></div>
 <div class="dbody">
 <p class="say">Yang paling mengejutkan di antara kelimanya. Pemain berhasil memuatnya di ponsel dengan chip Mali yang sangat berbeda: POCO X7 Pro lolos cek driver di Mali-G720, dan Oppo A6 5G berhasil memuatnya di Mali-G57 yang kecil.</p>
 <div><p class="label">Chip grafis tempat driver ini berjalan</p>
 <div class="chips" translate="no"><span class="gpu">Mali-G57</span><span class="gpu home">Mali-G610</span><span class="gpu">Mali-G720</span></div></div>
 <div><p class="label">Perangkat</p><ul class="devs">
-<li class="is-home"><span class="dev" translate="no">GameForce Ace</span><span class="chip-name" translate="no">Mali-G610</span><span class="badge b-home">Dikembangkan di</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/35">Hasil tes</a></span></li>
+<li class="is-home"><span class="dev" translate="no">GameForce Ace</span><span class="chip-name" translate="no">Mali-G610</span><span class="badge b-home">Dikembangkan di</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1059">Hasil tes</a></span></li>
 <li><span class="dev" translate="no">POCO X7 Pro</span><span class="chip-name" translate="no">Mali-G720</span><span class="badge b-ok">Berfungsi</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/227">Hasil tes</a></span></li>
 <li><span class="dev" translate="no">Oppo A6 5G</span><span class="chip-name" translate="no">Mali-G57</span><span class="badge b-part">Berfungsi sebagian</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/542">Hasil tes</a></span>
 <p class="note">Lolos sebagian besar cek driver (3 item gagal). Tes kecepatan tidak selesai.</p></li>
@@ -127,13 +128,13 @@
 <article class="card driver fam-mali" id="rp4pro">
 <div class="dhead"><div class="who"><p class="kicker">PanVK · Mali</p><h2>PanVK untuk Mali-G77</h2>
 <p>Dikembangkan di Retroid Pocket 4 Pro (MediaTek Dimensity 1100, Mali-G77).</p></div>
-<div class="get"><a class="btn" href="https://github.com/faux123/panvk-faux123-driver-rp4pro/releases" rel="noopener">Unduh</a><span class="ver">Rilis publik terbaru <span class="tag" translate="no">v0.17.0</span></span></div></div>
+<div class="get"><a class="btn" href="https://github.com/faux123/panvk-faux123-driver-rp4pro/releases" rel="noopener">Unduh</a><span class="ver">Rilis publik terbaru <span class="tag" translate="no">v1.0.0</span></span></div></div>
 <div class="dbody">
 <p class="say">Dibuat untuk RP4 Pro, dan kandidat terbaik untuk handheld MediaTek lain serta ponsel dengan grafis Mali-G77. Chip yang sama saja belum cukup: pemilik Galaxy Note20 Ultra melaporkan driver ini tidak berfungsi di ponsel itu. Jika Anda menjalankannya di perangkat lain, unggahan dari FauxVkTest akan memasukkan perangkat Anda ke daftar ini.</p>
 <div><p class="label">Chip grafis tempat driver ini berjalan</p>
 <div class="chips" translate="no"><span class="gpu home">Mali-G77</span></div></div>
 <div><p class="label">Perangkat</p><ul class="devs">
-<li class="is-home"><span class="dev" translate="no">Retroid Pocket 4 Pro</span><span class="chip-name" translate="no">Mali-G77</span><span class="badge b-home">Dikembangkan di</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/63">Hasil tes</a></span></li>
+<li class="is-home"><span class="dev" translate="no">Retroid Pocket 4 Pro</span><span class="chip-name" translate="no">Mali-G77</span><span class="badge b-home">Dikembangkan di</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1061">Hasil tes</a></span></li>
 <li><span class="dev" translate="no">Samsung Galaxy Note20 Ultra (Exynos)</span><span class="chip-name" translate="no">Mali-G77</span><span class="badge b-no">Tidak berfungsi</span><span class="src"><a href="https://www.reddit.com/r/EmulationOnAndroid/comments/1wznv0c/mali_custom_drivers_for_rp4_pro_rg556_and/pefm2ov/" rel="noopener">Laporan pemain</a></span>
 <p class="note">Keluarga chip grafisnya sama, tetapi driver tidak berfungsi di sana. Chip yang cocok memang pertanda baik, tetapi bukan jaminan.</p></li>
 </ul></div>
@@ -144,18 +145,17 @@
 <article class="card driver fam-mali" id="rg556">
 <div class="dhead"><div class="who"><p class="kicker">PanVK · Mali</p><h2>PanVK untuk Mali-G57 dan G68</h2>
 <p>Dikembangkan di Anbernic RG556 (Unisoc T820, Mali-G57).</p></div>
-<div class="get"><a class="btn" href="https://github.com/faux123/panvk-faux123-driver-rg556/releases" rel="noopener">Unduh</a><span class="ver">Rilis publik terbaru <span class="tag" translate="no">v0.16.0</span></span></div></div>
+<div class="get"><a class="btn" href="https://github.com/faux123/panvk-faux123-driver-rg556/releases" rel="noopener">Unduh</a><span class="ver">Rilis publik terbaru <span class="tag" translate="no">v1.0.0</span></span></div></div>
 <div class="dbody">
-<p class="say">Yang paling sempit jangkauannya di antara kelimanya. Driver ini berkomunikasi dengan chip grafis seperti yang diharapkan driver kernel resmi Arm, sedangkan perangkat MediaTek memakai driver yang berbeda, jadi tidak berfungsi di sana. Di ponsel Samsung Exynos berfungsi: pemilik Galaxy A16 5G memainkan dua game dengannya.</p>
+<p class="say">Dibuat untuk RG556. Sampai v0.16.0, driver ini tidak berfungsi di perangkat MediaTek, yang berkomunikasi dengan chip grafis dengan cara berbeda. Sejak v1.0.0, isinya sama dengan tiga unduhan PanVK lainnya, dan berjalan di Retroid Pocket 4 Pro saya yang memakai MediaTek. Di ponsel Samsung Exynos juga berfungsi: pemilik Galaxy A16 5G memainkan dua game dengannya.</p>
 <div><p class="label">Chip grafis tempat driver ini berjalan</p>
 <div class="chips" translate="no"><span class="gpu home">Mali-G57</span><span class="gpu">Mali-G68</span></div></div>
 <div><p class="label">Perangkat</p><ul class="devs">
-<li class="is-home"><span class="dev" translate="no">Anbernic RG556</span><span class="chip-name" translate="no">Mali-G57</span><span class="badge b-home">Dikembangkan di</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/65">Hasil tes</a></span></li>
+<li class="is-home"><span class="dev" translate="no">Anbernic RG556</span><span class="chip-name" translate="no">Mali-G57</span><span class="badge b-home">Dikembangkan di</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1062">Hasil tes</a></span></li>
 <li><span class="dev" translate="no">Samsung Galaxy A16 5G</span><span class="chip-name" translate="no">Mali-G68</span><span class="badge b-ok">Berfungsi</span><span class="src"><a href="https://github.com/faux123/panvk-faux123-driver-rg556/issues/1" rel="noopener">Laporan pemain</a></span>
 <p class="note">Memainkan Friday Night Funkin' dan sebuah mod yang berat lewat Winlator, tanpa root.</p></li>
 </ul></div>
-<div class="try"><div><span class="badge b-try">Belum diuji</span><ul><li>Perangkat Unisoc T820 lainnya</li><li>RG556 dengan software bawaan (punya saya memakai kernel kustom)</li></ul></div>
-<div class="warn"><span class="badge b-no">Bukan untuk</span><ul><li>Perangkat MediaTek. Gunakan driver Retroid Pocket 4 Pro di sana.</li></ul></div></div>
+<div class="try"><div><span class="badge b-try">Belum diuji</span><ul><li>Perangkat Unisoc T820 lainnya</li><li>RG556 dengan software bawaan (punya saya memakai kernel kustom)</li></ul></div></div>
 </div></article>
 
 <h2 id="how">Cara memakai</h2>

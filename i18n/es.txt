@@ -13,7 +13,7 @@ Cada driver está pensado para una familia de chips gráficos. El número indica
 <span class="name">PanVK para Mali&#8209;G710, G715 y G720</span><span class="home">Gráficos Google Tensor</span> <span class="count">2<small>chips</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="word">Mali-G710, G715</span>
 <span class="name">PanVK para Mali&#8209;G610 y G615</span><span class="home">Gráficos Rockchip y más</span> <span class="count">3<small>chips</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="word">Mali-G57, G610, G720</span>
 <span class="name">PanVK para Mali&#8209;G77</span><span class="home">Gráficos MediaTek Dimensity</span> <span class="count">1<small>chip registrado</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></span><span class="word">Mali-G77</span>
-<span class="name">PanVK para Mali&#8209;G57 y G68</span><span class="home">Unisoc y Exynos, no MediaTek</span> <span class="count">2<small>chips</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="word">Mali-G57, G68</span>
+<span class="name">PanVK para Mali&#8209;G57 y G68</span><span class="home">gráficos Unisoc y Samsung Exynos</span> <span class="count">2<small>chips</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="word">Mali-G57, G68</span>
 Qué significan las etiquetas
 <span class="badge b-home">Desarrollado en</span>
 El dispositivo que tengo y en el que pruebo cada versión.
@@ -27,6 +27,7 @@ Alguien lo probó en este dispositivo y falló.
 Mismo tipo de chip gráfico, así que puede funcionar. Nadie ha dado su opinión todavía.
 Los drivers
 Turnip es para móviles y consolas portátiles con un chip Qualcomm Snapdragon (gráficos Adreno). PanVK es para chips con gráficos Arm Mali, que usan MediaTek, Google Tensor, Rockchip, Samsung Exynos y Unisoc.
+Desde la v1.0.0, las cuatro descargas de PanVK traen el mismo driver: un solo archivo que detecta el chip Mali en el que funciona y activa solo las correcciones que ese chip necesita. Cada una sigue teniendo su propia descarga, así que elige la de tu chip como siempre. A partir de ahora, las cuatro reciben cada nueva versión al mismo tiempo.
 Turnip · Adreno
 Turnip para la serie Adreno 600, 700 y 800
 Para dispositivos Qualcomm Snapdragon. Desarrollado en la AYN Odin 3 (Adreno 830).
@@ -50,7 +51,7 @@ PanVK para Mali-G710, G715 y G720
 Desarrollado en el Google Pixel 7 (Tensor G2, Mali-G710).
 <a class="btn" href="https://github.com/faux123/panvk-faux123-driver-pixel7/releases" rel="noopener">Descargar</a><span class="ver">Última versión pública
 Hecho para un solo móvil, y ya funciona en las dos generaciones siguientes. Usuarios del Pixel 8a y el Pixel 9 lo han cargado y han pasado la comprobación completa del driver en sus chips Mali-G715, más nuevos.
-<span class="badge b-home">Desarrollado en</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/464">Resultado de la prueba</a></span>
+<span class="badge b-home">Desarrollado en</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1060">Resultado de la prueba</a></span>
 <span class="badge b-ok">Funciona</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/744">Resultado de la prueba</a></span>
 <span class="badge b-ok">Funciona</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/560">Resultado de la prueba</a></span>
 Pixel 7 Pro y Pixel 7a (mismo chip que el Pixel 7)
@@ -59,7 +60,7 @@ PanVK para Mali-G610 y G615
 Desarrollado en la GameForce Ace (Rockchip RK3588S, Mali-G610).
 <a class="btn" href="https://github.com/faux123/panvk-faux123-driver-ace/releases" rel="noopener">Descargar</a><span class="ver">Última versión pública
 El que más ha sorprendido. Los jugadores lo han cargado en móviles con chips Mali muy distintos: un POCO X7 Pro pasó la comprobación del driver en su Mali-G720, y un Oppo A6 5G consiguió que cargara en un modesto Mali-G57.
-<span class="badge b-home">Desarrollado en</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/35">Resultado de la prueba</a></span>
+<span class="badge b-home">Desarrollado en</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1059">Resultado de la prueba</a></span>
 <span class="badge b-ok">Funciona</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/227">Resultado de la prueba</a></span>
 <span class="badge b-part">Funciona en parte</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/542">Resultado de la prueba</a></span>
 Pasó casi toda la comprobación del driver (fallaron 3 elementos). La prueba de velocidad no terminó.
@@ -69,7 +70,7 @@ PanVK para Mali-G77
 Desarrollado en la Retroid Pocket 4 Pro (MediaTek Dimensity 1100, Mali-G77).
 <a class="btn" href="https://github.com/faux123/panvk-faux123-driver-rp4pro/releases" rel="noopener">Descargar</a><span class="ver">Última versión pública
 Hecho para la RP4 Pro, y el mejor candidato para otras consolas portátiles MediaTek y móviles con gráficos Mali-G77. Compartir el chip no basta por sí solo: un usuario de un Galaxy Note20 Ultra informó de que no funciona en ese móvil. Si lo usas en otro dispositivo, al subir un resultado de FauxVkTest tu dispositivo se añade a esta lista.
-<span class="badge b-home">Desarrollado en</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/63">Resultado de la prueba</a></span>
+<span class="badge b-home">Desarrollado en</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1061">Resultado de la prueba</a></span>
 <span class="badge b-no">No funciona</span><span class="src"><a href="https://www.reddit.com/r/EmulationOnAndroid/comments/1wznv0c/mali_custom_drivers_for_rp4_pro_rg556_and/pefm2ov/" rel="noopener">Informe de un jugador</a></span>
 Misma familia de chips gráficos, pero el driver no funcionó ahí. Que el chip coincida es buena señal, no una garantía.
 Otros dispositivos con gráficos Mali-G77 (MediaTek Dimensity 1000 a 1200)
@@ -77,14 +78,12 @@ La Retroid Pocket 4 normal (Dimensity 900, Mali-G68)
 PanVK para Mali-G57 y G68
 Desarrollado en la Anbernic RG556 (Unisoc T820, Mali-G57).
 <a class="btn" href="https://github.com/faux123/panvk-faux123-driver-rg556/releases" rel="noopener">Descargar</a><span class="ver">Última versión pública
-El más específico de los cinco. Se comunica con el chip gráfico como espera el driver de kernel de Arm, y los dispositivos MediaTek usan otro distinto, así que no funciona en ellos. En un móvil Samsung Exynos sí: un usuario de un Galaxy A16 5G jugó a dos juegos con él.
-<span class="badge b-home">Desarrollado en</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/65">Resultado de la prueba</a></span>
+Hecho para la RG556. Hasta la v0.16.0 no funcionaba en dispositivos MediaTek, que se comunican con el chip gráfico de otra forma. Desde la v1.0.0 es el mismo driver que las otras tres descargas de PanVK, y funciona en mi Retroid Pocket 4 Pro con MediaTek. En un móvil Samsung Exynos también funciona: un usuario de un Galaxy A16 5G jugó a dos juegos con él.
+<span class="badge b-home">Desarrollado en</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1062">Resultado de la prueba</a></span>
 <span class="badge b-ok">Funciona</span><span class="src"><a href="https://github.com/faux123/panvk-faux123-driver-rg556/issues/1" rel="noopener">Informe de un jugador</a></span>
 Jugó a Friday Night Funkin' y a un mod exigente con Winlator, sin root.
 Otros dispositivos Unisoc T820
 Una RG556 con su software original (la mía lleva un kernel personalizado)
-<span class="badge b-no">No apto para</span>
-Dispositivos MediaTek. Ahí usa el driver de la Retroid Pocket 4 Pro.
 Cómo usar uno
 Descarga el driver. Es un único archivo ZIP. No lo descomprimas.
 Abre un emulador o lanzador de juegos que pueda cargar drivers personalizados (por ejemplo Winlator, GameNative o Eden), busca el ajuste del driver gráfico y elige el archivo ZIP.

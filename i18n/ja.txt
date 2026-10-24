@@ -13,7 +13,7 @@ FauxVkDB
 <span class="name">Mali&#8209;G710・G715・G720向けPanVK</span><span class="home">Google Tensorのグラフィック</span> <span class="count">2<small>種のチップ</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="word">Mali-G710、G715</span>
 <span class="name">Mali&#8209;G610・G615向けPanVK</span><span class="home">Rockchipなどのグラフィック</span> <span class="count">3<small>種のチップ</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="word">Mali-G57、G610、G720</span>
 <span class="name">Mali&#8209;G77向けPanVK</span><span class="home">MediaTek Dimensityのグラフィック</span> <span class="count">1<small>種のチップを確認</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></span><span class="word">Mali-G77</span>
-<span class="name">Mali&#8209;G57・G68向けPanVK</span><span class="home">UnisocとExynos（MediaTekは対象外）</span> <span class="count">2<small>種のチップ</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="word">Mali-G57、G68</span>
+<span class="name">Mali&#8209;G57・G68向けPanVK</span><span class="home">UnisocとSamsung Exynosのグラフィック</span> <span class="count">2<small>種のチップ</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="word">Mali-G57、G68</span>
 ラベルの意味
 <span class="badge b-home">開発機</span>
 私が所有していて、リリースのたびにテストしているデバイスです。
@@ -27,6 +27,7 @@ FauxVkTestのドライバーチェックに合格した、速度テストが完�
 同じ種類のグラフィックチップなので、動く可能性があります。まだ誰からも報告がありません。
 ドライバー一覧
 Turnipは、Qualcomm Snapdragonチップ（Adrenoグラフィック）を搭載したスマートフォンやゲーム機向けです。PanVKは、MediaTek、Google Tensor、Rockchip、Samsung Exynos、Unisocが採用しているArm Maliグラフィックのチップ向けです。
+v1.0.0から、4つのPanVKのダウンロードの中身は同じドライバーになりました。1つのファイルが動作中のMaliチップを判別し、そのチップに必要な修正だけを有効にします。ダウンロードはこれまでどおりチップごとに分かれているので、お使いのチップに合うものを選んでください。今後は、新しいリリースが4つ同時に公開されます。
 Turnip · Adreno
 Adreno 600・700・800シリーズ向けTurnip
 Qualcomm Snapdragon搭載デバイス向けです。AYN Odin 3（Adreno 830）で開発しました。
@@ -50,7 +51,7 @@ Mali-G710・G715・G720向けPanVK
 Google Pixel 7（Tensor G2、Mali-G710）で開発しました。
 <a class="btn" href="https://github.com/faux123/panvk-faux123-driver-pixel7/releases" rel="noopener">ダウンロード</a><span class="ver">最新の公開版
 1機種向けに作りましたが、その後の2世代でもすでに動いています。Pixel 8aとPixel 9をお使いの方が読み込みに成功し、より新しいMali-G715チップでドライバーチェックにすべて合格しました。
-<span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/464">テスト結果</a></span>
+<span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1060">テスト結果</a></span>
 <span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/744">テスト結果</a></span>
 <span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/560">テスト結果</a></span>
 Pixel 7 ProとPixel 7a（Pixel 7と同じチップ）
@@ -59,7 +60,7 @@ Mali-G610・G615向けPanVK
 GameForce Ace（Rockchip RK3588S、Mali-G610）で開発しました。
 <a class="btn" href="https://github.com/faux123/panvk-faux123-driver-ace/releases" rel="noopener">ダウンロード</a><span class="ver">最新の公開版
 意外な広がりを見せたドライバーです。かなり種類の違うMaliチップを積んだスマートフォンで、プレイヤーが読み込みに成功しています。POCO X7 ProはMali-G720でドライバーチェックに合格し、Oppo A6 5Gは小型のMali-G57で読み込めました。
-<span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/35">テスト結果</a></span>
+<span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1059">テスト結果</a></span>
 <span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/227">テスト結果</a></span>
 <span class="badge b-part">一部動作</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/542">テスト結果</a></span>
 ドライバーチェックの大半に合格しました（3項目が失敗）。速度テストは完了しませんでした。
@@ -69,7 +70,7 @@ Mali-G77向けPanVK
 Retroid Pocket 4 Pro（MediaTek Dimensity 1100、Mali-G77）で開発しました。
 <a class="btn" href="https://github.com/faux123/panvk-faux123-driver-rp4pro/releases" rel="noopener">ダウンロード</a><span class="ver">最新の公開版
 RP4 Pro向けに作ったドライバーで、Mali-G77グラフィックを搭載したほかのMediaTek製ゲーム機やスマートフォンでも、いちばん有力な候補です。ただし、チップが同じというだけでは十分ではありません。Galaxy Note20 Ultraをお使いの方から、そのスマートフォンでは動作しないという報告がありました。ほかのデバイスで試した場合は、FauxVkTestの結果をアップロードしていただければ、お使いのデバイスがこの一覧に載ります。
-<span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/63">テスト結果</a></span>
+<span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1061">テスト結果</a></span>
 <span class="badge b-no">動作しない</span><span class="src"><a href="https://www.reddit.com/r/EmulationOnAndroid/comments/1wznv0c/mali_custom_drivers_for_rp4_pro_rg556_and/pefm2ov/" rel="noopener">プレイヤーの報告</a></span>
 同じグラフィックチップファミリーですが、ドライバーは動作しませんでした。チップが一致するのは良い兆しですが、保証ではありません。
 Mali-G77グラフィックを搭載したその他のデバイス（MediaTek Dimensity 1000〜1200）
@@ -77,14 +78,12 @@ Mali-G77グラフィックを搭載したその他のデバイス（MediaTek Dim
 Mali-G57・G68向けPanVK
 Anbernic RG556（Unisoc T820、Mali-G57）で開発しました。
 <a class="btn" href="https://github.com/faux123/panvk-faux123-driver-rg556/releases" rel="noopener">ダウンロード</a><span class="ver">最新の公開版
-5つの中で対象がいちばん狭いドライバーです。Arm純正のカーネルドライバーが想定する方法でグラフィックチップとやり取りしますが、MediaTekのデバイスは別のカーネルドライバーを使うため、動作しません。Samsung Exynosのスマートフォンでは動作し、Galaxy A16 5Gをお使いの方が2本のゲームをプレイしました。
-<span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/65">テスト結果</a></span>
+RG556向けに作ったドライバーです。v0.16.0までは、グラフィックチップとのやり取りの方法が異なるMediaTekのデバイスでは動作しませんでした。v1.0.0からはほかの3つのPanVKのダウンロードと同じドライバーになり、MediaTekを搭載した私のRetroid Pocket 4 Proで動いています。Samsung Exynosのスマートフォンでも動作し、Galaxy A16 5Gをお使いの方が2本のゲームをプレイしました。
+<span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1062">テスト結果</a></span>
 <span class="badge b-ok">動作する</span><span class="src"><a href="https://github.com/faux123/panvk-faux123-driver-rg556/issues/1" rel="noopener">プレイヤーの報告</a></span>
 Winlator経由でFriday Night Funkin'と負荷の高いMODをプレイできました。rootは不要です。
 その他のUnisoc T820デバイス
 標準ソフトウェアのままのRG556（私のものはカスタムカーネルで動かしています）
-<span class="badge b-no">非対応</span>
-MediaTekのデバイスは対象外です。その場合はRetroid Pocket 4 Pro用のドライバーを使ってください。
 使い方
 ドライバーをダウンロードします。ZIPファイル1つで、解凍は不要です。
 カスタムドライバーを読み込めるエミュレーターやゲームランチャー（Winlator、GameNative、Edenなど）を開き、グラフィックドライバーの設定を探して、ZIPファイルを選びます。

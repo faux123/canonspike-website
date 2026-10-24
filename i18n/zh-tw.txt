@@ -13,7 +13,7 @@ FauxVkDB
 <span class="name">適用 Mali&#8209;G710、G715 和 G720 的 PanVK</span><span class="home">Google Tensor 圖形晶片</span> <span class="count">2<small>款晶片</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="word">Mali-G710、G715</span>
 <span class="name">適用 Mali&#8209;G610 和 G615 的 PanVK</span><span class="home">Rockchip 等圖形晶片</span> <span class="count">3<small>款晶片</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="word">Mali-G57、G610、G720</span>
 <span class="name">適用 Mali&#8209;G77 的 PanVK</span><span class="home">聯發科 Dimensity 圖形晶片</span> <span class="count">1<small>款晶片有紀錄</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></span><span class="word">Mali-G77</span>
-<span class="name">適用 Mali&#8209;G57 和 G68 的 PanVK</span><span class="home">Unisoc 和 Exynos，不含聯發科</span> <span class="count">2<small>款晶片</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="word">Mali-G57、G68</span>
+<span class="name">適用 Mali&#8209;G57 和 G68 的 PanVK</span><span class="home">Unisoc 和三星 Exynos 圖形晶片</span> <span class="count">2<small>款晶片</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="word">Mali-G57、G68</span>
 標籤說明
 <span class="badge b-home">開發機</span>
 我自己擁有、每次發布都用來測試的裝置。
@@ -27,6 +27,7 @@ FauxVkDB
 圖形晶片類型相同，所以可能可用，但還沒有人回報。
 驅動程式列表
 Turnip 適用於搭載高通 Snapdragon 晶片（Adreno 圖形）的手機和掌機。PanVK 適用於 Arm Mali 圖形晶片，聯發科、Google Tensor、Rockchip、三星 Exynos 和 Unisoc 都有採用。
+自 v1.0.0 起，這四個 PanVK 下載裡是同一個驅動程式：一個檔案會辨識它所執行的 Mali 晶片，只開啟該晶片需要的修正。下載仍依晶片分開，照常選擇適合你晶片的那一個即可。今後每個新版本都會同時發布到這四個下載。
 Turnip · Adreno
 適用 Adreno 600、700、800 系列的 Turnip
 適用於高通 Snapdragon 裝置。在 AYN Odin 3（Adreno 830）上開發。
@@ -50,7 +51,7 @@ PanVK · Mali
 在 Google Pixel 7（Tensor G2、Mali-G710）上開發。
 <a class="btn" href="https://github.com/faux123/panvk-faux123-driver-pixel7/releases" rel="noopener">下載</a><span class="ver">最新公開版本
 原本只為一支手機而做，卻已經能在它之後的兩代機型上執行。Pixel 8a 和 Pixel 9 的使用者成功載入，並在較新的 Mali-G715 晶片上通過了完整的驅動程式檢測。
-<span class="badge b-home">開發機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/464">測試結果</a></span>
+<span class="badge b-home">開發機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1060">測試結果</a></span>
 <span class="badge b-ok">可用</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/744">測試結果</a></span>
 <span class="badge b-ok">可用</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/560">測試結果</a></span>
 Pixel 7 Pro 和 Pixel 7a（與 Pixel 7 晶片相同）
@@ -59,7 +60,7 @@ Pixel 8、Pixel 8 Pro 和 Pixel 9 Pro（與 Pixel 8a、Pixel 9 屬於同一晶�
 在 GameForce Ace（Rockchip RK3588S、Mali-G610）上開發。
 <a class="btn" href="https://github.com/faux123/panvk-faux123-driver-ace/releases" rel="noopener">下載</a><span class="ver">最新公開版本
 這款最出乎意料。玩家已在 Mali 晶片差異很大的手機上成功載入：POCO X7 Pro 在 Mali-G720 上通過了驅動程式檢測，Oppo A6 5G 則在小型的 Mali-G57 上成功載入。
-<span class="badge b-home">開發機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/35">測試結果</a></span>
+<span class="badge b-home">開發機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1059">測試結果</a></span>
 <span class="badge b-ok">可用</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/227">測試結果</a></span>
 <span class="badge b-part">部分可用</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/542">測試結果</a></span>
 通過了大部分驅動程式檢測（3 項未通過）。跑分測試沒有跑完。
@@ -69,7 +70,7 @@ Pixel 8、Pixel 8 Pro 和 Pixel 9 Pro（與 Pixel 8a、Pixel 9 屬於同一晶�
 在 Retroid Pocket 4 Pro（聯發科 Dimensity 1100、Mali-G77）上開發。
 <a class="btn" href="https://github.com/faux123/panvk-faux123-driver-rp4pro/releases" rel="noopener">下載</a><span class="ver">最新公開版本
 為 RP4 Pro 打造，也是其他搭載 Mali-G77 圖形晶片的聯發科掌機和手機的最佳候選。但晶片相同並不一定夠用：有一位 Galaxy Note20 Ultra 的使用者回報，這支手機上無法使用。如果你在其他裝置上執行過，上傳一次 FauxVkTest 的結果，你的裝置就會出現在這份列表中。
-<span class="badge b-home">開發機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/63">測試結果</a></span>
+<span class="badge b-home">開發機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1061">測試結果</a></span>
 <span class="badge b-no">不可用</span><span class="src"><a href="https://www.reddit.com/r/EmulationOnAndroid/comments/1wznv0c/mali_custom_drivers_for_rp4_pro_rg556_and/pefm2ov/" rel="noopener">玩家回報</a></span>
 圖形晶片系列相同，但驅動程式在這台裝置上無法使用。晶片相同是好兆頭，但不是保證。
 其他搭載 Mali-G77 圖形晶片的裝置（聯發科 Dimensity 1000 至 1200）
@@ -77,14 +78,12 @@ Pixel 8、Pixel 8 Pro 和 Pixel 9 Pro（與 Pixel 8a、Pixel 9 屬於同一晶�
 適用 Mali-G57 和 G68 的 PanVK
 在 Anbernic RG556（Unisoc T820、Mali-G57）上開發。
 <a class="btn" href="https://github.com/faux123/panvk-faux123-driver-rg556/releases" rel="noopener">下載</a><span class="ver">最新公開版本
-五款裡適用範圍最窄的一款。它與圖形晶片溝通的方式，是照 Arm 官方核心驅動程式的預期來設計，而聯發科裝置用的是另一種核心驅動程式，所以在聯發科裝置上無法使用。在三星 Exynos 手機上則可以：有一位 Galaxy A16 5G 的使用者用它玩了兩款遊戲。
-<span class="badge b-home">開發機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/65">測試結果</a></span>
+為 RG556 打造。v0.16.0 以前的版本無法在聯發科裝置上使用，因為聯發科裝置與圖形晶片溝通的方式不同。自 v1.0.0 起，它與另外三個 PanVK 下載是同一個驅動程式，已在我那台搭載聯發科晶片的 Retroid Pocket 4 Pro 上執行。在三星 Exynos 手機上也可以：有一位 Galaxy A16 5G 的使用者用它玩了兩款遊戲。
+<span class="badge b-home">開發機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1062">測試結果</a></span>
 <span class="badge b-ok">可用</span><span class="src"><a href="https://github.com/faux123/panvk-faux123-driver-rg556/issues/1" rel="noopener">玩家回報</a></span>
 透過 Winlator 玩了 Friday Night Funkin' 和一個高負載的模組，不需要 root。
 其他 Unisoc T820 裝置
 執行原廠系統的 RG556（我的那台跑的是自訂核心）
-<span class="badge b-no">不適用</span>
-聯發科裝置。請改用 Retroid Pocket 4 Pro 的驅動程式。
 使用方式
 下載驅動程式。它是一個 ZIP 檔，不要解壓縮。
 開啟支援載入自訂驅動程式的模擬器或遊戲啟動器（例如 Winlator、GameNative 或 Eden），找到圖形驅動程式的設定，選擇這個 ZIP 檔。
