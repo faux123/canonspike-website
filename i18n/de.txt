@@ -1,22 +1,19 @@
 faux123-Grafiktreiber: auf welchen Grafikchips jeder läuft
-Fünf Custom-Treiber für Android-Grafik von faux123 (Turnip für Adreno, PanVK für Mali). Sieh, auf welche Grafikchips jeder Treiber zielt und auf welchen Chips er bisher gelaufen ist.
+Zwei Custom-Treiber für Android-Grafik von faux123 (Turnip für Adreno, PanVK für Mali). Sieh, auf welche Grafikchips jeder Treiber zielt und auf welchen Chips er bisher gelaufen ist.
 <a class="brand" href="/drivers/">faux123 <b>drivers</b></a>
 Treiber
 Apps
 FauxVkDB
 Ein Treiber, <span class="grad">eine ganze Chip-Familie</span>
-Ein Grafiktreiber ist die Software, mit der Spiele auf dem Grafikchip deines Geräts zeichnen. Ich baue jeden meiner Treiber auf einem Gerät, das mir gehört. Spieler probieren sie dann auf ihren eigenen Smartphones und Handhelds aus, und manche davon laufen ebenfalls.
+Ein Grafiktreiber ist die Software, mit der Spiele auf dem Grafikchip deines Geräts zeichnen. Ich baue und teste jeden meiner Treiber auf Geräten, die ich besitze. Danach probieren Spieler sie auf ihren eigenen Smartphones und Handhelds aus, und auf manchen davon laufen sie auch.
 Diese Seite zeigt für jeden Treiber, auf welche Grafikchip-Familie er zielt und auf welchen Chips er bisher gelaufen ist, jeweils mit Link zum Beleg.
 Auf einen Blick
 Jeder Treiber zielt auf eine Familie von Grafikchips. Die Zahl nennt, auf wie vielen verschiedenen Chips aus dieser Familie und darüber hinaus der Treiber bisher gelaufen ist. Tippe auf einen Treiber, um die Chips und die Belege zu sehen.
 <span class="name">Turnip für Adreno 600, 700, 800</span><span class="home">Qualcomm-Snapdragon-Grafik</span> <span class="count">5<small>Chips</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Adreno 660 bis 840</span>
-<span class="name">PanVK für Mali&#8209;G710, G715 und G720</span><span class="home">Google-Tensor-Grafik</span> <span class="count">2<small>Chips</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="word">Mali-G710, G715</span>
-<span class="name">PanVK für Mali&#8209;G610 und G615</span><span class="home">Rockchip-Grafik und mehr</span> <span class="count">3<small>Chips</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="word">Mali-G57, G610, G720</span>
-<span class="name">PanVK für Mali&#8209;G77</span><span class="home">MediaTek-Dimensity-Grafik</span> <span class="count">1<small>Chip erfasst</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></span><span class="word">Mali-G77</span>
-<span class="name">PanVK für Mali&#8209;G57 und G68</span><span class="home">Unisoc- und Samsung-Exynos-Grafik</span> <span class="count">2<small>Chips</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="word">Mali-G57, G68</span>
+<span class="name">PanVK für Mali</span><span class="home">Arm-Mali-Grafik</span> <span class="count">7<small>Chips</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Mali-G57 bis G720</span>
 Was die Labels bedeuten
 <span class="badge b-home">Entwickelt auf</span>
-Das Gerät, das mir gehört und auf dem ich jede Version teste.
+Ein Gerät, das ich besitze und auf dem ich jede Version teste.
 <span class="badge b-ok">Läuft</span>
 Hat den FauxVkTest-Treiber-Check bestanden oder den Benchmark abgeschlossen, oder ein Spieler berichtet, dass er damit spielt.
 <span class="badge b-part">Läuft teilweise</span>
@@ -27,7 +24,7 @@ Jemand hat ihn auf diesem Gerät probiert, und er ist fehlgeschlagen.
 Gleiche Art von Grafikchip, deshalb läuft er vielleicht. Bisher hat sich niemand gemeldet.
 Die Treiber
 Turnip ist für Smartphones und Handhelds mit einem Qualcomm-Snapdragon-Chip (Adreno-Grafik). PanVK ist für Chips mit Arm-Mali-Grafik, wie sie MediaTek, Google Tensor, Rockchip, Samsung Exynos und Unisoc verbauen.
-Seit v1.0.0 enthalten die vier PanVK-Downloads denselben Treiber: eine einzige Datei, die den Mali-Chip erkennt, auf dem sie läuft, und nur die Korrekturen einschaltet, die dieser Chip braucht. Jeder Download bleibt eigenständig, also wähle wie bisher den für deinen Chip. Ab jetzt bekommen alle vier jede neue Version gleichzeitig.
+Seit v1.0.0 ist PanVK ein einziger Treiber mit einem einzigen Namen: dieselbe Datei für jedes Mali-Gerät, die den Chip erkennt, auf dem sie läuft, und nur die Korrekturen einschaltet, die dieser Chip braucht.
 Turnip · Adreno
 Turnip für die Adreno-Serien 600, 700 und 800
 Für Qualcomm-Snapdragon-Geräte. Entwickelt auf dem AYN Odin 3 (Adreno 830).
@@ -47,41 +44,28 @@ Geräte
 Jedes andere Gerät mit Adreno-Grafik der Serien 600, 700 oder 800
 Dazu gehören das Retroid Pocket 5, das Retroid Pocket Mini und das AYN Odin 2
 PanVK · Mali
-PanVK für Mali-G710, G715 und G720
-Entwickelt auf dem Google Pixel 7 (Tensor G2, Mali-G710).
-<a class="btn" href="https://github.com/faux123/panvk-faux123-driver-pixel7/releases" rel="noopener">Herunterladen</a><span class="ver">Neueste öffentliche Version
-Gebaut für ein einziges Smartphone und läuft schon auf den zwei Generationen danach. Besitzer eines Pixel 8a und eines Pixel 9 haben ihn geladen und den vollständigen Treiber-Check auf ihren neueren Mali-G715-Chips bestanden.
+PanVK für Mali
+Für Arm-Mali-Geräte. Gebaut auf vier Geräten, die ich besitze: dem Google Pixel 7 (Mali-G710), dem GameForce Ace (Mali-G610), dem Retroid Pocket 4 Pro (Mali-G77) und dem Anbernic RG556 (Mali-G57).
+<a class="btn" href="https://github.com/faux123/panvk-faux123-driver-ace/releases" rel="noopener">Herunterladen</a><span class="ver">Neueste öffentliche Version
+Eine Datei für jeden Mali-Chip, den er kennt. Er erkennt den Chip, auf dem er läuft, und schaltet nur die Korrekturen ein, die dieser Chip braucht, und ich teste jede Version auf allen vier meiner Geräte. Spieler haben ihn auch auf Chips ausgeführt, die ich nicht besitze, etwa dem Mali-G715 im Pixel 8a und Pixel 9 und dem Mali-G720 im POCO X7 Pro. Ein passender Chip ist ein gutes Zeichen, kein Versprechen. Die Spielerergebnisse unten stammen von den Downloads je Chip aus der Zeit vor v1.0.0.
 <span class="badge b-home">Entwickelt auf</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1060">Testergebnis</a></span>
+<span class="badge b-home">Entwickelt auf</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1059">Testergebnis</a></span>
+<span class="badge b-home">Entwickelt auf</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1061">Testergebnis</a></span>
+<span class="badge b-home">Entwickelt auf</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1062">Testergebnis</a></span>
 <span class="badge b-ok">Läuft</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/744">Testergebnis</a></span>
 <span class="badge b-ok">Läuft</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/560">Testergebnis</a></span>
-Pixel 7 Pro und Pixel 7a (gleicher Chip wie das Pixel 7)
-Pixel 8, Pixel 8 Pro und Pixel 9 Pro (gleiche Chip-Familie wie das Pixel 8a und das Pixel 9)
-PanVK für Mali-G610 und G615
-Entwickelt auf der GameForce Ace (Rockchip RK3588S, Mali-G610).
-<a class="btn" href="https://github.com/faux123/panvk-faux123-driver-ace/releases" rel="noopener">Herunterladen</a><span class="ver">Neueste öffentliche Version
-Die Überraschung unter den fünf. Spieler haben ihn auf Smartphones mit ganz unterschiedlichen Mali-Chips geladen: Ein POCO X7 Pro hat den Treiber-Check auf seinem Mali-G720 bestanden, und auf einem Oppo A6 5G lief er auf dem kleinen Mali-G57.
-<span class="badge b-home">Entwickelt auf</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1059">Testergebnis</a></span>
 <span class="badge b-ok">Läuft</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/227">Testergebnis</a></span>
-<span class="badge b-part">Läuft teilweise</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/542">Testergebnis</a></span>
-Hat den Großteil des Treiber-Checks bestanden (3 Punkte fehlgeschlagen). Der Benchmark wurde nicht fertig.
-Andere Geräte mit Rockchip RK3588 und RK3588S
-Andere Geräte mit Mali-G610-Grafik
-PanVK für Mali-G77
-Entwickelt auf dem Retroid Pocket 4 Pro (MediaTek Dimensity 1100, Mali-G77).
-<a class="btn" href="https://github.com/faux123/panvk-faux123-driver-rp4pro/releases" rel="noopener">Herunterladen</a><span class="ver">Neueste öffentliche Version
-Gebaut für das RP4 Pro und der beste Kandidat für andere MediaTek-Handhelds und Smartphones mit Mali-G77-Grafik. Derselbe Chip allein reicht nicht: Ein Besitzer eines Galaxy Note20 Ultra hat gemeldet, dass er auf diesem Smartphone nicht läuft. Wenn du ihn auf einem anderen Gerät nutzt, kommt dein Gerät mit einem FauxVkTest-Upload auf diese Liste.
-<span class="badge b-home">Entwickelt auf</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1061">Testergebnis</a></span>
-<span class="badge b-no">Läuft nicht</span><span class="src"><a href="https://www.reddit.com/r/EmulationOnAndroid/comments/1wznv0c/mali_custom_drivers_for_rp4_pro_rg556_and/pefm2ov/" rel="noopener">Spielerbericht</a></span>
-Gleiche Grafikchip-Familie, aber der Treiber lief dort nicht. Ein passender Chip ist ein gutes Zeichen, aber kein Versprechen.
-Andere Geräte mit Mali-G77-Grafik (MediaTek Dimensity 1000 bis 1200)
-Das normale Retroid Pocket 4 (Dimensity 900, Mali-G68)
-PanVK für Mali-G57 und G68
-Entwickelt auf dem Anbernic RG556 (Unisoc T820, Mali-G57).
-<a class="btn" href="https://github.com/faux123/panvk-faux123-driver-rg556/releases" rel="noopener">Herunterladen</a><span class="ver">Neueste öffentliche Version
-Für das RG556 gebaut. Bis v0.16.0 lief er nicht auf MediaTek-Geräten, die anders mit dem Grafikchip sprechen. Seit v1.0.0 ist es derselbe Treiber wie bei den anderen drei PanVK-Downloads, und er läuft auf meinem Retroid Pocket 4 Pro mit MediaTek-Chip. Auf einem Samsung-Exynos-Smartphone läuft er auch: Ein Besitzer eines Galaxy A16 5G hat damit zwei Spiele gespielt.
-<span class="badge b-home">Entwickelt auf</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1062">Testergebnis</a></span>
 <span class="badge b-ok">Läuft</span><span class="src"><a href="https://github.com/faux123/panvk-faux123-driver-rg556/issues/1" rel="noopener">Spielerbericht</a></span>
 Friday Night Funkin' und eine anspruchsvolle Mod über Winlator gespielt, ohne Root.
+<span class="badge b-part">Läuft teilweise</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/542">Testergebnis</a></span>
+Hat den Großteil des Treiber-Checks bestanden (3 Punkte fehlgeschlagen). Der Benchmark wurde nicht fertig.
+<span class="badge b-no">Läuft nicht</span><span class="src"><a href="https://www.reddit.com/r/EmulationOnAndroid/comments/1wznv0c/mali_custom_drivers_for_rp4_pro_rg556_and/pefm2ov/" rel="noopener">Spielerbericht</a></span>
+Gleiche Grafikchip-Familie, aber der Treiber lief dort nicht. Ein passender Chip ist ein gutes Zeichen, aber kein Versprechen.
+Pixel 7 Pro und Pixel 7a (gleicher Chip wie das Pixel 7)
+Pixel 8, Pixel 8 Pro und Pixel 9 Pro (gleiche Chip-Familie wie das Pixel 8a und das Pixel 9)
+Andere Geräte mit Rockchip RK3588 und RK3588S
+Andere Geräte mit Mali-G77-Grafik (MediaTek Dimensity 1000 bis 1200)
+Das normale Retroid Pocket 4 (Dimensity 900, Mali-G68)
 Andere Geräte mit Unisoc T820
 Ein RG556 mit der Original-Software (meiner läuft mit einem Custom-Kernel)
 So nutzt du einen Treiber

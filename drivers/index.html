@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>faux123 graphics drivers: which graphics chips each one runs on</title>
-<meta name="description" content="Five custom Android graphics drivers by faux123 (Turnip for Adreno, PanVK for Mali). See which graphics chips each one targets, and every chip it has been seen running on.">
+<meta name="description" content="Two custom Android graphics drivers by faux123 (Turnip for Adreno, PanVK for Mali). See which graphics chips each one targets, and every chip it has been seen running on.">
 <meta name="theme-color" content="#0B1620">
 <link rel="canonical" href="https://canonspike.com/drivers/">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
@@ -39,7 +39,7 @@
 
 <section class="hero">
 <h1>One driver, <span class="grad">a family of chips</span></h1>
-<p class="sub">A graphics driver is the software that lets games draw on your device's graphics chip. I build each of my drivers on one device I own. Players then try them on their own phones and handhelds, and some of those work too.</p>
+<p class="sub">A graphics driver is the software that lets games draw on your device's graphics chip. I build and test each of my drivers on devices I own. Players then try them on their own phones and handhelds, and some of those work too.</p>
 <p class="sub">This page shows, for each driver, the graphics chip family it targets and every chip it has been seen running on, with a link to the proof.</p>
 </section>
 
@@ -48,19 +48,13 @@
 <div class="glance">
 <a class="card fam-adreno" href="#turnip"><span class="name">Turnip for Adreno 600, 700, 800</span><span class="home">Qualcomm Snapdragon graphics</span>
 <span class="count">5<small>chips</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Adreno 660 to 840</span></a>
-<a class="card fam-mali" href="#pixel7"><span class="name">PanVK for Mali&#8209;G710, G715, and G720</span><span class="home">Google Tensor graphics</span>
-<span class="count">2<small>chips</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="word">Mali-G710, G715</span></a>
-<a class="card fam-mali" href="#ace"><span class="name">PanVK for Mali&#8209;G610 and G615</span><span class="home">Rockchip graphics, and more</span>
-<span class="count">3<small>chips</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="word">Mali-G57, G610, G720</span></a>
-<a class="card fam-mali" href="#rp4pro"><span class="name">PanVK for Mali&#8209;G77</span><span class="home">MediaTek Dimensity graphics</span>
-<span class="count">1<small>chip on record</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></span><span class="word">Mali-G77</span></a>
-<a class="card fam-mali" href="#rg556"><span class="name">PanVK for Mali&#8209;G57 and G68</span><span class="home">Unisoc and Samsung Exynos graphics</span>
-<span class="count">2<small>chips</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="word">Mali-G57, G68</span></a>
+<a class="card fam-mali" href="#panvk"><span class="name">PanVK for Mali</span><span class="home">Arm Mali graphics</span>
+<span class="count">7<small>chips</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Mali-G57 to G720</span></a>
 </div>
 
 <h2 id="badges">What the labels mean</h2>
 <ul class="legend card">
-<li><span class="badge b-home">Built on</span><p>The device I own and test every release on.</p></li>
+<li><span class="badge b-home">Built on</span><p>A device I own and test every release on.</p></li>
 <li><span class="badge b-ok">Works</span><p>Passed the FauxVkTest driver check or finished its speed test, or a player reports playing games with it.</p></li>
 <li><span class="badge b-part">Partly works</span><p>The driver loads, but some tests failed or did not finish.</p></li>
 <li><span class="badge b-no">Does not work</span><p>Someone tried it on this device and it failed.</p></li>
@@ -69,7 +63,7 @@
 
 <h2 id="drivers">The drivers</h2>
 <p class="sub">Turnip is for phones and handhelds with a Qualcomm Snapdragon chip (Adreno graphics). PanVK is for chips with Arm Mali graphics, used by MediaTek, Google Tensor, Rockchip, Samsung Exynos, and Unisoc.</p>
-<p class="sub">Since v1.0.0, the four PanVK downloads hold the same driver: one file that detects the Mali chip it runs on and turns on only the fixes that chip needs. Each one keeps its own download, so pick the one for your chip as before. From now on, all four get every new release at the same time.</p>
+<p class="sub">Since v1.0.0, PanVK is one driver with one name: the same file for every Mali device, which detects the chip it runs on and turns on only the fixes that chip needs.</p>
 
 <!-- TURNIP -->
 <article class="card driver fam-adreno" id="turnip">
@@ -94,73 +88,31 @@
 <div class="try"><div><span class="badge b-try">Not tested yet</span><ul><li>Any other device with Adreno 600, 700, or 800 series graphics</li><li>That includes the Retroid Pocket 5 and Retroid Pocket Mini, and the AYN Odin 2</li></ul></div></div>
 </div></article>
 
-<!-- PIXEL 7 -->
-<article class="card driver fam-mali" id="pixel7">
-<div class="dhead"><div class="who"><p class="kicker">PanVK · Mali</p><h2>PanVK for Mali-G710, G715, and G720</h2>
-<p>Built on the Google Pixel 7 (Tensor G2, Mali-G710).</p></div>
-<div class="get"><a class="btn" href="https://github.com/faux123/panvk-faux123-driver-pixel7/releases" rel="noopener">Download</a><span class="ver">Latest public release <span class="tag" translate="no">v1.0.0</span></span></div></div>
-<div class="dbody">
-<p class="say">Made for one phone, and already running on the two generations after it. Pixel 8a and Pixel 9 owners have loaded it and passed the full driver check on their newer Mali-G715 chips.</p>
-<div><p class="label">Graphics chips it has run on</p>
-<div class="chips" translate="no"><span class="gpu home">Mali-G710</span><span class="gpu">Mali-G715</span></div></div>
-<div><p class="label">Devices</p><ul class="devs">
-<li class="is-home"><span class="dev" translate="no">Google Pixel 7</span><span class="chip-name" translate="no">Mali-G710</span><span class="badge b-home">Built on</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1060">Test result</a></span></li>
-<li><span class="dev" translate="no">Google Pixel 9</span><span class="chip-name" translate="no">Mali-G715</span><span class="badge b-ok">Works</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/744">Test result</a></span></li>
-<li><span class="dev" translate="no">Google Pixel 8a</span><span class="chip-name" translate="no">Mali-G715</span><span class="badge b-ok">Works</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/560">Test result</a></span></li>
-</ul></div>
-<div class="try"><div><span class="badge b-try">Not tested yet</span><ul><li>Pixel 7 Pro and Pixel 7a (same chip as the Pixel 7)</li><li>Pixel 8, Pixel 8 Pro, and Pixel 9 Pro (same chip family as the Pixel 8a and Pixel 9)</li></ul></div></div>
-</div></article>
-
-<!-- ACE -->
-<article class="card driver fam-mali" id="ace">
-<div class="dhead"><div class="who"><p class="kicker">PanVK · Mali</p><h2>PanVK for Mali-G610 and G615</h2>
-<p>Built on the GameForce Ace (Rockchip RK3588S, Mali-G610).</p></div>
+<!-- PANVK -->
+<article class="card driver fam-mali" id="panvk"><span id="pixel7"></span><span id="ace"></span><span id="rp4pro"></span><span id="rg556"></span>
+<div class="dhead"><div class="who"><p class="kicker">PanVK · Mali</p><h2>PanVK for Mali</h2>
+<p>For Arm Mali devices. Built on four devices I own: the Google Pixel 7 (Mali-G710), the GameForce Ace (Mali-G610), the Retroid Pocket 4 Pro (Mali-G77), and the Anbernic RG556 (Mali-G57).</p></div>
 <div class="get"><a class="btn" href="https://github.com/faux123/panvk-faux123-driver-ace/releases" rel="noopener">Download</a><span class="ver">Latest public release <span class="tag" translate="no">v1.0.0</span></span></div></div>
 <div class="dbody">
-<p class="say">The surprise of the group. Players have loaded it on phones with very different Mali chips: a POCO X7 Pro passed the driver check on its Mali-G720, and an Oppo A6 5G got it loading on a small Mali-G57.</p>
+<p class="say">One file for every Mali chip it knows. It detects the chip it runs on and turns on only the fixes that chip needs, and I test every release on all four of my devices. Players have also run it on chips I do not own, such as the Mali-G715 in the Pixel 8a and Pixel 9 and the Mali-G720 in the POCO X7 Pro. A matching chip is a good sign, not a promise. The player results below come from the per-chip downloads from before v1.0.0.</p>
 <div><p class="label">Graphics chips it has run on</p>
-<div class="chips" translate="no"><span class="gpu">Mali-G57</span><span class="gpu home">Mali-G610</span><span class="gpu">Mali-G720</span></div></div>
+<div class="chips" translate="no"><span class="gpu home">Mali-G57</span><span class="gpu">Mali-G68</span><span class="gpu home">Mali-G77</span><span class="gpu home">Mali-G610</span><span class="gpu home">Mali-G710</span><span class="gpu">Mali-G715</span><span class="gpu">Mali-G720</span></div></div>
 <div><p class="label">Devices</p><ul class="devs">
+<li class="is-home"><span class="dev" translate="no">Google Pixel 7</span><span class="chip-name" translate="no">Mali-G710</span><span class="badge b-home">Built on</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1060">Test result</a></span></li>
 <li class="is-home"><span class="dev" translate="no">GameForce Ace</span><span class="chip-name" translate="no">Mali-G610</span><span class="badge b-home">Built on</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1059">Test result</a></span></li>
+<li class="is-home"><span class="dev" translate="no">Retroid Pocket 4 Pro</span><span class="chip-name" translate="no">Mali-G77</span><span class="badge b-home">Built on</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1061">Test result</a></span></li>
+<li class="is-home"><span class="dev" translate="no">Anbernic RG556</span><span class="chip-name" translate="no">Mali-G57</span><span class="badge b-home">Built on</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1062">Test result</a></span></li>
+<li><span class="dev" translate="no">Google Pixel 9</span><span class="chip-name" translate="no">Mali-G715</span><span class="badge b-ok">Works</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/744">Test result</a></span></li>
+<li><span class="dev" translate="no">Google Pixel 8a</span><span class="chip-name" translate="no">Mali-G715</span><span class="badge b-ok">Works</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/560">Test result</a></span></li>
 <li><span class="dev" translate="no">POCO X7 Pro</span><span class="chip-name" translate="no">Mali-G720</span><span class="badge b-ok">Works</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/227">Test result</a></span></li>
+<li><span class="dev" translate="no">Samsung Galaxy A16 5G</span><span class="chip-name" translate="no">Mali-G68</span><span class="badge b-ok">Works</span><span class="src"><a href="https://github.com/faux123/panvk-faux123-driver-rg556/issues/1" rel="noopener">Player report</a></span>
+<p class="note">Played Friday Night Funkin' and a demanding mod through Winlator, with no root.</p></li>
 <li><span class="dev" translate="no">Oppo A6 5G</span><span class="chip-name" translate="no">Mali-G57</span><span class="badge b-part">Partly works</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/542">Test result</a></span>
 <p class="note">Passed most of the driver check (3 items failed). The speed test did not finish.</p></li>
-</ul></div>
-<div class="try"><div><span class="badge b-try">Not tested yet</span><ul><li>Other Rockchip RK3588 and RK3588S devices</li><li>Other devices with Mali-G610 graphics</li></ul></div></div>
-</div></article>
-
-<!-- RP4 PRO -->
-<article class="card driver fam-mali" id="rp4pro">
-<div class="dhead"><div class="who"><p class="kicker">PanVK · Mali</p><h2>PanVK for Mali-G77</h2>
-<p>Built on the Retroid Pocket 4 Pro (MediaTek Dimensity 1100, Mali-G77).</p></div>
-<div class="get"><a class="btn" href="https://github.com/faux123/panvk-faux123-driver-rp4pro/releases" rel="noopener">Download</a><span class="ver">Latest public release <span class="tag" translate="no">v1.0.0</span></span></div></div>
-<div class="dbody">
-<p class="say">Built for the RP4 Pro, and the best candidate for other MediaTek handhelds and phones with Mali-G77 graphics. Sharing the chip is not enough on its own: a Galaxy Note20 Ultra owner reported it does not work on that phone. If you run it on another device, a FauxVkTest upload puts your device on this list.</p>
-<div><p class="label">Graphics chips it has run on</p>
-<div class="chips" translate="no"><span class="gpu home">Mali-G77</span></div></div>
-<div><p class="label">Devices</p><ul class="devs">
-<li class="is-home"><span class="dev" translate="no">Retroid Pocket 4 Pro</span><span class="chip-name" translate="no">Mali-G77</span><span class="badge b-home">Built on</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1061">Test result</a></span></li>
 <li><span class="dev" translate="no">Samsung Galaxy Note20 Ultra (Exynos)</span><span class="chip-name" translate="no">Mali-G77</span><span class="badge b-no">Does not work</span><span class="src"><a href="https://www.reddit.com/r/EmulationOnAndroid/comments/1wznv0c/mali_custom_drivers_for_rp4_pro_rg556_and/pefm2ov/" rel="noopener">Player report</a></span>
 <p class="note">Same graphics chip family, but the driver did not work there. A matching chip is a good sign, not a promise.</p></li>
 </ul></div>
-<div class="try"><div><span class="badge b-try">Not tested yet</span><ul><li>Other devices with Mali-G77 graphics (MediaTek Dimensity 1000 to 1200)</li><li>The standard Retroid Pocket 4 (Dimensity 900, Mali-G68)</li></ul></div></div>
-</div></article>
-
-<!-- RG556 -->
-<article class="card driver fam-mali" id="rg556">
-<div class="dhead"><div class="who"><p class="kicker">PanVK · Mali</p><h2>PanVK for Mali-G57 and G68</h2>
-<p>Built on the Anbernic RG556 (Unisoc T820, Mali-G57).</p></div>
-<div class="get"><a class="btn" href="https://github.com/faux123/panvk-faux123-driver-rg556/releases" rel="noopener">Download</a><span class="ver">Latest public release <span class="tag" translate="no">v1.0.0</span></span></div></div>
-<div class="dbody">
-<p class="say">Made for the RG556. Up to v0.16.0 it did not work on MediaTek devices, which talk to the graphics chip in a different way. Since v1.0.0 it is the same driver as the other three PanVK downloads, which runs on my MediaTek-based Retroid Pocket 4 Pro. On a Samsung Exynos phone it works too: a Galaxy A16 5G owner played two games with it.</p>
-<div><p class="label">Graphics chips it has run on</p>
-<div class="chips" translate="no"><span class="gpu home">Mali-G57</span><span class="gpu">Mali-G68</span></div></div>
-<div><p class="label">Devices</p><ul class="devs">
-<li class="is-home"><span class="dev" translate="no">Anbernic RG556</span><span class="chip-name" translate="no">Mali-G57</span><span class="badge b-home">Built on</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1062">Test result</a></span></li>
-<li><span class="dev" translate="no">Samsung Galaxy A16 5G</span><span class="chip-name" translate="no">Mali-G68</span><span class="badge b-ok">Works</span><span class="src"><a href="https://github.com/faux123/panvk-faux123-driver-rg556/issues/1" rel="noopener">Player report</a></span>
-<p class="note">Played Friday Night Funkin' and a demanding mod through Winlator, with no root.</p></li>
-</ul></div>
-<div class="try"><div><span class="badge b-try">Not tested yet</span><ul><li>Other Unisoc T820 devices</li><li>An RG556 on its stock software (mine runs a custom kernel)</li></ul></div></div>
+<div class="try"><div><span class="badge b-try">Not tested yet</span><ul><li>Pixel 7 Pro and Pixel 7a (same chip as the Pixel 7)</li><li>Pixel 8, Pixel 8 Pro, and Pixel 9 Pro (same chip family as the Pixel 8a and Pixel 9)</li><li>Other Rockchip RK3588 and RK3588S devices</li><li>Other devices with Mali-G77 graphics (MediaTek Dimensity 1000 to 1200)</li><li>The standard Retroid Pocket 4 (Dimensity 900, Mali-G68)</li><li>Other Unisoc T820 devices</li><li>An RG556 on its stock software (mine runs a custom kernel)</li></ul></div></div>
 </div></article>
 
 <h2 id="how">How to use one</h2>

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>faux123のグラフィックドライバー：どのグラフィックチップで動くか</title>
-<meta name="description" content="faux123によるAndroid向けカスタムグラフィックドライバー5種（Adreno向けのTurnip、Mali向けのPanVK）。各ドライバーの対象チップと、これまでに動作が確認されたチップをすべて掲載しています。">
+<meta name="description" content="faux123による2つのAndroid向けカスタムグラフィックドライバー（Adreno向けTurnip、Mali向けPanVK）。それぞれが対象とするグラフィックチップと、これまでに動作が確認されたすべてのチップを紹介します。">
 <meta name="theme-color" content="#0B1620">
 <link rel="canonical" href="https://canonspike.com/drivers/ja/">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
@@ -39,7 +39,7 @@
 
 <section class="hero">
 <h1>1つのドライバーで、<span class="grad">チップファミリーまるごと</span></h1>
-<p class="sub">グラフィックドライバーは、ゲームがデバイスのグラフィックチップに描画するためのソフトウェアです。私はドライバーを1つずつ、自分が持っている1台のデバイスで作っています。その後、プレイヤーの皆さんが自分のスマートフォンやゲーム機で試してくれていて、そこで動いた機種もあります。</p>
+<p class="sub">グラフィックドライバーは、ゲームがデバイスのグラフィックチップに描画するためのソフトウェアです。私は自分が持っているデバイスで、それぞれのドライバーを作ってテストしています。その後、プレイヤーの皆さんが自分のスマートフォンやゲーム機で試してくれていて、そこで動いた機種もあります。</p>
 <p class="sub">このページでは、ドライバーごとに、対象のグラフィックチップファミリーと、これまでに動作が確認されたチップをすべて、確認結果へのリンク付きで紹介します。</p>
 </section>
 
@@ -47,15 +47,12 @@
 <p class="sub">各ドライバーは、1つのグラフィックチップファミリーを対象にしています。数字は、そのファミリー内外を含め、これまでにこのドライバーの動作が確認されたチップの種類の数です。ドライバーをタップすると、チップと確認結果が見られます。</p>
 <div class="glance">
 <a class="card fam-adreno" href="#turnip"><span class="name">Adreno 600・700・800向けTurnip</span><span class="home">Qualcomm Snapdragonのグラフィック</span> <span class="count">5<small>種のチップ</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Adreno 660〜840</span></a>
-<a class="card fam-mali" href="#pixel7"><span class="name">Mali&#8209;G710・G715・G720向けPanVK</span><span class="home">Google Tensorのグラフィック</span> <span class="count">2<small>種のチップ</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="word">Mali-G710、G715</span></a>
-<a class="card fam-mali" href="#ace"><span class="name">Mali&#8209;G610・G615向けPanVK</span><span class="home">Rockchipなどのグラフィック</span> <span class="count">3<small>種のチップ</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="word">Mali-G57、G610、G720</span></a>
-<a class="card fam-mali" href="#rp4pro"><span class="name">Mali&#8209;G77向けPanVK</span><span class="home">MediaTek Dimensityのグラフィック</span> <span class="count">1<small>種のチップを確認</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></span><span class="word">Mali-G77</span></a>
-<a class="card fam-mali" href="#rg556"><span class="name">Mali&#8209;G57・G68向けPanVK</span><span class="home">UnisocとSamsung Exynosのグラフィック</span> <span class="count">2<small>種のチップ</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="word">Mali-G57、G68</span></a>
+<a class="card fam-mali" href="#panvk"><span class="name">Mali向けPanVK</span><span class="home">Arm Maliのグラフィック</span> <span class="count">7<small>種のチップ</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Mali-G57からG720</span></a>
 </div>
 
 <h2 id="badges">ラベルの意味</h2>
 <ul class="legend card">
-<li><span class="badge b-home">開発機</span><p>私が所有していて、リリースのたびにテストしているデバイスです。</p></li>
+<li><span class="badge b-home">開発機</span><p>私が所有していて、リリースのたびにテストしているデバイスの1台です。</p></li>
 <li><span class="badge b-ok">動作する</span><p>FauxVkTestのドライバーチェックに合格した、速度テストが完了した、またはプレイヤーがゲームをプレイできたと報告しているものです。</p></li>
 <li><span class="badge b-part">一部動作</span><p>ドライバーは読み込まれますが、一部のテストが失敗したか、完了しませんでした。</p></li>
 <li><span class="badge b-no">動作しない</span><p>このデバイスで試した人がいて、動作しませんでした。</p></li>
@@ -64,7 +61,7 @@
 
 <h2 id="drivers">ドライバー一覧</h2>
 <p class="sub">Turnipは、Qualcomm Snapdragonチップ（Adrenoグラフィック）を搭載したスマートフォンやゲーム機向けです。PanVKは、MediaTek、Google Tensor、Rockchip、Samsung Exynos、Unisocが採用しているArm Maliグラフィックのチップ向けです。</p>
-<p class="sub">v1.0.0から、4つのPanVKのダウンロードの中身は同じドライバーになりました。1つのファイルが動作中のMaliチップを判別し、そのチップに必要な修正だけを有効にします。ダウンロードはこれまでどおりチップごとに分かれているので、お使いのチップに合うものを選んでください。今後は、新しいリリースが4つ同時に公開されます。</p>
+<p class="sub">v1.0.0から、PanVKは1つの名前を持つ1つのドライバーになりました。すべてのMaliデバイスで同じファイルを使い、動作中のチップを判別して、そのチップに必要な修正だけを有効にします。</p>
 
 <!-- TURNIP -->
 <article class="card driver fam-adreno" id="turnip">
@@ -89,73 +86,31 @@
 <div class="try"><div><span class="badge b-try">未テスト</span><ul><li>Adreno 600・700・800シリーズのグラフィックを搭載したその他のデバイス</li><li>Retroid Pocket 5、Retroid Pocket Mini、AYN Odin 2なども含まれます</li></ul></div></div>
 </div></article>
 
-<!-- PIXEL 7 -->
-<article class="card driver fam-mali" id="pixel7">
-<div class="dhead"><div class="who"><p class="kicker">PanVK · Mali</p><h2>Mali-G710・G715・G720向けPanVK</h2>
-<p>Google Pixel 7（Tensor G2、Mali-G710）で開発しました。</p></div>
-<div class="get"><a class="btn" href="https://github.com/faux123/panvk-faux123-driver-pixel7/releases" rel="noopener">ダウンロード</a><span class="ver">最新の公開版 <span class="tag" translate="no">v1.0.0</span></span></div></div>
-<div class="dbody">
-<p class="say">1機種向けに作りましたが、その後の2世代でもすでに動いています。Pixel 8aとPixel 9をお使いの方が読み込みに成功し、より新しいMali-G715チップでドライバーチェックにすべて合格しました。</p>
-<div><p class="label">動作が確認されたグラフィックチップ</p>
-<div class="chips" translate="no"><span class="gpu home">Mali-G710</span><span class="gpu">Mali-G715</span></div></div>
-<div><p class="label">デバイス</p><ul class="devs">
-<li class="is-home"><span class="dev" translate="no">Google Pixel 7</span><span class="chip-name" translate="no">Mali-G710</span><span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1060">テスト結果</a></span></li>
-<li><span class="dev" translate="no">Google Pixel 9</span><span class="chip-name" translate="no">Mali-G715</span><span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/744">テスト結果</a></span></li>
-<li><span class="dev" translate="no">Google Pixel 8a</span><span class="chip-name" translate="no">Mali-G715</span><span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/560">テスト結果</a></span></li>
-</ul></div>
-<div class="try"><div><span class="badge b-try">未テスト</span><ul><li>Pixel 7 ProとPixel 7a（Pixel 7と同じチップ）</li><li>Pixel 8、Pixel 8 Pro、Pixel 9 Pro（Pixel 8a、Pixel 9と同じチップファミリー）</li></ul></div></div>
-</div></article>
-
-<!-- ACE -->
-<article class="card driver fam-mali" id="ace">
-<div class="dhead"><div class="who"><p class="kicker">PanVK · Mali</p><h2>Mali-G610・G615向けPanVK</h2>
-<p>GameForce Ace（Rockchip RK3588S、Mali-G610）で開発しました。</p></div>
+<!-- PANVK -->
+<article class="card driver fam-mali" id="panvk"><span id="pixel7"></span><span id="ace"></span><span id="rp4pro"></span><span id="rg556"></span>
+<div class="dhead"><div class="who"><p class="kicker">PanVK · Mali</p><h2>Mali向けPanVK</h2>
+<p>Arm Mali搭載デバイス向け。私が持っている4台のデバイスで作っています：Google Pixel 7（Mali-G710）、GameForce Ace（Mali-G610）、Retroid Pocket 4 Pro（Mali-G77）、Anbernic RG556（Mali-G57）。</p></div>
 <div class="get"><a class="btn" href="https://github.com/faux123/panvk-faux123-driver-ace/releases" rel="noopener">ダウンロード</a><span class="ver">最新の公開版 <span class="tag" translate="no">v1.0.0</span></span></div></div>
 <div class="dbody">
-<p class="say">意外な広がりを見せたドライバーです。かなり種類の違うMaliチップを積んだスマートフォンで、プレイヤーが読み込みに成功しています。POCO X7 ProはMali-G720でドライバーチェックに合格し、Oppo A6 5Gは小型のMali-G57で読み込めました。</p>
+<p class="say">認識できるすべてのMaliチップに1つのファイルで対応します。動作中のチップを判別してそのチップに必要な修正だけを有効にし、リリースのたびに私の4台すべてでテストしています。プレイヤーの皆さんは、Pixel 8aとPixel 9のMali-G715や、POCO X7 ProのMali-G720など、私が持っていないチップでも動かしています。チップが同じなのは良い兆しですが、動作の保証ではありません。以下のプレイヤーの結果は、v1.0.0より前のチップ別ダウンロードによるものです。</p>
 <div><p class="label">動作が確認されたグラフィックチップ</p>
-<div class="chips" translate="no"><span class="gpu">Mali-G57</span><span class="gpu home">Mali-G610</span><span class="gpu">Mali-G720</span></div></div>
+<div class="chips" translate="no"><span class="gpu home">Mali-G57</span><span class="gpu">Mali-G68</span><span class="gpu home">Mali-G77</span><span class="gpu home">Mali-G610</span><span class="gpu home">Mali-G710</span><span class="gpu">Mali-G715</span><span class="gpu">Mali-G720</span></div></div>
 <div><p class="label">デバイス</p><ul class="devs">
+<li class="is-home"><span class="dev" translate="no">Google Pixel 7</span><span class="chip-name" translate="no">Mali-G710</span><span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1060">テスト結果</a></span></li>
 <li class="is-home"><span class="dev" translate="no">GameForce Ace</span><span class="chip-name" translate="no">Mali-G610</span><span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1059">テスト結果</a></span></li>
+<li class="is-home"><span class="dev" translate="no">Retroid Pocket 4 Pro</span><span class="chip-name" translate="no">Mali-G77</span><span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1061">テスト結果</a></span></li>
+<li class="is-home"><span class="dev" translate="no">Anbernic RG556</span><span class="chip-name" translate="no">Mali-G57</span><span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1062">テスト結果</a></span></li>
+<li><span class="dev" translate="no">Google Pixel 9</span><span class="chip-name" translate="no">Mali-G715</span><span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/744">テスト結果</a></span></li>
+<li><span class="dev" translate="no">Google Pixel 8a</span><span class="chip-name" translate="no">Mali-G715</span><span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/560">テスト結果</a></span></li>
 <li><span class="dev" translate="no">POCO X7 Pro</span><span class="chip-name" translate="no">Mali-G720</span><span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/227">テスト結果</a></span></li>
+<li><span class="dev" translate="no">Samsung Galaxy A16 5G</span><span class="chip-name" translate="no">Mali-G68</span><span class="badge b-ok">動作する</span><span class="src"><a href="https://github.com/faux123/panvk-faux123-driver-rg556/issues/1" rel="noopener">プレイヤーの報告</a></span>
+<p class="note">Winlator経由でFriday Night Funkin'と負荷の高いMODをプレイできました。rootは不要です。</p></li>
 <li><span class="dev" translate="no">Oppo A6 5G</span><span class="chip-name" translate="no">Mali-G57</span><span class="badge b-part">一部動作</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/542">テスト結果</a></span>
 <p class="note">ドライバーチェックの大半に合格しました（3項目が失敗）。速度テストは完了しませんでした。</p></li>
-</ul></div>
-<div class="try"><div><span class="badge b-try">未テスト</span><ul><li>その他のRockchip RK3588・RK3588Sデバイス</li><li>Mali-G610グラフィックを搭載したその他のデバイス</li></ul></div></div>
-</div></article>
-
-<!-- RP4 PRO -->
-<article class="card driver fam-mali" id="rp4pro">
-<div class="dhead"><div class="who"><p class="kicker">PanVK · Mali</p><h2>Mali-G77向けPanVK</h2>
-<p>Retroid Pocket 4 Pro（MediaTek Dimensity 1100、Mali-G77）で開発しました。</p></div>
-<div class="get"><a class="btn" href="https://github.com/faux123/panvk-faux123-driver-rp4pro/releases" rel="noopener">ダウンロード</a><span class="ver">最新の公開版 <span class="tag" translate="no">v1.0.0</span></span></div></div>
-<div class="dbody">
-<p class="say">RP4 Pro向けに作ったドライバーで、Mali-G77グラフィックを搭載したほかのMediaTek製ゲーム機やスマートフォンでも、いちばん有力な候補です。ただし、チップが同じというだけでは十分ではありません。Galaxy Note20 Ultraをお使いの方から、そのスマートフォンでは動作しないという報告がありました。ほかのデバイスで試した場合は、FauxVkTestの結果をアップロードしていただければ、お使いのデバイスがこの一覧に載ります。</p>
-<div><p class="label">動作が確認されたグラフィックチップ</p>
-<div class="chips" translate="no"><span class="gpu home">Mali-G77</span></div></div>
-<div><p class="label">デバイス</p><ul class="devs">
-<li class="is-home"><span class="dev" translate="no">Retroid Pocket 4 Pro</span><span class="chip-name" translate="no">Mali-G77</span><span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1061">テスト結果</a></span></li>
 <li><span class="dev" translate="no">Samsung Galaxy Note20 Ultra (Exynos)</span><span class="chip-name" translate="no">Mali-G77</span><span class="badge b-no">動作しない</span><span class="src"><a href="https://www.reddit.com/r/EmulationOnAndroid/comments/1wznv0c/mali_custom_drivers_for_rp4_pro_rg556_and/pefm2ov/" rel="noopener">プレイヤーの報告</a></span>
 <p class="note">同じグラフィックチップファミリーですが、ドライバーは動作しませんでした。チップが一致するのは良い兆しですが、保証ではありません。</p></li>
 </ul></div>
-<div class="try"><div><span class="badge b-try">未テスト</span><ul><li>Mali-G77グラフィックを搭載したその他のデバイス（MediaTek Dimensity 1000〜1200）</li><li>標準のRetroid Pocket 4（Dimensity 900、Mali-G68）</li></ul></div></div>
-</div></article>
-
-<!-- RG556 -->
-<article class="card driver fam-mali" id="rg556">
-<div class="dhead"><div class="who"><p class="kicker">PanVK · Mali</p><h2>Mali-G57・G68向けPanVK</h2>
-<p>Anbernic RG556（Unisoc T820、Mali-G57）で開発しました。</p></div>
-<div class="get"><a class="btn" href="https://github.com/faux123/panvk-faux123-driver-rg556/releases" rel="noopener">ダウンロード</a><span class="ver">最新の公開版 <span class="tag" translate="no">v1.0.0</span></span></div></div>
-<div class="dbody">
-<p class="say">RG556向けに作ったドライバーです。v0.16.0までは、グラフィックチップとのやり取りの方法が異なるMediaTekのデバイスでは動作しませんでした。v1.0.0からはほかの3つのPanVKのダウンロードと同じドライバーになり、MediaTekを搭載した私のRetroid Pocket 4 Proで動いています。Samsung Exynosのスマートフォンでも動作し、Galaxy A16 5Gをお使いの方が2本のゲームをプレイしました。</p>
-<div><p class="label">動作が確認されたグラフィックチップ</p>
-<div class="chips" translate="no"><span class="gpu home">Mali-G57</span><span class="gpu">Mali-G68</span></div></div>
-<div><p class="label">デバイス</p><ul class="devs">
-<li class="is-home"><span class="dev" translate="no">Anbernic RG556</span><span class="chip-name" translate="no">Mali-G57</span><span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1062">テスト結果</a></span></li>
-<li><span class="dev" translate="no">Samsung Galaxy A16 5G</span><span class="chip-name" translate="no">Mali-G68</span><span class="badge b-ok">動作する</span><span class="src"><a href="https://github.com/faux123/panvk-faux123-driver-rg556/issues/1" rel="noopener">プレイヤーの報告</a></span>
-<p class="note">Winlator経由でFriday Night Funkin'と負荷の高いMODをプレイできました。rootは不要です。</p></li>
-</ul></div>
-<div class="try"><div><span class="badge b-try">未テスト</span><ul><li>その他のUnisoc T820デバイス</li><li>標準ソフトウェアのままのRG556（私のものはカスタムカーネルで動かしています）</li></ul></div></div>
+<div class="try"><div><span class="badge b-try">未テスト</span><ul><li>Pixel 7 ProとPixel 7a（Pixel 7と同じチップ）</li><li>Pixel 8、Pixel 8 Pro、Pixel 9 Pro（Pixel 8a、Pixel 9と同じチップファミリー）</li><li>その他のRockchip RK3588・RK3588Sデバイス</li><li>Mali-G77グラフィックを搭載したその他のデバイス（MediaTek Dimensity 1000〜1200）</li><li>標準のRetroid Pocket 4（Dimensity 900、Mali-G68）</li><li>その他のUnisoc T820デバイス</li><li>標準ソフトウェアのままのRG556（私のものはカスタムカーネルで動かしています）</li></ul></div></div>
 </div></article>
 
 <h2 id="how">使い方</h2>
