@@ -74,29 +74,41 @@ Abre un emulador o lanzador de juegos que pueda cargar drivers personalizados (p
 ¿Quieres comprobarlo antes, o añadir tu dispositivo a esta página? Haz una comprobación del driver en <a href="https://play.google.com/store/apps/details?id=com.faux.vktest" rel="noopener">FauxVkTest</a> y sube el resultado a <a href="https://fauxvkdb.canonspike.com/">FauxVkDB</a>.
 Estos drivers se ofrecen sin soporte. Un driver puede rendir mejor que el de tu dispositivo en un juego y peor en otro. El driver de tu dispositivo sigue instalado y el resto de apps siguen usándolo.
 Apps del mismo desarrollador
-Un toque en una insignia abre la página de la tienda. Una app marcada con «Próximamente» aún no está en esa tienda.
+Toca una insignia para abrir la página de la tienda. Una insignia gris con "Próximamente" aún no está en la tienda.
 FauxVkTest en Google Play
-FauxVkTest
+<a class="cardlink" href="https://fauxvkdb.canonspike.com/" rel="noopener">FauxVkTest</a>
 Comprueba qué hace de verdad tu driver gráfico (Vulkan) y lo rápido que es. Todos los resultados de pruebas de esta página salen de ahí.
 Para Android
 Disponible en Google Play: FauxVkTest
 FauxCooling en GitHub
-FauxCooling
+<a class="cardlink" href="https://fauxcooling.canonspike.com/" rel="noopener">FauxCooling</a>
 Mantiene fresco tu dispositivo mientras juegas. Funciona en consolas portátiles AYN y Retroid Pocket, y en cualquier móvil, tablet o portátil con root de otras marcas.
 Para consolas portátiles, móviles y tablets Android
 Descargar en GitHub: FauxCooling
 FauxClockNG en GitHub
-FauxClockNG
+<a class="cardlink" href="https://fauxclockng.canonspike.com/" rel="noopener">FauxClockNG</a>
 Requiere root. Ajusta a mano las opciones del governor de la CPU, la GPU, la memoria, la E/S y la red.
 Para Android con root
 Descargar en GitHub: FauxClockNG
-RomRoster
+<a class="cardlink" href="https://romroster.canonspike.com/" rel="noopener">RomRoster</a>
 Una sola lista con todos los juegos de todas tus consolas portátiles. Mira qué hay en cada dispositivo.
 Para Android, iPhone e iPad
-<a href="https://play.google.com/store/apps/details?id=com.faux123.romroster" rel="noopener"><img src="/drivers/img/google-play.webp" width="161" height="48" alt="Disponible en Google Play: RomRoster" loading="lazy"></a><span class="appsoon">Próximamente en App Store</span>
-Shellvana
+<a href="https://play.google.com/store/apps/details?id=com.faux123.romroster" rel="noopener"><img src="/drivers/img/google-play.webp" width="161" height="48" alt="Disponible en Google Play: RomRoster" loading="lazy"></a><span class="soonbadge"><img src="/drivers/img/app-store.svg" width="144" height="48" alt="Próximamente en App Store: RomRoster" loading="lazy"><span>Próximamente</span></span>
+<a class="cardlink" href="https://shellvana.com/" rel="noopener">Shellvana</a>
 Un cliente SSH que muestra la salida del terminal como texto legible, no como una cuadrícula diminuta.
 Disponible en Google Play: Shellvana
 Descárgala en App Store: Shellvana
+Net SD card en Google Play
+<a class="cardlink" href="https://netsd.canonspike.com/" rel="noopener">Net SD card</a>
+Tu biblioteca de juegos de PC, vista por tus emuladores Android como si estuviera en la tarjeta SD. Sin root.
+Disponible en Google Play: Net SD card
+FauxWall en Google Play
+<a class="cardlink" href="https://fauxwall.canonspike.com/" rel="noopener">FauxWall</a>
+Fondos animados y temas para Android, con una pantalla de inicio limpia.
+Disponible en Google Play: FauxWall
+Face Trend
+Mira cómo cambia tu cara con el tiempo, en privado, en tu teléfono.
+Para Android y iPhone
+<span class="soonbadge"><img src="/drivers/img/google-play.webp" width="161" height="48" alt="Próximamente en Google Play: Face Trend" loading="lazy"><span>Próximamente</span></span><span class="soonbadge"><img src="/drivers/img/app-store.svg" width="144" height="48" alt="Próximamente en App Store: Face Trend" loading="lazy"><span>Próximamente</span></span>
 Drivers de faux123 (Paul Reioux). Los resultados por dispositivo vienen de <a href="https://fauxvkdb.canonspike.com/">FauxVkDB</a>, a fecha de 2026-10-15.
 <a href="/">canonspike.com</a>

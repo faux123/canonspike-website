@@ -74,29 +74,41 @@ Pixel 8、Pixel 8 Pro 和 Pixel 9 Pro（與 Pixel 8a、Pixel 9 屬於同一晶�
 想先檢查一下，或想把你的裝置加進本頁？請在 <a href="https://play.google.com/store/apps/details?id=com.faux.vktest" rel="noopener">FauxVkTest</a> 中執行驅動程式檢測，並把結果上傳到 <a href="https://fauxvkdb.canonspike.com/">FauxVkDB</a>。
 這些驅動程式不提供技術支援。同一款驅動程式可能在某個遊戲裡比裝置內建的驅動程式更好，在另一個遊戲裡更差。裝置內建的驅動程式仍然保留，其他應用程式會繼續使用它。
 同一位開發者的其他應用程式
-點一下徽章即可開啟商店頁面。標示「即將推出」的應用程式尚未在該商店上架。
+輕觸徽章即可開啟商店頁面。標示「即將推出」的灰色徽章表示尚未上架。
 Google Play 上的 FauxVkTest
-FauxVkTest
+<a class="cardlink" href="https://fauxvkdb.canonspike.com/" rel="noopener">FauxVkTest</a>
 檢測你的繪圖驅動程式（Vulkan）到底能做什麼、有多快。本頁的所有測試結果都來自它。
 適用於 Android
 在 Google Play 獲取：FauxVkTest
 GitHub 上的 FauxCooling
-FauxCooling
+<a class="cardlink" href="https://fauxcooling.canonspike.com/" rel="noopener">FauxCooling</a>
 在你玩遊戲時給裝置降溫。適用於 AYN 和 Retroid Pocket 掌機，以及其他品牌已 root 的手機、平板或掌機。
 適用於 Android 掌機、手機和平板
 從 GitHub 下載：FauxCooling
 GitHub 上的 FauxClockNG
-FauxClockNG
+<a class="cardlink" href="https://fauxclockng.canonspike.com/" rel="noopener">FauxClockNG</a>
 需要 root。可手動設定 CPU 調節器、GPU、記憶體、I/O 和網路選項。
 適用於已 root 的 Android
 從 GitHub 下載：FauxClockNG
-RomRoster
+<a class="cardlink" href="https://romroster.canonspike.com/" rel="noopener">RomRoster</a>
 把你擁有的所有掌機上的所有遊戲列在一張清單裡，一眼看出哪台裝置上有什麼。
 適用於 Android、iPhone 和 iPad
-<a href="https://play.google.com/store/apps/details?id=com.faux123.romroster" rel="noopener"><img src="/drivers/img/google-play.webp" width="161" height="48" alt="在 Google Play 獲取：RomRoster" loading="lazy"></a><span class="appsoon">即將登陸 App Store</span>
-Shellvana
+<a href="https://play.google.com/store/apps/details?id=com.faux123.romroster" rel="noopener"><img src="/drivers/img/google-play.webp" width="161" height="48" alt="在 Google Play 獲取：RomRoster" loading="lazy"></a><span class="soonbadge"><img src="/drivers/img/app-store.svg" width="144" height="48" alt="即將登上App Store：RomRoster" loading="lazy"><span>即將推出</span></span>
+<a class="cardlink" href="https://shellvana.com/" rel="noopener">Shellvana</a>
 一個 SSH 用戶端，把終端輸出顯示成易讀的文字，而不是一個小小的字元格子。
 在 Google Play 獲取：Shellvana
 在 App Store 下載：Shellvana
+Google Play 上的 Net SD card
+<a class="cardlink" href="https://netsd.canonspike.com/" rel="noopener">Net SD card</a>
+讓 Android 模擬器像讀取 SD 卡一樣讀取你的 PC 遊戲庫。不需 root。
+在 Google Play 獲取：Net SD card
+Google Play 上的 FauxWall
+<a class="cardlink" href="https://fauxwall.canonspike.com/" rel="noopener">FauxWall</a>
+適用於 Android 的動態桌布與主題，附有簡潔的主畫面。
+在 Google Play 獲取：FauxWall
+Face Trend
+在手機上私密地記錄你的臉隨時間的變化。
+適用於 Android 與 iPhone
+<span class="soonbadge"><img src="/drivers/img/google-play.webp" width="161" height="48" alt="即將登上Google Play：Face Trend" loading="lazy"><span>即將推出</span></span><span class="soonbadge"><img src="/drivers/img/app-store.svg" width="144" height="48" alt="即將登上App Store：Face Trend" loading="lazy"><span>即將推出</span></span>
 faux123（Paul Reioux）製作的驅動程式。裝置結果來自 <a href="https://fauxvkdb.canonspike.com/">FauxVkDB</a>，截至 2026-10-15。
 <a href="/">canonspike.com</a>

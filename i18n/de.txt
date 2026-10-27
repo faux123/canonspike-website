@@ -74,29 +74,41 @@ Lade den Treiber herunter. Es ist eine einzelne ZIP-Datei. Entpacke sie nicht.
 Du willst ihn erst prüfen oder dein Gerät auf dieser Seite eintragen? Starte einen Treiber-Check in <a href="https://play.google.com/store/apps/details?id=com.faux.vktest" rel="noopener">FauxVkTest</a> und lade das Ergebnis zu <a href="https://fauxvkdb.canonspike.com/">FauxVkDB</a> hoch.
 Für diese Treiber gibt es keinen Support. Ein Treiber kann in einem Spiel besser sein als der Treiber deines Geräts und in einem anderen schlechter. Der Treiber deines Geräts bleibt installiert, und alle anderen Apps nutzen ihn weiter.
 Apps vom selben Entwickler
-Ein Tipp auf ein Badge öffnet die Store-Seite. Eine App mit dem Hinweis "Bald" ist in diesem Store noch nicht verfügbar.
+Ein Tippen auf ein Abzeichen öffnet die Store-Seite. Ein graues Abzeichen mit „Demnächst“ ist noch nicht im Store.
 FauxVkTest bei Google Play
-FauxVkTest
+<a class="cardlink" href="https://fauxvkdb.canonspike.com/" rel="noopener">FauxVkTest</a>
 Prüfe, was dein Grafiktreiber (Vulkan) wirklich kann und wie schnell er ist. Jedes Testergebnis auf dieser Seite stammt daraus.
 Für Android
 Jetzt bei Google Play: FauxVkTest
 FauxCooling auf GitHub
-FauxCooling
+<a class="cardlink" href="https://fauxcooling.canonspike.com/" rel="noopener">FauxCooling</a>
 Hält dein Gerät beim Spielen kühl. Funktioniert auf AYN- und Retroid-Pocket-Handhelds und auf jedem gerooteten Smartphone, Tablet oder Handheld anderer Marken.
 Für Android-Handhelds, Smartphones und Tablets
 Von GitHub herunterladen: FauxCooling
 FauxClockNG auf GitHub
-FauxClockNG
+<a class="cardlink" href="https://fauxclockng.canonspike.com/" rel="noopener">FauxClockNG</a>
 Braucht Root. Stelle CPU-Governor, GPU, Speicher, I/O und Netzwerk von Hand ein.
 Für Android mit Root
 Von GitHub herunterladen: FauxClockNG
-RomRoster
+<a class="cardlink" href="https://romroster.canonspike.com/" rel="noopener">RomRoster</a>
 Eine Liste aller Spiele auf allen deinen Handhelds. Sieh, was auf welchem Gerät ist.
 Für Android, iPhone und iPad
-<a href="https://play.google.com/store/apps/details?id=com.faux123.romroster" rel="noopener"><img src="/drivers/img/google-play.webp" width="161" height="48" alt="Jetzt bei Google Play: RomRoster" loading="lazy"></a><span class="appsoon">Bald im App Store</span>
-Shellvana
+<a href="https://play.google.com/store/apps/details?id=com.faux123.romroster" rel="noopener"><img src="/drivers/img/google-play.webp" width="161" height="48" alt="Jetzt bei Google Play: RomRoster" loading="lazy"></a><span class="soonbadge"><img src="/drivers/img/app-store.svg" width="144" height="48" alt="Demnächst im den App Store: RomRoster" loading="lazy"><span>Demnächst</span></span>
+<a class="cardlink" href="https://shellvana.com/" rel="noopener">Shellvana</a>
 Ein SSH-Client, der Terminal-Ausgaben als lesbaren Text darstellt statt als winziges Raster.
 Jetzt bei Google Play: Shellvana
 Laden im App Store: Shellvana
+Net SD card im Google Play
+<a class="cardlink" href="https://netsd.canonspike.com/" rel="noopener">Net SD card</a>
+Deine PC-Spielebibliothek, für deine Android-Emulatoren wie auf der SD-Karte. Ohne Root.
+Jetzt bei Google Play: Net SD card
+FauxWall im Google Play
+<a class="cardlink" href="https://fauxwall.canonspike.com/" rel="noopener">FauxWall</a>
+Live-Hintergründe und Designs für Android, mit einem aufgeräumten Startbildschirm.
+Jetzt bei Google Play: FauxWall
+Face Trend
+Sieh, wie sich dein Gesicht mit der Zeit verändert, privat auf deinem Smartphone.
+Für Android und iPhone
+<span class="soonbadge"><img src="/drivers/img/google-play.webp" width="161" height="48" alt="Demnächst im Google Play: Face Trend" loading="lazy"><span>Demnächst</span></span><span class="soonbadge"><img src="/drivers/img/app-store.svg" width="144" height="48" alt="Demnächst im den App Store: Face Trend" loading="lazy"><span>Demnächst</span></span>
 Treiber von faux123 (Paul Reioux). Die Geräteergebnisse stammen aus <a href="https://fauxvkdb.canonspike.com/">FauxVkDB</a>, Stand 2026-10-15.
 <a href="/">canonspike.com</a>

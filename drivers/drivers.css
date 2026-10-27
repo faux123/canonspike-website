@@ -16,6 +16,7 @@
 .fam-adreno{--a1:#FF5A5F;--a2:#FF9F43}.fam-mali{--a1:#3B82F6;--a2:#22D3EE}
 .acc-vktest{--a1:#3DDC97;--a2:#22D3EE}.acc-cooling{--a1:#7DD3FC;--a2:#38BDF8}.acc-clock{--a1:#F5B83D;--a2:#F97316}
 .acc-roster{--a1:#7C6CFF;--a2:#4F46E5}.acc-shell{--a1:#E9B949;--a2:#B8860B}
+.acc-netsd{--a1:#E8B53A;--a2:#B8860B}.acc-wall{--a1:#C084FC;--a2:#7C3AED}.acc-face{--a1:#F472B6;--a2:#DB2777}
 
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
@@ -141,11 +142,13 @@ background:radial-gradient(340px 150px at 0 0,color-mix(in srgb,var(--a1) 15%,tr
 .appcard:hover{transform:translateY(-3px);border-color:var(--a1);box-shadow:var(--shadow),0 12px 34px color-mix(in srgb,var(--a1) 26%,transparent)}
 .appicon{display:block;line-height:0}.appicon img{border-radius:22%;box-shadow:0 6px 18px rgba(0,0,0,.35)}
 .appbody h3{font-size:1.25rem;margin:0 0 4px}.appbody p{margin:0}
-.appbody .for{color:var(--muted);font-size:.92rem;margin-top:6px}
+.appbody .meta{color:var(--muted);font-size:.92rem;margin-top:6px}
 .appstores{grid-column:1/-1;align-self:end;display:flex;flex-wrap:wrap;gap:12px;margin:2px 0 0}
 .appstores a{display:block;line-height:0;border-radius:9px;transition:transform .15s,filter .15s}.appstores a:hover{transform:translateY(-1px);filter:brightness(1.15)}
 .appstores img{height:48px;width:auto;display:block}
-.appsoon{display:inline-flex;align-items:center;min-height:48px;padding:0 16px;border-radius:9px;border:1px dashed color-mix(in srgb,var(--a1) 60%,var(--line));color:var(--muted);font-weight:700;font-size:.92rem;white-space:nowrap}
+.soonbadge{display:inline-flex;flex-direction:column;align-items:center;gap:4px}.soonbadge img{height:48px;width:auto;display:block;opacity:.45;filter:grayscale(1)}.soonbadge span{font-size:.78rem;font-weight:700;color:var(--muted);letter-spacing:.02em}
+.appcard{position:relative}.cardlink{color:inherit;text-decoration:none}.cardlink::after{content:"";position:absolute;inset:0;border-radius:inherit}
+.appstores{position:relative;z-index:1}.appcard:focus-within{border-color:var(--a1);box-shadow:var(--shadow),0 12px 34px color-mix(in srgb,var(--a1) 26%,transparent)}.cardlink:focus-visible{outline:2px solid var(--a1);outline-offset:-2px}
 @media (max-width:480px){nav{margin-left:-9px}nav a{padding:0 9px;font-size:.95rem}.brand{font-size:1.02rem}.hero{padding:30px 18px 24px}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
 /* Language menu and footer list (2026-10-21), copied from FauxVkDB's .langmenu and .langs. The CSP blocks inline styles, so they live here. */

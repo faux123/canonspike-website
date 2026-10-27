@@ -74,29 +74,41 @@ Mali-G77グラフィックを搭載したその他のデバイス（MediaTek Dim
 先に確認したい場合や、お使いのデバイスをこのページに載せたい場合は、<a href="https://play.google.com/store/apps/details?id=com.faux.vktest" rel="noopener">FauxVkTest</a>でドライバーチェックを実行し、結果を<a href="https://fauxvkdb.canonspike.com/">FauxVkDB</a>にアップロードしてください。
 これらのドライバーにサポートはありません。ゲームによっては、デバイス標準のドライバーより良くなることも、悪くなることもあります。デバイス標準のドライバーはそのまま残り、ほかのアプリは引き続きそれを使います。
 同じ開発者のアプリ
-バッジをタップすると、ストアのページが開きます。「近日公開」と表示されたアプリは、そのストアにはまだ公開されていません。
+バッジをタップするとストアページが開きます。「近日公開」の灰色のバッジは、まだストアにありません。
 Google PlayのFauxVkTest
-FauxVkTest
+<a class="cardlink" href="https://fauxvkdb.canonspike.com/" rel="noopener">FauxVkTest</a>
 お使いのグラフィックドライバー(Vulkan)が実際に何をできるか、どのくらい速いかをチェックします。このページのテスト結果はすべて、このアプリで取得したものです。
 Android向け
 Google Playで入手：FauxVkTest
 GitHubのFauxCooling
-FauxCooling
+<a class="cardlink" href="https://fauxcooling.canonspike.com/" rel="noopener">FauxCooling</a>
 プレイ中のデバイスを冷やします。AYNとRetroid Pocketのゲーム機、ほかのブランドのroot化したスマートフォン、タブレット、ゲーム機で使えます。
 Androidのゲーム機、スマートフォン、タブレット向け
 GitHubからダウンロード：FauxCooling
 GitHubのFauxClockNG
-FauxClockNG
+<a class="cardlink" href="https://fauxclockng.canonspike.com/" rel="noopener">FauxClockNG</a>
 rootが必要です。CPUガバナー、GPU、メモリ、I/O、ネットワークの設定を手動で変更できます。
 root化したAndroid向け
 GitHubからダウンロード：FauxClockNG
-RomRoster
+<a class="cardlink" href="https://romroster.canonspike.com/" rel="noopener">RomRoster</a>
 お持ちのすべてのゲーム機にあるゲームを1つのリストで。どのデバイスに何が入っているかがわかります。
 Android、iPhone、iPad向け
-<a href="https://play.google.com/store/apps/details?id=com.faux123.romroster" rel="noopener"><img src="/drivers/img/google-play.webp" width="161" height="48" alt="Google Playで入手：RomRoster" loading="lazy"></a><span class="appsoon">App Storeで近日公開</span>
-Shellvana
+<a href="https://play.google.com/store/apps/details?id=com.faux123.romroster" rel="noopener"><img src="/drivers/img/google-play.webp" width="161" height="48" alt="Google Playで入手：RomRoster" loading="lazy"></a><span class="soonbadge"><img src="/drivers/img/app-store.svg" width="144" height="48" alt="App Storeで近日公開：RomRoster" loading="lazy"><span>近日公開</span></span>
+<a class="cardlink" href="https://shellvana.com/" rel="noopener">Shellvana</a>
 ターミナルの出力を、小さな格子ではなく読みやすい文章として表示するSSHクライアント。
 Google Playで入手：Shellvana
 App Storeでダウンロード：Shellvana
+Google PlayのNet SD card
+<a class="cardlink" href="https://netsd.canonspike.com/" rel="noopener">Net SD card</a>
+PCのゲームライブラリを、SDカードにあるかのようにAndroidエミュレーターに見せます。root不要。
+Google Playで入手：Net SD card
+Google PlayのFauxWall
+<a class="cardlink" href="https://fauxwall.canonspike.com/" rel="noopener">FauxWall</a>
+Android向けのライブ壁紙とテーマ。すっきりしたホーム画面付き。
+Google Playで入手：FauxWall
+Face Trend
+顔の変化を時間をかけて記録。スマートフォンの中だけで、プライベートに。
+AndroidとiPhone向け
+<span class="soonbadge"><img src="/drivers/img/google-play.webp" width="161" height="48" alt="Google Playで近日公開：Face Trend" loading="lazy"><span>近日公開</span></span><span class="soonbadge"><img src="/drivers/img/app-store.svg" width="144" height="48" alt="App Storeで近日公開：Face Trend" loading="lazy"><span>近日公開</span></span>
 faux123（Paul Reioux）によるドライバーです。デバイスの結果は<a href="https://fauxvkdb.canonspike.com/">FauxVkDB</a>から取得したもので、2026-10-15時点の情報です。
 <a href="/">canonspike.com</a>
