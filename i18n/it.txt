@@ -28,7 +28,7 @@ Dalla v1.0.0 PanVK è un unico driver con un unico nome: lo stesso file per ogni
 Turnip · Adreno
 Turnip per la serie Adreno 600, 700 e 800
 Per dispositivi Qualcomm Snapdragon. Sviluppato su AYN Odin 3 (Adreno 830).
-<a class="btn" href="https://github.com/faux123/turnip-faux123-driver/releases" rel="noopener">Scarica</a><span class="ver">Ultima versione pubblica
+<a class="btn" href="https://github.com/faux123/turnip-faux123-driver/releases" rel="noopener">Scarica</a><span class="ver" hidden>Ultima versione pubblica
 È quello che copre più dispositivi. Turnip si comporta allo stesso modo con tutti i chip Adreno moderni, quindi lo stesso file ha girato su cinque generazioni di grafica Snapdragon, dai telefoni Galaxy del 2021 agli handheld più recenti.
 Chip grafici su cui ha girato
 Dispositivi
@@ -46,7 +46,7 @@ Include Retroid Pocket 5, Retroid Pocket Mini e AYN Odin 2
 PanVK · Mali
 PanVK per Mali
 Per dispositivi Arm Mali. Creato su quattro dispositivi che possiedo: il Google Pixel 7 (Mali-G710), la GameForce Ace (Mali-G610), la Retroid Pocket 4 Pro (Mali-G77) e l'Anbernic RG556 (Mali-G57).
-<a class="btn" href="https://github.com/faux123/panvk-faux123-driver-ace/releases" rel="noopener">Scarica</a><span class="ver">Ultima versione pubblica
+<a class="btn" href="https://github.com/faux123/panvk-faux123-driver-ace/releases" rel="noopener">Scarica</a><span class="ver" hidden>Ultima versione pubblica
 Un unico file per ogni chip Mali che conosce. Riconosce il chip su cui gira e attiva solo le correzioni di cui quel chip ha bisogno, e provo ogni versione su tutti e quattro i miei dispositivi. I giocatori lo hanno usato anche su chip che non possiedo, come il Mali-G715 di Pixel 8a e Pixel 9 e il Mali-G720 del POCO X7 Pro. Un chip uguale è un buon segno, non una promessa. I risultati dei giocatori qui sotto vengono dai download per singolo chip precedenti alla v1.0.0.
 <span class="badge b-home">Sviluppato su</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1060">Risultato del test</a></span>
 <span class="badge b-home">Sviluppato su</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1059">Risultato del test</a></span>

@@ -60,6 +60,9 @@ python3 -m http.server 8000
   `i18n/<lang>.txt` holds the same lines translated, in the same order.
 - After changing English text: `python3 tool/i18n.py extract`, change the same line numbers in every
   `i18n/<lang>.txt`, then `python3 tool/i18n.py build`, commit, and `bash tool/deploy.sh`.
-- Device and chip names carry `translate="no"`, and each release tag sits in `<span class="tag">`, so
-  `releases.js` swaps only the tag and a new fallback version needs `build` but no translation.
+- Device and chip names carry `translate="no"`. Each release line is `<span class="ver" hidden>` with an
+  empty `<span class="tag">`: `releases.js` fills the tag from `/api/releases` and shows the line.
+- Since 2026-10-27 the page holds no version numbers, so a driver release needs no page edit, build,
+  or deploy. If `/api/releases` fails, the release line stays hidden and **Download** still opens the
+  repo's releases page.
 - The translations were written by Claude and no native speaker has read them.

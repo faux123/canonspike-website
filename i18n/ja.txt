@@ -28,7 +28,7 @@ v1.0.0から、PanVKは1つの名前を持つ1つのドライバーになりま�
 Turnip · Adreno
 Adreno 600・700・800シリーズ向けTurnip
 Qualcomm Snapdragon搭載デバイス向けです。AYN Odin 3（Adreno 830）で開発しました。
-<a class="btn" href="https://github.com/faux123/turnip-faux123-driver/releases" rel="noopener">ダウンロード</a><span class="ver">最新の公開版
+<a class="btn" href="https://github.com/faux123/turnip-faux123-driver/releases" rel="noopener">ダウンロード</a><span class="ver" hidden>最新の公開版
 最も幅広く使えるドライバーです。Turnipは最近のどのAdrenoチップにも同じ方法でやり取りするため、同じファイルが、2021年のGalaxyスマートフォンから最新のゲーム機まで、5世代のSnapdragonグラフィックで動いています。
 動作が確認されたグラフィックチップ
 デバイス
@@ -46,7 +46,7 @@ Retroid Pocket 5、Retroid Pocket Mini、AYN Odin 2なども含まれます
 PanVK · Mali
 Mali向けPanVK
 Arm Mali搭載デバイス向け。私が持っている4台のデバイスで作っています：Google Pixel 7（Mali-G710）、GameForce Ace（Mali-G610）、Retroid Pocket 4 Pro（Mali-G77）、Anbernic RG556（Mali-G57）。
-<a class="btn" href="https://github.com/faux123/panvk-faux123-driver-ace/releases" rel="noopener">ダウンロード</a><span class="ver">最新の公開版
+<a class="btn" href="https://github.com/faux123/panvk-faux123-driver-ace/releases" rel="noopener">ダウンロード</a><span class="ver" hidden>最新の公開版
 認識できるすべてのMaliチップに1つのファイルで対応します。動作中のチップを判別してそのチップに必要な修正だけを有効にし、リリースのたびに私の4台すべてでテストしています。プレイヤーの皆さんは、Pixel 8aとPixel 9のMali-G715や、POCO X7 ProのMali-G720など、私が持っていないチップでも動かしています。チップが同じなのは良い兆しですが、動作の保証ではありません。以下のプレイヤーの結果は、v1.0.0より前のチップ別ダウンロードによるものです。
 <span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1060">テスト結果</a></span>
 <span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1059">テスト結果</a></span>

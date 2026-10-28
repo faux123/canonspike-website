@@ -28,7 +28,7 @@ Seit v1.0.0 ist PanVK ein einziger Treiber mit einem einzigen Namen: dieselbe Da
 Turnip · Adreno
 Turnip für die Adreno-Serien 600, 700 und 800
 Für Qualcomm-Snapdragon-Geräte. Entwickelt auf dem AYN Odin 3 (Adreno 830).
-<a class="btn" href="https://github.com/faux123/turnip-faux123-driver/releases" rel="noopener">Herunterladen</a><span class="ver">Neueste öffentliche Version
+<a class="btn" href="https://github.com/faux123/turnip-faux123-driver/releases" rel="noopener">Herunterladen</a><span class="ver" hidden>Neueste öffentliche Version
 Dieser Treiber erreicht die meisten Geräte. Turnip spricht mit allen aktuellen Adreno-Chips dieselbe Sprache, deshalb läuft dieselbe Datei auf fünf Generationen von Snapdragon-Grafik, von Galaxy-Smartphones aus dem Jahr 2021 bis zu den neuesten Handhelds.
 Grafikchips, auf denen er gelaufen ist
 Geräte
@@ -46,7 +46,7 @@ Dazu gehören das Retroid Pocket 5, das Retroid Pocket Mini und das AYN Odin 2
 PanVK · Mali
 PanVK für Mali
 Für Arm-Mali-Geräte. Gebaut auf vier Geräten, die ich besitze: dem Google Pixel 7 (Mali-G710), dem GameForce Ace (Mali-G610), dem Retroid Pocket 4 Pro (Mali-G77) und dem Anbernic RG556 (Mali-G57).
-<a class="btn" href="https://github.com/faux123/panvk-faux123-driver-ace/releases" rel="noopener">Herunterladen</a><span class="ver">Neueste öffentliche Version
+<a class="btn" href="https://github.com/faux123/panvk-faux123-driver-ace/releases" rel="noopener">Herunterladen</a><span class="ver" hidden>Neueste öffentliche Version
 Eine Datei für jeden Mali-Chip, den er kennt. Er erkennt den Chip, auf dem er läuft, und schaltet nur die Korrekturen ein, die dieser Chip braucht, und ich teste jede Version auf allen vier meiner Geräte. Spieler haben ihn auch auf Chips ausgeführt, die ich nicht besitze, etwa dem Mali-G715 im Pixel 8a und Pixel 9 und dem Mali-G720 im POCO X7 Pro. Ein passender Chip ist ein gutes Zeichen, kein Versprechen. Die Spielerergebnisse unten stammen von den Downloads je Chip aus der Zeit vor v1.0.0.
 <span class="badge b-home">Entwickelt auf</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1060">Testergebnis</a></span>
 <span class="badge b-home">Entwickelt auf</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1059">Testergebnis</a></span>

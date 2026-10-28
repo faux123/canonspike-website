@@ -28,7 +28,7 @@ Sejak v1.0.0, PanVK adalah satu driver dengan satu nama: file yang sama untuk se
 Turnip · Adreno
 Turnip untuk seri Adreno 600, 700, dan 800
 Untuk perangkat Qualcomm Snapdragon. Dikembangkan di AYN Odin 3 (Adreno 830).
-<a class="btn" href="https://github.com/faux123/turnip-faux123-driver/releases" rel="noopener">Unduh</a><span class="ver">Rilis publik terbaru
+<a class="btn" href="https://github.com/faux123/turnip-faux123-driver/releases" rel="noopener">Unduh</a><span class="ver" hidden>Rilis publik terbaru
 Inilah yang jangkauannya paling luas. Turnip memakai bahasa yang sama untuk semua chip Adreno modern, jadi satu file yang sama sudah berjalan di lima generasi grafis Snapdragon, dari ponsel Galaxy tahun 2021 sampai handheld terbaru.
 Chip grafis tempat driver ini berjalan
 Perangkat
@@ -46,7 +46,7 @@ Termasuk Retroid Pocket 5, Retroid Pocket Mini, dan AYN Odin 2
 PanVK · Mali
 PanVK untuk Mali
 Untuk perangkat Arm Mali. Dibuat di empat perangkat yang saya miliki: Google Pixel 7 (Mali-G710), GameForce Ace (Mali-G610), Retroid Pocket 4 Pro (Mali-G77), dan Anbernic RG556 (Mali-G57).
-<a class="btn" href="https://github.com/faux123/panvk-faux123-driver-ace/releases" rel="noopener">Unduh</a><span class="ver">Rilis publik terbaru
+<a class="btn" href="https://github.com/faux123/panvk-faux123-driver-ace/releases" rel="noopener">Unduh</a><span class="ver" hidden>Rilis publik terbaru
 Satu file untuk setiap chip Mali yang dikenalnya. Driver ini mengenali chip tempatnya berjalan dan hanya menyalakan perbaikan yang dibutuhkan chip itu, dan saya menguji setiap rilis di keempat perangkat saya. Pemain juga sudah menjalankannya di chip yang tidak saya miliki, seperti Mali-G715 di Pixel 8a dan Pixel 9 serta Mali-G720 di POCO X7 Pro. Chip yang sama adalah pertanda baik, bukan janji. Hasil pemain di bawah berasal dari unduhan per chip sebelum v1.0.0.
 <span class="badge b-home">Dikembangkan di</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1060">Hasil tes</a></span>
 <span class="badge b-home">Dikembangkan di</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1059">Hasil tes</a></span>

@@ -28,7 +28,7 @@ Since v1.0.0, PanVK is one driver with one name: the same file for every Mali de
 Turnip · Adreno
 Turnip for Adreno 600, 700, and 800 series
 For Qualcomm Snapdragon devices. Built on the AYN Odin 3 (Adreno 830).
-<a class="btn" href="https://github.com/faux123/turnip-faux123-driver/releases" rel="noopener">Download</a><span class="ver">Latest public release
+<a class="btn" href="https://github.com/faux123/turnip-faux123-driver/releases" rel="noopener">Download</a><span class="ver" hidden>Latest public release
 This one has the widest reach. Turnip speaks the same language to every modern Adreno chip, so the same file has run on five generations of Snapdragon graphics, from 2021 Galaxy phones to the newest handhelds.
 Graphics chips it has run on
 Devices
@@ -46,7 +46,7 @@ That includes the Retroid Pocket 5 and Retroid Pocket Mini, and the AYN Odin 2
 PanVK · Mali
 PanVK for Mali
 For Arm Mali devices. Built on four devices I own: the Google Pixel 7 (Mali-G710), the GameForce Ace (Mali-G610), the Retroid Pocket 4 Pro (Mali-G77), and the Anbernic RG556 (Mali-G57).
-<a class="btn" href="https://github.com/faux123/panvk-faux123-driver-ace/releases" rel="noopener">Download</a><span class="ver">Latest public release
+<a class="btn" href="https://github.com/faux123/panvk-faux123-driver-ace/releases" rel="noopener">Download</a><span class="ver" hidden>Latest public release
 One file for every Mali chip it knows. It detects the chip it runs on and turns on only the fixes that chip needs, and I test every release on all four of my devices. Players have also run it on chips I do not own, such as the Mali-G715 in the Pixel 8a and Pixel 9 and the Mali-G720 in the POCO X7 Pro. A matching chip is a good sign, not a promise. The player results below come from the per-chip downloads from before v1.0.0.
 <span class="badge b-home">Built on</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1060">Test result</a></span>
 <span class="badge b-home">Built on</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1059">Test result</a></span>

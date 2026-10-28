@@ -28,7 +28,7 @@ Desde a v1.0.0, o PanVK é um só driver com um só nome: o mesmo arquivo para t
 Turnip · Adreno
 Turnip para as séries Adreno 600, 700 e 800
 Para aparelhos Qualcomm Snapdragon. Desenvolvido no AYN Odin 3 (Adreno 830).
-<a class="btn" href="https://github.com/faux123/turnip-faux123-driver/releases" rel="noopener">Baixar</a><span class="ver">Última versão pública
+<a class="btn" href="https://github.com/faux123/turnip-faux123-driver/releases" rel="noopener">Baixar</a><span class="ver" hidden>Última versão pública
 Este é o que chega a mais aparelhos. O Turnip fala a mesma língua com todos os chips Adreno modernos, então o mesmo arquivo já rodou em cinco gerações de gráficos Snapdragon, dos celulares Galaxy de 2021 aos portáteis mais novos.
 Chips gráficos em que ele já rodou
 Aparelhos
@@ -46,7 +46,7 @@ Isso inclui o Retroid Pocket 5, o Retroid Pocket Mini e o AYN Odin 2
 PanVK · Mali
 PanVK para Mali
 Para aparelhos Arm Mali. Feito em quatro aparelhos que eu tenho: o Google Pixel 7 (Mali-G710), o GameForce Ace (Mali-G610), o Retroid Pocket 4 Pro (Mali-G77) e o Anbernic RG556 (Mali-G57).
-<a class="btn" href="https://github.com/faux123/panvk-faux123-driver-ace/releases" rel="noopener">Baixar</a><span class="ver">Última versão pública
+<a class="btn" href="https://github.com/faux123/panvk-faux123-driver-ace/releases" rel="noopener">Baixar</a><span class="ver" hidden>Última versão pública
 Um só arquivo para cada chip Mali que ele conhece. Ele detecta o chip em que roda e liga só as correções de que esse chip precisa, e eu testo cada versão nos meus quatro aparelhos. Jogadores também já o rodaram em chips que eu não tenho, como o Mali-G715 do Pixel 8a e do Pixel 9 e o Mali-G720 do POCO X7 Pro. Um chip igual é um bom sinal, não uma promessa. Os resultados de jogadores abaixo vêm dos downloads por chip de antes da v1.0.0.
 <span class="badge b-home">Desenvolvido em</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1060">Resultado do teste</a></span>
 <span class="badge b-home">Desenvolvido em</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1059">Resultado do teste</a></span>

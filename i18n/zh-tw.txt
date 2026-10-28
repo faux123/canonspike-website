@@ -28,7 +28,7 @@ Turnip 適用於搭載高通 Snapdragon 晶片（Adreno 圖形）的手機和掌
 Turnip · Adreno
 適用 Adreno 600、700、800 系列的 Turnip
 適用於高通 Snapdragon 裝置。在 AYN Odin 3（Adreno 830）上開發。
-<a class="btn" href="https://github.com/faux123/turnip-faux123-driver/releases" rel="noopener">下載</a><span class="ver">最新公開版本
+<a class="btn" href="https://github.com/faux123/turnip-faux123-driver/releases" rel="noopener">下載</a><span class="ver" hidden>最新公開版本
 這款涵蓋範圍最廣。Turnip 與每一代現代 Adreno 晶片溝通的方式都相同，所以同一個檔案已經在五代 Snapdragon 圖形晶片上跑過，從 2021 年的 Galaxy 手機到最新的掌機都有。
 已確認可執行的圖形晶片
 裝置
@@ -46,7 +46,7 @@ Turnip · Adreno
 PanVK · Mali
 適用 Mali 的 PanVK
 適用於 Arm Mali 裝置。在我擁有的四台裝置上打造：Google Pixel 7（Mali-G710）、GameForce Ace（Mali-G610）、Retroid Pocket 4 Pro（Mali-G77）和 Anbernic RG556（Mali-G57）。
-<a class="btn" href="https://github.com/faux123/panvk-faux123-driver-ace/releases" rel="noopener">下載</a><span class="ver">最新公開版本
+<a class="btn" href="https://github.com/faux123/panvk-faux123-driver-ace/releases" rel="noopener">下載</a><span class="ver" hidden>最新公開版本
 一個檔案對應它認得的每一款 Mali 晶片。它會辨識所執行的晶片，只開啟該晶片需要的修正，每次發布我都會在自己的四台裝置上測試。玩家也在我沒有的晶片上執行過它，例如 Pixel 8a 和 Pixel 9 的 Mali-G715，以及 POCO X7 Pro 的 Mali-G720。晶片相同是好兆頭，但不是保證。下方的玩家結果來自 v1.0.0 之前依晶片區分的下載。
 <span class="badge b-home">開發機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1060">測試結果</a></span>
 <span class="badge b-home">開發機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1059">測試結果</a></span>
