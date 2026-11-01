@@ -107,8 +107,9 @@ background:radial-gradient(420px 160px at 0 0,color-mix(in srgb,var(--a1) 16%,tr
 
 /* device list: rows on desktop, stacked cards on phones */
 .devs{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:14px;overflow:hidden}
-.devs li{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr) auto minmax(0,1.2fr);gap:6px 16px;align-items:center;padding:12px 16px;border-top:1px solid var(--line);background:var(--card)}
+.devs li{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr) 11em minmax(0,1.2fr);gap:6px 16px;align-items:center;padding:12px 16px;border-top:1px solid var(--line);background:var(--card)}
 .devs li:first-child{border-top:0}
+.devs li>.badge{justify-self:center}
 .devs li.is-home{background:color-mix(in srgb,var(--gold) 7%,var(--card))}
 .dev{font-weight:700}
 .chip-name{color:var(--muted);font-size:.92rem}
