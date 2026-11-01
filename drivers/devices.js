@@ -23,7 +23,7 @@
   // "AYN Odin2 Portal" and "AYN Odin 2 Portal", "Galaxy S21+ 5G" and "Galaxy S21+" are one device.
   const norm = (s) => String(s || "").toLowerCase().replace(/^moorechip\s+/, "").replace(/\s+5g$/, "").replace(/[^a-z0-9+]+/g, "");
   const chipName = (fam, gpu) => {
-    const m = fam === "adreno" ? String(gpu).match(/Adreno \d{3}/) : String(gpu).match(/Mali-G\d+/);
+    const m = fam === "adreno" ? String(gpu).match(/Adreno \d{3,4}/) : String(gpu).match(/Mali-[GT]\d+/);
     return m ? m[0] : String(gpu || "");
   };
   const span = (cls, text, notr) => {
