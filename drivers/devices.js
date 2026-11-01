@@ -42,7 +42,7 @@
     li.append(span(`badge ${cls}`, legend(cls)));
     const src = span("src", "");
     const a = document.createElement("a");
-    a.href = `https://fauxvkdb.canonspike.com/report/${report}`;
+    a.href = `https://fauxvkdb.canonspike.com/report/${Number(report)}`;
     a.textContent = kind.speed ? words.speed : words.check;
     src.append(a);
     li.append(src);
@@ -57,20 +57,24 @@
     const staticRows = [...list.children];
     const homeNames = new Set(staticRows.filter((li) => li.classList.contains("is-home"))
       .map((li) => norm(li.querySelector(".dev")?.textContent)));
-    // One row per device: its newest driver check, else its newest speed test.
+    // One row per device and chip: its newest driver check, else its newest speed test. Sorted here, so the
+    // order FauxVkDB sends does not matter; a row without a numeric report id is dropped.
+    const key = (dev, gpu) => `${norm(dev)}|${chipName(fam, gpu)}`;
+    const newest = (rows) => (rows || []).filter((r) => Number.isInteger(r.report))
+      .sort((x, y) => (y.received || 0) - (x.received || 0) || y.report - x.report);
     const seen = new Map();
-    for (const c of feed.checks || []) {
-      const k = norm(c.device);
-      if (!seen.has(k)) seen.set(k, row(fam, c.device, { gpu: c.gpu }, c.report, c.problems, homeNames.has(k)));
+    for (const c of newest(feed.checks)) {
+      const k = key(c.device, c.gpu);
+      if (!seen.has(k)) seen.set(k, row(fam, c.device, { gpu: c.gpu }, c.report, c.problems, homeNames.has(norm(c.device))));
     }
-    for (const s of feed.speed || []) {
-      const k = norm(s.device);
-      if (!seen.has(k)) seen.set(k, row(fam, s.device, { gpu: s.gpu, speed: true }, s.report, 0, homeNames.has(k)));
+    for (const s of newest(feed.speed)) {
+      const k = key(s.device, s.gpu);
+      if (!seen.has(k)) seen.set(k, row(fam, s.device, { gpu: s.gpu, speed: true }, s.report, 0, homeNames.has(norm(s.device))));
     }
     if (!seen.size) continue;
     // Built-on devices first, then FauxVkDB rows (newest first), then the page's own rows FauxVkDB does not cover.
     const live = [...seen.values()];
-    const kept = staticRows.filter((li) => !seen.has(norm(li.querySelector(".dev")?.textContent)));
+    const kept = staticRows.filter((li) => !seen.has(key(li.querySelector(".dev")?.textContent, li.querySelector(".chip-name")?.textContent)));
     const home = [...live.filter((li) => li.classList.contains("is-home")), ...kept.filter((li) => li.classList.contains("is-home"))];
     const rest = [...live.filter((li) => !li.classList.contains("is-home")), ...kept.filter((li) => !li.classList.contains("is-home"))];
     list.replaceChildren(...home, ...rest);
