@@ -32,9 +32,9 @@ Pour les appareils Qualcomm Snapdragon. Développé sur l'AYN Odin 3 (Adreno 830
 C'est celui qui couvre le plus d'appareils. Turnip fonctionne de la même façon avec toutes les puces Adreno récentes : le même fichier a tourné sur cinq générations de graphismes Snapdragon, des téléphones Galaxy de 2021 aux consoles portables les plus récentes.
 Puces graphiques sur lesquelles il a tourné
 Appareils
-<span class="badge b-home">Développé sur</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/4">Résultat du test</a></span>
+<span class="badge b-home">Développé sur</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/4" data-word="check">Résultat du test</a></span>
 <span class="badge b-ok">Fonctionne</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/604">Résultat du test</a></span>
-<span class="badge b-ok">Fonctionne</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/641">Test de performance</a></span>
+<span class="badge b-ok">Fonctionne</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/641" data-word="speed">Test de performance</a></span>
 <span class="badge b-ok">Fonctionne</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/235">Résultat du test</a></span>
 <span class="badge b-ok">Fonctionne</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/102">Test de performance</a></span>
 <span class="badge b-ok">Fonctionne</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/32">Résultat du test</a></span>

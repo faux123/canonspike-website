@@ -32,9 +32,9 @@ Para aparelhos Qualcomm Snapdragon. Desenvolvido no AYN Odin 3 (Adreno 830).
 Este é o que chega a mais aparelhos. O Turnip fala a mesma língua com todos os chips Adreno modernos, então o mesmo arquivo já rodou em cinco gerações de gráficos Snapdragon, dos celulares Galaxy de 2021 aos portáteis mais novos.
 Chips gráficos em que ele já rodou
 Aparelhos
-<span class="badge b-home">Desenvolvido em</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/4">Resultado do teste</a></span>
+<span class="badge b-home">Desenvolvido em</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/4" data-word="check">Resultado do teste</a></span>
 <span class="badge b-ok">Funciona</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/604">Resultado do teste</a></span>
-<span class="badge b-ok">Funciona</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/641">Teste de velocidade</a></span>
+<span class="badge b-ok">Funciona</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/641" data-word="speed">Teste de velocidade</a></span>
 <span class="badge b-ok">Funciona</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/235">Resultado do teste</a></span>
 <span class="badge b-ok">Funciona</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/102">Teste de velocidade</a></span>
 <span class="badge b-ok">Funciona</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/32">Resultado do teste</a></span>

@@ -14,12 +14,12 @@
     const b = document.querySelector(`.legend .badge.${cls}`);
     return b ? b.textContent : "";
   };
-  // Link words, read from rows the page ships in every language: report 4 is a driver check, 641 a speed test.
-  const linkWord = (id, fallback) => {
-    const a = document.querySelector(`.devs .src a[href$="/report/${id}"]`);
+  // Link words, read from the two page rows marked data-word (a driver check and a speed test) in every language.
+  const linkWord = (kind, fallback) => {
+    const a = document.querySelector(`.devs .src a[data-word="${kind}"]`);
     return a ? a.textContent : fallback;
   };
-  const words = { check: linkWord(4, "Test result"), speed: linkWord(641, "Speed test") };
+  const words = { check: linkWord("check", "Test result"), speed: linkWord("speed", "Speed test") };
   // "AYN Odin2 Portal" and "AYN Odin 2 Portal", "Galaxy S21+ 5G" and "Galaxy S21+" are one device.
   const norm = (s) => String(s || "").toLowerCase().replace(/^moorechip\s+/, "").replace(/\s+5g$/, "").replace(/[^a-z0-9+]+/g, "");
   const chipName = (fam, gpu) => {
@@ -79,7 +79,7 @@
     const chipsBox = card.querySelector(".chips");
     const homeChips = new Set([...(chipsBox?.querySelectorAll(".gpu.home") || [])].map((g) => g.textContent));
     const chips = [...new Set([...list.querySelectorAll(".chip-name")].map((c) => chipName(fam, c.textContent)).filter(Boolean))]
-      .sort((x, y) => parseInt(x.replace(/\D+/g, "")) - parseInt(y.replace(/\D+/g, "")));
+      .sort((x, y) => (parseInt(x.replace(/\D+/g, "")) || 0) - (parseInt(y.replace(/\D+/g, "")) || 0));
     if (chipsBox && chips.length) {
       chipsBox.replaceChildren(...chips.map((c) => span(homeChips.has(c) ? "gpu home" : "gpu", c)));
     }

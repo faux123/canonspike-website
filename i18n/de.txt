@@ -32,9 +32,9 @@ Für Qualcomm-Snapdragon-Geräte. Entwickelt auf dem AYN Odin 3 (Adreno 830).
 Dieser Treiber erreicht die meisten Geräte. Turnip spricht mit allen aktuellen Adreno-Chips dieselbe Sprache, deshalb läuft dieselbe Datei auf fünf Generationen von Snapdragon-Grafik, von Galaxy-Smartphones aus dem Jahr 2021 bis zu den neuesten Handhelds.
 Grafikchips, auf denen er gelaufen ist
 Geräte
-<span class="badge b-home">Entwickelt auf</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/4">Testergebnis</a></span>
+<span class="badge b-home">Entwickelt auf</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/4" data-word="check">Testergebnis</a></span>
 <span class="badge b-ok">Läuft</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/604">Testergebnis</a></span>
-<span class="badge b-ok">Läuft</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/641">Benchmark</a></span>
+<span class="badge b-ok">Läuft</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/641" data-word="speed">Benchmark</a></span>
 <span class="badge b-ok">Läuft</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/235">Testergebnis</a></span>
 <span class="badge b-ok">Läuft</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/102">Benchmark</a></span>
 <span class="badge b-ok">Läuft</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/32">Testergebnis</a></span>

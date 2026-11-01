@@ -32,9 +32,9 @@ Per dispositivi Qualcomm Snapdragon. Sviluppato su AYN Odin 3 (Adreno 830).
 È quello che copre più dispositivi. Turnip si comporta allo stesso modo con tutti i chip Adreno moderni, quindi lo stesso file ha girato su cinque generazioni di grafica Snapdragon, dai telefoni Galaxy del 2021 agli handheld più recenti.
 Chip grafici su cui ha girato
 Dispositivi
-<span class="badge b-home">Sviluppato su</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/4">Risultato del test</a></span>
+<span class="badge b-home">Sviluppato su</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/4" data-word="check">Risultato del test</a></span>
 <span class="badge b-ok">Funziona</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/604">Risultato del test</a></span>
-<span class="badge b-ok">Funziona</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/641">Test di velocità</a></span>
+<span class="badge b-ok">Funziona</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/641" data-word="speed">Test di velocità</a></span>
 <span class="badge b-ok">Funziona</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/235">Risultato del test</a></span>
 <span class="badge b-ok">Funziona</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/102">Test di velocità</a></span>
 <span class="badge b-ok">Funziona</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/32">Risultato del test</a></span>

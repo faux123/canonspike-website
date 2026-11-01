@@ -32,9 +32,9 @@ Qualcomm Snapdragon搭載デバイス向けです。AYN Odin 3（Adreno 830）�
 最も幅広く使えるドライバーです。Turnipは最近のどのAdrenoチップにも同じ方法でやり取りするため、同じファイルが、2021年のGalaxyスマートフォンから最新のゲーム機まで、5世代のSnapdragonグラフィックで動いています。
 動作が確認されたグラフィックチップ
 デバイス
-<span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/4">テスト結果</a></span>
+<span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/4" data-word="check">テスト結果</a></span>
 <span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/604">テスト結果</a></span>
-<span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/641">速度テスト</a></span>
+<span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/641" data-word="speed">速度テスト</a></span>
 <span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/235">テスト結果</a></span>
 <span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/102">速度テスト</a></span>
 <span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/32">テスト結果</a></span>

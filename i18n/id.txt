@@ -32,9 +32,9 @@ Untuk perangkat Qualcomm Snapdragon. Dikembangkan di AYN Odin 3 (Adreno 830).
 Inilah yang jangkauannya paling luas. Turnip memakai bahasa yang sama untuk semua chip Adreno modern, jadi satu file yang sama sudah berjalan di lima generasi grafis Snapdragon, dari ponsel Galaxy tahun 2021 sampai handheld terbaru.
 Chip grafis tempat driver ini berjalan
 Perangkat
-<span class="badge b-home">Dikembangkan di</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/4">Hasil tes</a></span>
+<span class="badge b-home">Dikembangkan di</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/4" data-word="check">Hasil tes</a></span>
 <span class="badge b-ok">Berfungsi</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/604">Hasil tes</a></span>
-<span class="badge b-ok">Berfungsi</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/641">Tes kecepatan</a></span>
+<span class="badge b-ok">Berfungsi</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/641" data-word="speed">Tes kecepatan</a></span>
 <span class="badge b-ok">Berfungsi</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/235">Hasil tes</a></span>
 <span class="badge b-ok">Berfungsi</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/102">Tes kecepatan</a></span>
 <span class="badge b-ok">Berfungsi</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/32">Hasil tes</a></span>

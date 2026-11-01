@@ -32,9 +32,9 @@ For Qualcomm Snapdragon devices. Built on the AYN Odin 3 (Adreno 830).
 This one has the widest reach. Turnip speaks the same language to every modern Adreno chip, so the same file has run on five generations of Snapdragon graphics, from 2021 Galaxy phones to the newest handhelds.
 Graphics chips it has run on
 Devices
-<span class="badge b-home">Built on</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/4">Test result</a></span>
+<span class="badge b-home">Built on</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/4" data-word="check">Test result</a></span>
 <span class="badge b-ok">Works</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/604">Test result</a></span>
-<span class="badge b-ok">Works</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/641">Speed test</a></span>
+<span class="badge b-ok">Works</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/641" data-word="speed">Speed test</a></span>
 <span class="badge b-ok">Works</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/235">Test result</a></span>
 <span class="badge b-ok">Works</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/102">Speed test</a></span>
 <span class="badge b-ok">Works</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/32">Test result</a></span>

@@ -32,9 +32,9 @@ Turnip · Adreno
 这款覆盖范围最广。Turnip 与每一代现代 Adreno 芯片的通信方式都相同，所以同一个文件已经在五代 Snapdragon 图形芯片上跑过，从 2021 年的 Galaxy 手机到最新的掌机。
 已确认运行的图形芯片
 设备
-<span class="badge b-home">开发机</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/4">测试结果</a></span>
+<span class="badge b-home">开发机</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/4" data-word="check">测试结果</a></span>
 <span class="badge b-ok">可用</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/604">测试结果</a></span>
-<span class="badge b-ok">可用</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/641">跑分测试</a></span>
+<span class="badge b-ok">可用</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/641" data-word="speed">跑分测试</a></span>
 <span class="badge b-ok">可用</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/235">测试结果</a></span>
 <span class="badge b-ok">可用</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/102">跑分测试</a></span>
 <span class="badge b-ok">可用</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/32">测试结果</a></span>
