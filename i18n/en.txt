@@ -43,6 +43,9 @@ Devices
 <span class="badge b-ok">Works</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/30">Test result</a></span>
 Any other device with Adreno 600, 700, or 800 series graphics
 That includes the Retroid Pocket 5 and Retroid Pocket Mini, and the AYN Odin 2
+Using DroidDeck?
+DroidDeck runs the Linux Steam client on Android and needs two drivers: one for its own screen and one for the Linux side where Steam and your games run. The DroidDeck download has both, in one ZIP file: on its page, pick the file that ends in <code>-droiddeck-bundle.zip</code>. So far it is tested on the AYN Odin 3 only.
+<a class="btn" href="https://github.com/faux123/turnip-faux123-droiddeck/releases" rel="noopener">Download for DroidDeck</a><span class="ver" hidden>Latest public release
 PanVK · Mali
 PanVK for Mali
 For Arm Mali devices. Built on four devices I own: the Google Pixel 7 (Mali-G710), the GameForce Ace (Mali-G610), the Retroid Pocket 4 Pro (Mali-G77), and the Anbernic RG556 (Mali-G57).
@@ -70,7 +73,7 @@ Other Unisoc T820 devices
 An RG556 on its stock software (mine runs a custom kernel)
 How to use one
 Download the driver. It is one ZIP file. Do not unpack it.
-Open an emulator or game launcher that can load custom drivers (for example Winlator, GameNative, or Eden), find its graphics driver setting, and choose the ZIP file.
+Open an emulator or game launcher that can load custom drivers (for example Winlator, GameNative, or Eden), find its graphics driver setting, and choose the ZIP file. In DroidDeck, use the DroidDeck download: open Components, tap Import .zip, and choose the file.
 Want to check it first, or add your device to this page? Run a driver check in <a href="https://play.google.com/store/apps/details?id=com.faux.vktest" rel="noopener">FauxVkTest</a> and upload the result to <a href="https://fauxvkdb.canonspike.com/">FauxVkDB</a>.
 These drivers come with no support. A driver can do better than your device's own driver in one game and worse in another. Your device's own driver stays installed, and every other app keeps using it.
 Apps from the same developer

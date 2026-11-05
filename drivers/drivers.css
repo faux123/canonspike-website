@@ -93,6 +93,7 @@ background:radial-gradient(420px 160px at 0 0,color-mix(in srgb,var(--a1) 16%,tr
 .kicker{font-size:.8rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--a1);margin:0 0 4px}
 .dhead p{margin:0;color:var(--muted)}
 .dhead .get{display:flex;flex-direction:column;align-items:flex-end;gap:6px}
+.altpkg{display:grid;gap:8px}.altpkg p{margin:0}.altpkg .get{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
 .btn{min-height:48px;padding:0 20px;border-radius:14px;border:0;background:linear-gradient(100deg,var(--a1),var(--a2));color:#04141c;font:700 1rem var(--sans);display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.25);transition:transform .15s,filter .15s;white-space:nowrap}
 .btn:hover{transform:translateY(-1px);filter:brightness(1.08)}
 .ver{color:var(--muted);font-size:.85rem}

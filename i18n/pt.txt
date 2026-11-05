@@ -43,6 +43,9 @@ Aparelhos
 <span class="badge b-ok">Funciona</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/30">Resultado do teste</a></span>
 Qualquer outro aparelho com gráficos Adreno das séries 600, 700 ou 800
 Isso inclui o Retroid Pocket 5, o Retroid Pocket Mini e o AYN Odin 2
+Usa o DroidDeck?
+O DroidDeck roda o cliente Steam para Linux no Android e precisa de dois drivers: um para a própria tela e outro para o lado Linux, onde rodam o Steam e seus jogos. O download para DroidDeck traz os dois, em um só arquivo ZIP: na página dele, escolha o arquivo que termina em <code>-droiddeck-bundle.zip</code>. Por enquanto, só foi testado no AYN Odin 3.
+<a class="btn" href="https://github.com/faux123/turnip-faux123-droiddeck/releases" rel="noopener">Baixar para DroidDeck</a><span class="ver" hidden>Última versão pública
 PanVK · Mali
 PanVK para Mali
 Para aparelhos Arm Mali. Feito em quatro aparelhos que eu tenho: o Google Pixel 7 (Mali-G710), o GameForce Ace (Mali-G610), o Retroid Pocket 4 Pro (Mali-G77) e o Anbernic RG556 (Mali-G57).
@@ -70,7 +73,7 @@ Outros aparelhos com Unisoc T820
 Um RG556 com o software original (o meu roda um kernel customizado)
 Como usar um driver
 Baixe o driver. É um único arquivo ZIP. Não extraia.
-Abra um emulador ou launcher de jogos que carregue drivers customizados (por exemplo Winlator, GameNative ou Eden), encontre a configuração do driver gráfico e escolha o arquivo ZIP.
+Abra um emulador ou launcher de jogos que carregue drivers customizados (por exemplo Winlator, GameNative ou Eden), encontre a configuração do driver gráfico e escolha o arquivo ZIP. No DroidDeck, use o download para DroidDeck: abra Components, toque em Import .zip e escolha o arquivo.
 Quer conferir antes ou colocar o seu aparelho nesta página? Rode uma verificação do driver no <a href="https://play.google.com/store/apps/details?id=com.faux.vktest" rel="noopener">FauxVkTest</a> e envie o resultado para o <a href="https://fauxvkdb.canonspike.com/">FauxVkDB</a>.
 Estes drivers não têm suporte. Um driver pode ser melhor que o driver do seu aparelho em um jogo e pior em outro. O driver do seu aparelho continua instalado, e todos os outros apps continuam usando esse driver.
 Apps do mesmo desenvolvedor

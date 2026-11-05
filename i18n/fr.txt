@@ -43,6 +43,9 @@ Appareils
 <span class="badge b-ok">Fonctionne</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/30">Résultat du test</a></span>
 Tout autre appareil à graphismes Adreno de la série 600, 700 ou 800
 Cela inclut la Retroid Pocket 5, la Retroid Pocket Mini et l'AYN Odin 2
+Vous utilisez DroidDeck ?
+DroidDeck fait tourner le client Steam pour Linux sur Android et a besoin de deux pilotes : un pour son propre écran et un pour la partie Linux, où tournent Steam et vos jeux. Le téléchargement pour DroidDeck contient les deux, dans un seul fichier ZIP : sur sa page, choisissez le fichier qui se termine par <code>-droiddeck-bundle.zip</code>. Pour l'instant, il n'est testé que sur l'AYN Odin 3.
+<a class="btn" href="https://github.com/faux123/turnip-faux123-droiddeck/releases" rel="noopener">Télécharger pour DroidDeck</a><span class="ver" hidden>Dernière version publique
 PanVK · Mali
 PanVK pour Mali
 Pour les appareils Arm Mali. Conçu sur quatre appareils que je possède : le Google Pixel 7 (Mali-G710), la GameForce Ace (Mali-G610), la Retroid Pocket 4 Pro (Mali-G77) et l'Anbernic RG556 (Mali-G57).
@@ -70,7 +73,7 @@ Autres appareils Unisoc T820
 Une RG556 avec son logiciel d'origine (la mienne tourne sous un kernel custom)
 Comment en utiliser un
 Téléchargez le pilote. C'est un simple fichier ZIP. Ne le décompressez pas.
-Ouvrez un émulateur ou un lanceur de jeux capable de charger des pilotes personnalisés (par exemple Winlator, GameNative ou Eden), trouvez son réglage de pilote graphique et choisissez le fichier ZIP.
+Ouvrez un émulateur ou un lanceur de jeux capable de charger des pilotes personnalisés (par exemple Winlator, GameNative ou Eden), trouvez son réglage de pilote graphique et choisissez le fichier ZIP. Dans DroidDeck, utilisez le téléchargement pour DroidDeck : ouvrez Components, touchez Import .zip et choisissez le fichier.
 Envie de vérifier d'abord, ou d'ajouter votre appareil à cette page ? Lancez une vérification du pilote dans <a href="https://play.google.com/store/apps/details?id=com.faux.vktest" rel="noopener">FauxVkTest</a> et envoyez le résultat à <a href="https://fauxvkdb.canonspike.com/">FauxVkDB</a>.
 Ces pilotes sont fournis sans support. Un pilote peut faire mieux que celui de votre appareil dans un jeu et moins bien dans un autre. Le pilote de votre appareil reste installé et toutes les autres applications continuent de l'utiliser.
 Applications du même développeur

@@ -43,6 +43,9 @@ Turnip · Adreno
 <span class="badge b-ok">可用</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/30">测试结果</a></span>
 其他搭载 Adreno 600、700 或 800 系列图形的设备
 包括 Retroid Pocket 5、Retroid Pocket Mini 和 AYN Odin 2
+在用 DroidDeck？
+DroidDeck 在 Android 上运行 Linux 版 Steam 客户端，需要两个驱动：一个用于它自己的画面，另一个用于运行 Steam 和游戏的 Linux 部分。DroidDeck 版下载把两个驱动放在同一个 ZIP 文件里：在下载页面上，选择文件名以 <code>-droiddeck-bundle.zip</code> 结尾的文件。目前只在 AYN Odin 3 上测试过。
+<a class="btn" href="https://github.com/faux123/turnip-faux123-droiddeck/releases" rel="noopener">下载 DroidDeck 版</a><span class="ver" hidden>最新公开版本
 PanVK · Mali
 面向 Mali 的 PanVK
 适用于 Arm Mali 设备。在我拥有的四台设备上打造：Google Pixel 7（Mali-G710）、GameForce Ace（Mali-G610）、Retroid Pocket 4 Pro（Mali-G77）和 Anbernic RG556（Mali-G57）。
@@ -70,7 +73,7 @@ Pixel 8、Pixel 8 Pro 和 Pixel 9 Pro（与 Pixel 8a、Pixel 9 同属一个芯�
 运行原厂系统的 RG556（我的那台运行的是自定义内核）
 使用方法
 下载驱动。它是一个 ZIP 文件，不要解压。
-打开支持加载第三方驱动的模拟器或游戏启动器（例如 Winlator、GameNative 或 Eden），找到图形驱动设置，选择这个 ZIP 文件。
+打开支持加载第三方驱动的模拟器或游戏启动器（例如 Winlator、GameNative 或 Eden），找到图形驱动设置，选择这个 ZIP 文件。在 DroidDeck 中，请使用 DroidDeck 版下载：打开 Components，点 Import .zip，选择这个文件。
 想先检查一下，或想把你的设备加到本页？请在 <a href="https://play.google.com/store/apps/details?id=com.faux.vktest" rel="noopener">FauxVkTest</a> 中运行驱动检测，并把结果上传到 <a href="https://fauxvkdb.canonspike.com/">FauxVkDB</a>。
 这些驱动不提供技术支持。一款驱动可能在某个游戏里比设备自带的驱动更好，在另一个游戏里更差。设备自带的驱动仍然保留，其他应用继续使用它。
 同一开发者的其他应用

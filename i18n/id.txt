@@ -43,6 +43,9 @@ Perangkat
 <span class="badge b-ok">Berfungsi</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/30">Hasil tes</a></span>
 Perangkat lain mana pun dengan grafis Adreno seri 600, 700, atau 800
 Termasuk Retroid Pocket 5, Retroid Pocket Mini, dan AYN Odin 2
+Pakai DroidDeck?
+DroidDeck menjalankan klien Steam untuk Linux di Android dan butuh dua driver: satu untuk layarnya sendiri dan satu untuk sisi Linux, tempat Steam dan game kamu berjalan. Unduhan untuk DroidDeck berisi keduanya, dalam satu file ZIP: di halamannya, pilih file yang namanya berakhiran <code>-droiddeck-bundle.zip</code>. Sejauh ini baru diuji di AYN Odin 3.
+<a class="btn" href="https://github.com/faux123/turnip-faux123-droiddeck/releases" rel="noopener">Unduh untuk DroidDeck</a><span class="ver" hidden>Rilis publik terbaru
 PanVK · Mali
 PanVK untuk Mali
 Untuk perangkat Arm Mali. Dibuat di empat perangkat yang saya miliki: Google Pixel 7 (Mali-G710), GameForce Ace (Mali-G610), Retroid Pocket 4 Pro (Mali-G77), dan Anbernic RG556 (Mali-G57).
@@ -70,7 +73,7 @@ Perangkat Unisoc T820 lainnya
 RG556 dengan software bawaan (punya saya memakai kernel kustom)
 Cara memakai
 Unduh drivernya. Berupa satu file ZIP. Jangan diekstrak.
-Buka emulator atau launcher game yang bisa memuat driver kustom (misalnya Winlator, GameNative, atau Eden), cari pengaturan driver grafisnya, lalu pilih file ZIP tersebut.
+Buka emulator atau launcher game yang bisa memuat driver kustom (misalnya Winlator, GameNative, atau Eden), cari pengaturan driver grafisnya, lalu pilih file ZIP tersebut. Di DroidDeck, pakai unduhan untuk DroidDeck: buka Components, ketuk Import .zip, lalu pilih file tersebut.
 Ingin memeriksanya dulu, atau menambahkan perangkat Anda ke halaman ini? Jalankan cek driver di <a href="https://play.google.com/store/apps/details?id=com.faux.vktest" rel="noopener">FauxVkTest</a> lalu unggah hasilnya ke <a href="https://fauxvkdb.canonspike.com/">FauxVkDB</a>.
 Driver-driver ini tanpa dukungan. Sebuah driver bisa lebih baik daripada driver bawaan perangkat Anda di satu game dan lebih buruk di game lain. Driver bawaan perangkat Anda tetap terpasang, dan semua aplikasi lain tetap memakainya.
 Aplikasi dari pengembang yang sama

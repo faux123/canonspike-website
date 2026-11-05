@@ -7,6 +7,7 @@
 // and has no such limit, so it is tried first; the API stays as the fallback. `?debug=1` adds why each one failed.
 const REPOS = [
   "turnip-faux123-driver",
+  "turnip-faux123-droiddeck",
   "panvk-faux123-driver-pixel7",
   "panvk-faux123-driver-ace",
   "panvk-faux123-driver-rp4pro",

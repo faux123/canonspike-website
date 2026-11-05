@@ -43,6 +43,9 @@ Geräte
 <span class="badge b-ok">Läuft</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/30">Testergebnis</a></span>
 Jedes andere Gerät mit Adreno-Grafik der Serien 600, 700 oder 800
 Dazu gehören das Retroid Pocket 5, das Retroid Pocket Mini und das AYN Odin 2
+Du nutzt DroidDeck?
+DroidDeck führt den Linux-Steam-Client auf Android aus und braucht zwei Treiber: einen für den eigenen Bildschirm und einen für die Linux-Seite, auf der Steam und deine Spiele laufen. Der DroidDeck-Download enthält beide, in einer ZIP-Datei: Wähle auf seiner Seite die Datei, die auf <code>-droiddeck-bundle.zip</code> endet. Bisher ist er nur auf dem AYN Odin 3 getestet.
+<a class="btn" href="https://github.com/faux123/turnip-faux123-droiddeck/releases" rel="noopener">Für DroidDeck herunterladen</a><span class="ver" hidden>Neueste öffentliche Version
 PanVK · Mali
 PanVK für Mali
 Für Arm-Mali-Geräte. Gebaut auf vier Geräten, die ich besitze: dem Google Pixel 7 (Mali-G710), dem GameForce Ace (Mali-G610), dem Retroid Pocket 4 Pro (Mali-G77) und dem Anbernic RG556 (Mali-G57).
@@ -70,7 +73,7 @@ Andere Geräte mit Unisoc T820
 Ein RG556 mit der Original-Software (meiner läuft mit einem Custom-Kernel)
 So nutzt du einen Treiber
 Lade den Treiber herunter. Es ist eine einzelne ZIP-Datei. Entpacke sie nicht.
-Öffne einen Emulator oder Game-Launcher, der Custom-Treiber laden kann (zum Beispiel Winlator, GameNative oder Eden), such die Einstellung für den Grafiktreiber und wähle die ZIP-Datei aus.
+Öffne einen Emulator oder Game-Launcher, der Custom-Treiber laden kann (zum Beispiel Winlator, GameNative oder Eden), such die Einstellung für den Grafiktreiber und wähle die ZIP-Datei aus. In DroidDeck nimmst du den DroidDeck-Download: Öffne Components, tippe auf Import .zip und wähle die Datei aus.
 Du willst ihn erst prüfen oder dein Gerät auf dieser Seite eintragen? Starte einen Treiber-Check in <a href="https://play.google.com/store/apps/details?id=com.faux.vktest" rel="noopener">FauxVkTest</a> und lade das Ergebnis zu <a href="https://fauxvkdb.canonspike.com/">FauxVkDB</a> hoch.
 Für diese Treiber gibt es keinen Support. Ein Treiber kann in einem Spiel besser sein als der Treiber deines Geräts und in einem anderen schlechter. Der Treiber deines Geräts bleibt installiert, und alle anderen Apps nutzen ihn weiter.
 Apps vom selben Entwickler
