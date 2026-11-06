@@ -7,6 +7,7 @@ FauxVkDB
 Un pilote, <span class="grad">toute une famille de puces</span>
 Un pilote graphique est le logiciel qui permet aux jeux de dessiner sur la puce graphique de votre appareil. Je conçois et teste chacun de mes pilotes sur des appareils que je possède. Les joueurs les essaient ensuite sur leurs propres téléphones et consoles portables, et certains y fonctionnent aussi.
 Cette page indique, pour chaque pilote, la famille de puces graphiques visée et toutes les puces sur lesquelles il a été vu en fonctionnement, avec un lien vers la preuve.
+<a class="news" href="#droiddeck"><span class="news-tag">Nouveau</span> <span class="news-text"><b>Turnip fonctionne maintenant dans DroidDeck.</b> Un seul téléchargement installe les deux pilotes dont DroidDeck a besoin : un pour son écran et un pour la partie Linux, où tournent Steam et vos jeux.</span> <span class="news-go" aria-hidden="true">&rarr;</span></a>
 En un coup d'œil
 Chaque pilote cible une famille de puces graphiques. Le nombre indique combien de puces différentes, de cette famille et d'ailleurs, ont été vues en fonctionnement avec le pilote jusqu'ici. Touchez un pilote pour voir les puces et les preuves.
 <span class="name">Turnip pour Adreno 600, 700, 800</span><span class="home">Graphismes Qualcomm Snapdragon</span> <span class="count">5<small>puces</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Adreno 660 à 840</span>

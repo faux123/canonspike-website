@@ -7,6 +7,7 @@ FauxVkDB
 一个驱动，<span class="grad">适配一系列芯片</span>
 图形驱动是让游戏在设备的图形芯片上绘制画面的软件。我在自己拥有的设备上打造并测试每一款驱动。之后玩家会在自己的手机和掌机上试用，其中一些设备也能运行。
 本页按驱动列出它所针对的图形芯片系列，以及目前已确认能运行它的所有芯片，并附有相应的验证链接。
+<a class="news" href="#droiddeck"><span class="news-tag">新</span> <span class="news-text"><b>Turnip 现在可以在 DroidDeck 中运行。</b> 一次下载即可装好 DroidDeck 需要的两个驱动：一个用于它自己的画面，另一个用于运行 Steam 和游戏的 Linux 部分。</span> <span class="news-go" aria-hidden="true">&rarr;</span></a>
 一览
 每款驱动针对一个图形芯片系列。数字表示该系列内外，目前已确认能运行这款驱动的不同芯片数量。点按驱动即可查看具体芯片和验证记录。
 <span class="name">面向 Adreno 600、700、800 的 Turnip</span><span class="home">高通 Snapdragon 图形芯片</span> <span class="count">5<small>款芯片</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Adreno 660 至 840</span>

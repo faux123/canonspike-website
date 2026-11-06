@@ -7,6 +7,7 @@ FauxVkDB
 One driver, <span class="grad">a family of chips</span>
 A graphics driver is the software that lets games draw on your device's graphics chip. I build and test each of my drivers on devices I own. Players then try them on their own phones and handhelds, and some of those work too.
 This page shows, for each driver, the graphics chip family it targets and every chip it has been seen running on, with a link to the proof.
+<a class="news" href="#droiddeck"><span class="news-tag">New</span> <span class="news-text"><b>Turnip now runs in DroidDeck.</b> One download sets both drivers DroidDeck needs: one for its screen and one for the Linux side where Steam and your games run.</span> <span class="news-go" aria-hidden="true">&rarr;</span></a>
 At a glance
 Each driver targets one family of graphics chips. The number is how many different chips in that family and beyond it have been seen running the driver so far. Tap a driver to see the chips and the proof.
 <span class="name">Turnip for Adreno 600, 700, 800</span><span class="home">Qualcomm Snapdragon graphics</span> <span class="count">5<small>chips</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Adreno 660 to 840</span>

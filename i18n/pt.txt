@@ -7,6 +7,7 @@ FauxVkDB
 Um driver, <span class="grad">uma família inteira de chips</span>
 Um driver gráfico é o software que permite que os jogos desenhem no chip gráfico do seu aparelho. Eu crio e testo cada um dos meus drivers em aparelhos que tenho. Depois, os jogadores testam nos próprios celulares e portáteis, e em alguns deles também funciona.
 Esta página mostra, para cada driver, a família de chips gráficos para a qual ele é feito e todos os chips em que ele já foi visto rodando, com um link para a prova.
+<a class="news" href="#droiddeck"><span class="news-tag">Novo</span> <span class="news-text"><b>O Turnip agora funciona no DroidDeck.</b> Um único download configura os dois drivers de que o DroidDeck precisa: um para a tela dele e outro para o lado Linux, onde rodam o Steam e os seus jogos.</span> <span class="news-go" aria-hidden="true">&rarr;</span></a>
 Resumo
 Cada driver é feito para uma família de chips gráficos. O número indica em quantos chips diferentes, dessa família e de fora dela, o driver já foi visto rodando. Toque em um driver para ver os chips e as provas.
 <span class="name">Turnip para Adreno 600, 700, 800</span><span class="home">Gráficos Qualcomm Snapdragon</span> <span class="count">5<small>chips</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Adreno 660 a 840</span>

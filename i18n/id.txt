@@ -7,6 +7,7 @@ FauxVkDB
 Satu driver, <span class="grad">satu keluarga chip</span>
 Driver grafis adalah perangkat lunak yang memungkinkan game menggambar di chip grafis perangkat Anda. Saya membuat dan menguji setiap driver saya di perangkat yang saya miliki. Lalu para pemain mencobanya di ponsel dan handheld mereka sendiri, dan sebagian juga berfungsi di sana.
 Halaman ini menampilkan, untuk tiap driver, keluarga chip grafis yang menjadi targetnya dan semua chip tempat driver itu pernah terlihat berjalan, lengkap dengan tautan ke buktinya.
+<a class="news" href="#droiddeck"><span class="news-tag">Baru</span> <span class="news-text"><b>Turnip sekarang berjalan di DroidDeck.</b> Satu unduhan memasang kedua driver yang dibutuhkan DroidDeck: satu untuk layarnya dan satu untuk sisi Linux tempat Steam dan game kamu berjalan.</span> <span class="news-go" aria-hidden="true">&rarr;</span></a>
 Sekilas
 Setiap driver menargetkan satu keluarga chip grafis. Angkanya menunjukkan berapa banyak chip berbeda, di dalam keluarga itu maupun di luarnya, yang sejauh ini pernah terlihat menjalankan driver tersebut. Ketuk sebuah driver untuk melihat chip dan buktinya.
 <span class="name">Turnip untuk Adreno 600, 700, 800</span><span class="home">Grafis Qualcomm Snapdragon</span> <span class="count">5<small>chip</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Adreno 660 sampai 840</span>

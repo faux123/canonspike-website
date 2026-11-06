@@ -172,3 +172,8 @@ footer.site .langs{display:flex;flex-wrap:wrap;gap:4px 16px;margin-top:10px}
 footer.site .langs a{display:inline-flex;align-items:center;min-height:44px}
 footer.site .langs a[aria-current]{color:var(--text);font-weight:600;text-decoration:none}
 @media (max-width:780px){header.site .wrap:has(.langmenu) nav{order:2;flex:1 0 100%;margin-left:-12px}.langmenu>summary{padding-right:4px}}
+.news{display:flex;align-items:center;gap:14px;margin:14px 0 6px;padding:14px 18px;border-radius:16px;border:1px solid var(--g2);background:var(--card);color:var(--text);text-decoration:none;box-shadow:var(--shadow);transition:transform .15s,filter .15s}
+.news:hover{transform:translateY(-1px);filter:brightness(1.08)}
+.news-tag{flex:none;padding:4px 10px;border-radius:999px;background:var(--grad);color:var(--on-grad);font-weight:800;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em}
+.news-text{flex:1;min-width:0;line-height:1.45}.news-text b{font-weight:800}
+.news-go{flex:none;font-size:1.3rem;color:var(--g2)}

@@ -7,6 +7,7 @@ FauxVkDB
 Ein Treiber, <span class="grad">eine ganze Chip-Familie</span>
 Ein Grafiktreiber ist die Software, mit der Spiele auf dem Grafikchip deines Geräts zeichnen. Ich baue und teste jeden meiner Treiber auf Geräten, die ich besitze. Danach probieren Spieler sie auf ihren eigenen Smartphones und Handhelds aus, und auf manchen davon laufen sie auch.
 Diese Seite zeigt für jeden Treiber, auf welche Grafikchip-Familie er zielt und auf welchen Chips er bisher gelaufen ist, jeweils mit Link zum Beleg.
+<a class="news" href="#droiddeck"><span class="news-tag">Neu</span> <span class="news-text"><b>Turnip läuft jetzt in DroidDeck.</b> Ein Download richtet beide Treiber ein, die DroidDeck braucht: einen für den eigenen Bildschirm und einen für die Linux-Seite, auf der Steam und deine Spiele laufen.</span> <span class="news-go" aria-hidden="true">&rarr;</span></a>
 Auf einen Blick
 Jeder Treiber zielt auf eine Familie von Grafikchips. Die Zahl nennt, auf wie vielen verschiedenen Chips aus dieser Familie und darüber hinaus der Treiber bisher gelaufen ist. Tippe auf einen Treiber, um die Chips und die Belege zu sehen.
 <span class="name">Turnip für Adreno 600, 700, 800</span><span class="home">Qualcomm-Snapdragon-Grafik</span> <span class="count">5<small>Chips</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Adreno 660 bis 840</span>

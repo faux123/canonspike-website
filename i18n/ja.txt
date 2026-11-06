@@ -7,6 +7,7 @@ FauxVkDB
 1つのドライバーで、<span class="grad">チップファミリーまるごと</span>
 グラフィックドライバーは、ゲームがデバイスのグラフィックチップに描画するためのソフトウェアです。私は自分が持っているデバイスで、それぞれのドライバーを作ってテストしています。その後、プレイヤーの皆さんが自分のスマートフォンやゲーム機で試してくれていて、そこで動いた機種もあります。
 このページでは、ドライバーごとに、対象のグラフィックチップファミリーと、これまでに動作が確認されたチップをすべて、確認結果へのリンク付きで紹介します。
+<a class="news" href="#droiddeck"><span class="news-tag">新着</span> <span class="news-text"><b>TurnipがDroidDeckで動くようになりました。</b> 1つのダウンロードで、DroidDeckに必要な2つのドライバー（アプリの画面用と、Steamとゲームが動くLinux側用）がそろいます。</span> <span class="news-go" aria-hidden="true">&rarr;</span></a>
 ひと目でわかる一覧
 各ドライバーは、1つのグラフィックチップファミリーを対象にしています。数字は、そのファミリー内外を含め、これまでにこのドライバーの動作が確認されたチップの種類の数です。ドライバーをタップすると、チップと確認結果が見られます。
 <span class="name">Adreno 600・700・800向けTurnip</span><span class="home">Qualcomm Snapdragonのグラフィック</span> <span class="count">5<small>種のチップ</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Adreno 660〜840</span>

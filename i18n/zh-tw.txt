@@ -7,6 +7,7 @@ FauxVkDB
 一個驅動程式，<span class="grad">適用一整個晶片系列</span>
 圖形驅動程式是讓遊戲在裝置的圖形晶片上繪製畫面的軟體。我在自己擁有的裝置上打造並測試每一款驅動程式。之後玩家會在自己的手機和掌機上試用，其中一些裝置也能執行。
 本頁依驅動程式列出它所針對的圖形晶片系列，以及目前已確認能執行它的所有晶片，並附上對應的驗證連結。
+<a class="news" href="#droiddeck"><span class="news-tag">新</span> <span class="news-text"><b>Turnip 現在可以在 DroidDeck 中執行。</b> 一次下載即可裝好 DroidDeck 需要的兩個驅動程式：一個用於它自己的畫面，另一個用於執行 Steam 和遊戲的 Linux 部分。</span> <span class="news-go" aria-hidden="true">&rarr;</span></a>
 總覽
 每款驅動程式針對一個圖形晶片系列。數字代表該系列內外，目前已確認能執行這款驅動程式的不同晶片數量。點一下驅動程式即可查看晶片與驗證紀錄。
 <span class="name">適用 Adreno 600、700、800 的 Turnip</span><span class="home">高通 Snapdragon 圖形晶片</span> <span class="count">5<small>款晶片</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Adreno 660 至 840</span>
