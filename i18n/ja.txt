@@ -28,20 +28,23 @@ Turnipは、Qualcomm Snapdragonチップ（Adrenoグラフィック）を搭載�
 v1.0.0から、PanVKは1つの名前を持つ1つのドライバーになりました。すべてのMaliデバイスで同じファイルを使い、動作中のチップを判別して、そのチップに必要な修正だけを有効にします。
 Turnip · Adreno
 Adreno 600・700・800シリーズ向けTurnip
-Qualcomm Snapdragon搭載デバイス向けです。AYN Odin 3（Adreno 830）で開発しました。
+Qualcomm Snapdragon搭載デバイス向けです。私が持っている7台のデバイスで開発しました：AYN Odin 3（Adreno 830）、Retroid Pocket Duo（Adreno 722）、Samsung Galaxyの5機種、S23（Adreno 740）、S22（Adreno 730）、S21+（Adreno 660）、S20+（Adreno 650）、S10（Adreno 640）。
 <a class="btn" href="https://github.com/faux123/turnip-faux123-driver/releases" rel="noopener">ダウンロード</a><span class="ver" hidden>最新の公開版
 最も幅広く使えるドライバーです。Turnipは最近のどのAdrenoチップにも同じ方法でやり取りするため、同じファイルが、2021年のGalaxyスマートフォンから最新のゲーム機まで、5世代のSnapdragonグラフィックで動いています。
 動作が確認されたグラフィックチップ
 デバイス
 <span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/4" data-word="check">テスト結果</a></span>
+<span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/32">テスト結果</a></span>
+<span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/47">テスト結果</a></span>
+<span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/30">テスト結果</a></span>
+<span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1628">テスト結果</a></span>
+<span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1629">テスト結果</a></span>
+<span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1633">テスト結果</a></span>
 <span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/604">テスト結果</a></span>
 <span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/641" data-word="speed">速度テスト</a></span>
 <span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/235">テスト結果</a></span>
 <span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/102">速度テスト</a></span>
-<span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/32">テスト結果</a></span>
 <span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/459">速度テスト</a></span>
-<span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/47">テスト結果</a></span>
-<span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/30">テスト結果</a></span>
 Adreno 600・700・800シリーズのグラフィックを搭載したその他のデバイス
 Retroid Pocket 5、Retroid Pocket Mini、AYN Odin 2なども含まれます
 DroidDeckを使っていますか？

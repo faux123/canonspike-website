@@ -28,20 +28,23 @@ Turnip 适用于搭载高通 Snapdragon 芯片（Adreno 图形）的手机和掌
 自 v1.0.0 起，PanVK 只有一个驱动、一个名称：所有 Mali 设备使用同一个文件，它会识别所运行的芯片，只开启该芯片需要的修复。
 Turnip · Adreno
 面向 Adreno 600、700、800 系列的 Turnip
-适用于高通 Snapdragon 设备。在 AYN Odin 3（Adreno 830）上开发。
+适用于高通 Snapdragon 设备。在我拥有的七台设备上开发：AYN Odin 3（Adreno 830）、Retroid Pocket Duo（Adreno 722），以及五部三星 Galaxy 手机：S23（Adreno 740）、S22（Adreno 730）、S21+（Adreno 660）、S20+（Adreno 650）和 S10（Adreno 640）。
 <a class="btn" href="https://github.com/faux123/turnip-faux123-driver/releases" rel="noopener">下载</a><span class="ver" hidden>最新公开版本
 这款覆盖范围最广。Turnip 与每一代现代 Adreno 芯片的通信方式都相同，所以同一个文件已经在五代 Snapdragon 图形芯片上跑过，从 2021 年的 Galaxy 手机到最新的掌机。
 已确认运行的图形芯片
 设备
 <span class="badge b-home">开发机</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/4" data-word="check">测试结果</a></span>
+<span class="badge b-home">开发机</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/32">测试结果</a></span>
+<span class="badge b-home">开发机</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/47">测试结果</a></span>
+<span class="badge b-home">开发机</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/30">测试结果</a></span>
+<span class="badge b-home">开发机</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1628">测试结果</a></span>
+<span class="badge b-home">开发机</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1629">测试结果</a></span>
+<span class="badge b-home">开发机</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1633">测试结果</a></span>
 <span class="badge b-ok">可用</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/604">测试结果</a></span>
 <span class="badge b-ok">可用</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/641" data-word="speed">跑分测试</a></span>
 <span class="badge b-ok">可用</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/235">测试结果</a></span>
 <span class="badge b-ok">可用</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/102">跑分测试</a></span>
-<span class="badge b-ok">可用</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/32">测试结果</a></span>
 <span class="badge b-ok">可用</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/459">跑分测试</a></span>
-<span class="badge b-ok">可用</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/47">测试结果</a></span>
-<span class="badge b-ok">可用</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/30">测试结果</a></span>
 其他搭载 Adreno 600、700 或 800 系列图形的设备
 包括 Retroid Pocket 5、Retroid Pocket Mini 和 AYN Odin 2
 在用 DroidDeck？

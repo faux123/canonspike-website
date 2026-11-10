@@ -28,20 +28,23 @@ Turnip ist für Smartphones und Handhelds mit einem Qualcomm-Snapdragon-Chip (Ad
 Seit v1.0.0 ist PanVK ein einziger Treiber mit einem einzigen Namen: dieselbe Datei für jedes Mali-Gerät, die den Chip erkennt, auf dem sie läuft, und nur die Korrekturen einschaltet, die dieser Chip braucht.
 Turnip · Adreno
 Turnip für die Adreno-Serien 600, 700 und 800
-Für Qualcomm-Snapdragon-Geräte. Entwickelt auf dem AYN Odin 3 (Adreno 830).
+Für Qualcomm-Snapdragon-Geräte. Entwickelt auf sieben Geräten, die ich besitze: dem AYN Odin 3 (Adreno 830), dem Retroid Pocket Duo (Adreno 722) und fünf Samsung-Galaxy-Smartphones: S23 (Adreno 740), S22 (Adreno 730), S21+ (Adreno 660), S20+ (Adreno 650) und S10 (Adreno 640).
 <a class="btn" href="https://github.com/faux123/turnip-faux123-driver/releases" rel="noopener">Herunterladen</a><span class="ver" hidden>Neueste öffentliche Version
 Dieser Treiber erreicht die meisten Geräte. Turnip spricht mit allen aktuellen Adreno-Chips dieselbe Sprache, deshalb läuft dieselbe Datei auf fünf Generationen von Snapdragon-Grafik, von Galaxy-Smartphones aus dem Jahr 2021 bis zu den neuesten Handhelds.
 Grafikchips, auf denen er gelaufen ist
 Geräte
 <span class="badge b-home">Entwickelt auf</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/4" data-word="check">Testergebnis</a></span>
+<span class="badge b-home">Entwickelt auf</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/32">Testergebnis</a></span>
+<span class="badge b-home">Entwickelt auf</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/47">Testergebnis</a></span>
+<span class="badge b-home">Entwickelt auf</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/30">Testergebnis</a></span>
+<span class="badge b-home">Entwickelt auf</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1628">Testergebnis</a></span>
+<span class="badge b-home">Entwickelt auf</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1629">Testergebnis</a></span>
+<span class="badge b-home">Entwickelt auf</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1633">Testergebnis</a></span>
 <span class="badge b-ok">Läuft</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/604">Testergebnis</a></span>
 <span class="badge b-ok">Läuft</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/641" data-word="speed">Benchmark</a></span>
 <span class="badge b-ok">Läuft</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/235">Testergebnis</a></span>
 <span class="badge b-ok">Läuft</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/102">Benchmark</a></span>
-<span class="badge b-ok">Läuft</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/32">Testergebnis</a></span>
 <span class="badge b-ok">Läuft</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/459">Benchmark</a></span>
-<span class="badge b-ok">Läuft</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/47">Testergebnis</a></span>
-<span class="badge b-ok">Läuft</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/30">Testergebnis</a></span>
 Jedes andere Gerät mit Adreno-Grafik der Serien 600, 700 oder 800
 Dazu gehören das Retroid Pocket 5, das Retroid Pocket Mini und das AYN Odin 2
 Du nutzt DroidDeck?

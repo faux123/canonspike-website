@@ -28,20 +28,23 @@ Turnip untuk ponsel dan handheld dengan chip Qualcomm Snapdragon (grafis Adreno)
 Sejak v1.0.0, PanVK adalah satu driver dengan satu nama: file yang sama untuk setiap perangkat Mali, yang mengenali chip tempatnya berjalan dan hanya menyalakan perbaikan yang dibutuhkan chip itu.
 Turnip · Adreno
 Turnip untuk seri Adreno 600, 700, dan 800
-Untuk perangkat Qualcomm Snapdragon. Dikembangkan di AYN Odin 3 (Adreno 830).
+Untuk perangkat Qualcomm Snapdragon. Dikembangkan di tujuh perangkat yang saya miliki: AYN Odin 3 (Adreno 830), Retroid Pocket Duo (Adreno 722), dan lima ponsel Samsung Galaxy: S23 (Adreno 740), S22 (Adreno 730), S21+ (Adreno 660), S20+ (Adreno 650), dan S10 (Adreno 640).
 <a class="btn" href="https://github.com/faux123/turnip-faux123-driver/releases" rel="noopener">Unduh</a><span class="ver" hidden>Rilis publik terbaru
 Inilah yang jangkauannya paling luas. Turnip memakai bahasa yang sama untuk semua chip Adreno modern, jadi satu file yang sama sudah berjalan di lima generasi grafis Snapdragon, dari ponsel Galaxy tahun 2021 sampai handheld terbaru.
 Chip grafis tempat driver ini berjalan
 Perangkat
 <span class="badge b-home">Dikembangkan di</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/4" data-word="check">Hasil tes</a></span>
+<span class="badge b-home">Dikembangkan di</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/32">Hasil tes</a></span>
+<span class="badge b-home">Dikembangkan di</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/47">Hasil tes</a></span>
+<span class="badge b-home">Dikembangkan di</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/30">Hasil tes</a></span>
+<span class="badge b-home">Dikembangkan di</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1628">Hasil tes</a></span>
+<span class="badge b-home">Dikembangkan di</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1629">Hasil tes</a></span>
+<span class="badge b-home">Dikembangkan di</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1633">Hasil tes</a></span>
 <span class="badge b-ok">Berfungsi</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/604">Hasil tes</a></span>
 <span class="badge b-ok">Berfungsi</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/641" data-word="speed">Tes kecepatan</a></span>
 <span class="badge b-ok">Berfungsi</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/235">Hasil tes</a></span>
 <span class="badge b-ok">Berfungsi</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/102">Tes kecepatan</a></span>
-<span class="badge b-ok">Berfungsi</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/32">Hasil tes</a></span>
 <span class="badge b-ok">Berfungsi</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/459">Tes kecepatan</a></span>
-<span class="badge b-ok">Berfungsi</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/47">Hasil tes</a></span>
-<span class="badge b-ok">Berfungsi</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/30">Hasil tes</a></span>
 Perangkat lain mana pun dengan grafis Adreno seri 600, 700, atau 800
 Termasuk Retroid Pocket 5, Retroid Pocket Mini, dan AYN Odin 2
 Pakai DroidDeck?

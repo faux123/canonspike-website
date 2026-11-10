@@ -28,20 +28,23 @@ O Turnip é para celulares e portáteis com chip Qualcomm Snapdragon (gráficos 
 Desde a v1.0.0, o PanVK é um só driver com um só nome: o mesmo arquivo para todo aparelho Mali, que detecta o chip em que roda e liga só as correções de que esse chip precisa.
 Turnip · Adreno
 Turnip para as séries Adreno 600, 700 e 800
-Para aparelhos Qualcomm Snapdragon. Desenvolvido no AYN Odin 3 (Adreno 830).
+Para aparelhos Qualcomm Snapdragon. Desenvolvido em sete aparelhos que eu tenho: o AYN Odin 3 (Adreno 830), o Retroid Pocket Duo (Adreno 722) e cinco celulares Samsung Galaxy: S23 (Adreno 740), S22 (Adreno 730), S21+ (Adreno 660), S20+ (Adreno 650) e S10 (Adreno 640).
 <a class="btn" href="https://github.com/faux123/turnip-faux123-driver/releases" rel="noopener">Baixar</a><span class="ver" hidden>Última versão pública
 Este é o que chega a mais aparelhos. O Turnip fala a mesma língua com todos os chips Adreno modernos, então o mesmo arquivo já rodou em cinco gerações de gráficos Snapdragon, dos celulares Galaxy de 2021 aos portáteis mais novos.
 Chips gráficos em que ele já rodou
 Aparelhos
 <span class="badge b-home">Desenvolvido em</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/4" data-word="check">Resultado do teste</a></span>
+<span class="badge b-home">Desenvolvido em</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/32">Resultado do teste</a></span>
+<span class="badge b-home">Desenvolvido em</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/47">Resultado do teste</a></span>
+<span class="badge b-home">Desenvolvido em</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/30">Resultado do teste</a></span>
+<span class="badge b-home">Desenvolvido em</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1628">Resultado do teste</a></span>
+<span class="badge b-home">Desenvolvido em</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1629">Resultado do teste</a></span>
+<span class="badge b-home">Desenvolvido em</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1633">Resultado do teste</a></span>
 <span class="badge b-ok">Funciona</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/604">Resultado do teste</a></span>
 <span class="badge b-ok">Funciona</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/641" data-word="speed">Teste de velocidade</a></span>
 <span class="badge b-ok">Funciona</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/235">Resultado do teste</a></span>
 <span class="badge b-ok">Funciona</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/102">Teste de velocidade</a></span>
-<span class="badge b-ok">Funciona</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/32">Resultado do teste</a></span>
 <span class="badge b-ok">Funciona</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/459">Teste de velocidade</a></span>
-<span class="badge b-ok">Funciona</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/47">Resultado do teste</a></span>
-<span class="badge b-ok">Funciona</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/30">Resultado do teste</a></span>
 Qualquer outro aparelho com gráficos Adreno das séries 600, 700 ou 800
 Isso inclui o Retroid Pocket 5, o Retroid Pocket Mini e o AYN Odin 2
 Usa o DroidDeck?
