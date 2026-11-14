@@ -11,7 +11,7 @@ Questa pagina mostra, per ogni driver, la famiglia di chip grafici a cui è dest
 In sintesi
 Ogni driver è destinato a una famiglia di chip grafici. Il numero indica quanti chip diversi, di quella famiglia e non solo, sono stati visti funzionare con il driver finora. Tocca un driver per vedere i chip e le prove.
 <span class="name">Turnip per Adreno 600, 700, 800</span><span class="home">Grafica Qualcomm Snapdragon</span> <span class="count">5<small>chip</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Adreno da 660 a 840</span>
-<span class="name">PanVK per Mali</span><span class="home">Grafica Arm Mali</span> <span class="count">7<small>chip</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Da Mali-G57 a G720</span>
+<span class="name">PanVK per Mali</span><span class="home">Grafica Arm Mali</span> <span class="count">8<small>chip</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Da Mali-G57 a G720</span>
 Cosa significano le etichette
 <span class="badge b-home">Sviluppato su</span>
 Un dispositivo che possiedo e su cui provo ogni versione.
@@ -52,13 +52,14 @@ DroidDeck esegue il client Steam per Linux su Android e ha bisogno di due driver
 <a class="btn" href="https://github.com/faux123/turnip-faux123-droiddeck/releases" rel="noopener">Scarica per DroidDeck</a><span class="ver" hidden>Ultima versione pubblica
 PanVK · Mali
 PanVK per Mali
-Per dispositivi Arm Mali. Creato su quattro dispositivi che possiedo: il Google Pixel 7 (Mali-G710), la GameForce Ace (Mali-G610), la Retroid Pocket 4 Pro (Mali-G77) e l'Anbernic RG556 (Mali-G57).
+Per dispositivi Arm Mali. Creato su cinque dispositivi che possiedo: il Google Pixel 7 (Mali-G710), la GameForce Ace (Mali-G610), la Retroid Pocket 4 Pro (Mali-G77), l'Anbernic RG556 (Mali-G57) e l'Anbernic RG557 (Mali-G615).
 <a class="btn" href="https://github.com/faux123/panvk-faux123-driver-ace/releases" rel="noopener">Scarica</a><span class="ver" hidden>Ultima versione pubblica
-Un unico file per ogni chip Mali che conosce. Riconosce il chip su cui gira e attiva solo le correzioni di cui quel chip ha bisogno, e provo ogni versione su tutti e quattro i miei dispositivi. I giocatori lo hanno usato anche su chip che non possiedo, come il Mali-G715 di Pixel 8a e Pixel 9 e il Mali-G720 del POCO X7 Pro. Un chip uguale è un buon segno, non una promessa. I risultati dei giocatori qui sotto vengono dai download per singolo chip precedenti alla v1.0.0.
+Un unico file per ogni chip Mali che conosce. Riconosce il chip su cui gira e attiva solo le correzioni di cui quel chip ha bisogno, e provo ogni versione su tutti e cinque i miei dispositivi. I giocatori lo hanno usato anche su chip che non possiedo, come il Mali-G715 di Pixel 8a e Pixel 9 e il Mali-G720 del POCO X7 Pro. Un chip uguale è un buon segno, non una promessa. I risultati dei giocatori qui sotto vengono dai download per singolo chip precedenti alla v1.0.0.
 <span class="badge b-home">Sviluppato su</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1060">Risultato del test</a></span>
 <span class="badge b-home">Sviluppato su</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1059">Risultato del test</a></span>
 <span class="badge b-home">Sviluppato su</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1061">Risultato del test</a></span>
 <span class="badge b-home">Sviluppato su</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1062">Risultato del test</a></span>
+<span class="badge b-home">Sviluppato su</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/2425">Risultato del test</a></span>
 <span class="badge b-ok">Funziona</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/744">Risultato del test</a></span>
 <span class="badge b-ok">Funziona</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/560">Risultato del test</a></span>
 <span class="badge b-ok">Funziona</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/227">Risultato del test</a></span>

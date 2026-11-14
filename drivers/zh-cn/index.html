@@ -49,7 +49,7 @@
 <p class="sub">每款驱动针对一个图形芯片系列。数字表示该系列内外，目前已确认能运行这款驱动的不同芯片数量。点按驱动即可查看具体芯片和验证记录。</p>
 <div class="glance">
 <a class="card fam-adreno" href="#turnip"><span class="name">面向 Adreno 600、700、800 的 Turnip</span><span class="home">高通 Snapdragon 图形芯片</span> <span class="count">5<small>款芯片</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Adreno 660 至 840</span></a>
-<a class="card fam-mali" href="#panvk"><span class="name">面向 Mali 的 PanVK</span><span class="home">Arm Mali 图形芯片</span> <span class="count">7<small>款芯片</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Mali-G57 至 G720</span></a>
+<a class="card fam-mali" href="#panvk"><span class="name">面向 Mali 的 PanVK</span><span class="home">Arm Mali 图形芯片</span> <span class="count">8<small>款芯片</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Mali-G57 至 G720</span></a>
 </div>
 
 <h2 id="badges">标签说明</h2>
@@ -95,19 +95,20 @@
 </div></article>
 
 <!-- PANVK -->
-<article class="card driver fam-mali" id="panvk"><span id="pixel7"></span><span id="ace"></span><span id="rp4pro"></span><span id="rg556"></span>
+<article class="card driver fam-mali" id="panvk"><span id="pixel7"></span><span id="ace"></span><span id="rp4pro"></span><span id="rg556"></span><span id="rg557"></span>
 <div class="dhead"><div class="who"><p class="kicker">PanVK · Mali</p><h2>面向 Mali 的 PanVK</h2>
-<p>适用于 Arm Mali 设备。在我拥有的四台设备上打造：Google Pixel 7（Mali-G710）、GameForce Ace（Mali-G610）、Retroid Pocket 4 Pro（Mali-G77）和 Anbernic RG556（Mali-G57）。</p></div>
+<p>适用于 Arm Mali 设备。在我拥有的五台设备上打造：Google Pixel 7（Mali-G710）、GameForce Ace（Mali-G610）、Retroid Pocket 4 Pro（Mali-G77）、Anbernic RG556（Mali-G57）和 Anbernic RG557（Mali-G615）。</p></div>
 <div class="get"><a class="btn" href="https://github.com/faux123/panvk-faux123-driver-ace/releases" rel="noopener">下载</a><span class="ver" hidden>最新公开版本 <span class="tag" translate="no"></span></span></div></div>
 <div class="dbody">
-<p class="say">一个文件对应它认识的每一款 Mali 芯片。它会识别所运行的芯片，只开启该芯片需要的修复，每次发布我都会在自己的四台设备上测试。玩家也在我没有的芯片上运行过它，例如 Pixel 8a 和 Pixel 9 的 Mali-G715，以及 POCO X7 Pro 的 Mali-G720。芯片相同是好兆头，但不是保证。下方的玩家结果来自 v1.0.0 之前按芯片区分的下载。</p>
+<p class="say">一个文件对应它认识的每一款 Mali 芯片。它会识别所运行的芯片，只开启该芯片需要的修复，每次发布我都会在自己的五台设备上测试。玩家也在我没有的芯片上运行过它，例如 Pixel 8a 和 Pixel 9 的 Mali-G715，以及 POCO X7 Pro 的 Mali-G720。芯片相同是好兆头，但不是保证。下方的玩家结果来自 v1.0.0 之前按芯片区分的下载。</p>
 <div><p class="label">已确认运行的图形芯片</p>
-<div class="chips" translate="no"><span class="gpu home">Mali-G57</span><span class="gpu">Mali-G68</span><span class="gpu home">Mali-G77</span><span class="gpu home">Mali-G610</span><span class="gpu home">Mali-G710</span><span class="gpu">Mali-G715</span><span class="gpu">Mali-G720</span></div></div>
+<div class="chips" translate="no"><span class="gpu home">Mali-G57</span><span class="gpu">Mali-G68</span><span class="gpu home">Mali-G77</span><span class="gpu home">Mali-G610</span><span class="gpu home">Mali-G615</span><span class="gpu home">Mali-G710</span><span class="gpu">Mali-G715</span><span class="gpu">Mali-G720</span></div></div>
 <div><p class="label">设备</p><ul class="devs">
 <li class="is-home"><span class="dev" translate="no">Google Pixel 7</span><span class="chip-name" translate="no">Mali-G710</span><span class="badge b-home">开发机</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1060">测试结果</a></span></li>
 <li class="is-home"><span class="dev" translate="no">GameForce Ace</span><span class="chip-name" translate="no">Mali-G610</span><span class="badge b-home">开发机</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1059">测试结果</a></span></li>
 <li class="is-home"><span class="dev" translate="no">Retroid Pocket 4 Pro</span><span class="chip-name" translate="no">Mali-G77</span><span class="badge b-home">开发机</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1061">测试结果</a></span></li>
 <li class="is-home"><span class="dev" translate="no">Anbernic RG556</span><span class="chip-name" translate="no">Mali-G57</span><span class="badge b-home">开发机</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1062">测试结果</a></span></li>
+<li class="is-home"><span class="dev" translate="no">Anbernic RG557</span><span class="chip-name" translate="no">Mali-G615</span><span class="badge b-home">开发机</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/2425">测试结果</a></span></li>
 <li><span class="dev" translate="no">Google Pixel 9</span><span class="chip-name" translate="no">Mali-G715</span><span class="badge b-ok">可用</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/744">测试结果</a></span></li>
 <li><span class="dev" translate="no">Google Pixel 8a</span><span class="chip-name" translate="no">Mali-G715</span><span class="badge b-ok">可用</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/560">测试结果</a></span></li>
 <li><span class="dev" translate="no">POCO X7 Pro</span><span class="chip-name" translate="no">Mali-G720</span><span class="badge b-ok">可用</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/227">测试结果</a></span></li>

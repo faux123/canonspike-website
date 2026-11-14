@@ -11,7 +11,7 @@ FauxVkDB
 ひと目でわかる一覧
 各ドライバーは、1つのグラフィックチップファミリーを対象にしています。数字は、そのファミリー内外を含め、これまでにこのドライバーの動作が確認されたチップの種類の数です。ドライバーをタップすると、チップと確認結果が見られます。
 <span class="name">Adreno 600・700・800向けTurnip</span><span class="home">Qualcomm Snapdragonのグラフィック</span> <span class="count">5<small>種のチップ</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Adreno 660〜840</span>
-<span class="name">Mali向けPanVK</span><span class="home">Arm Maliのグラフィック</span> <span class="count">7<small>種のチップ</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Mali-G57からG720</span>
+<span class="name">Mali向けPanVK</span><span class="home">Arm Maliのグラフィック</span> <span class="count">8<small>種のチップ</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Mali-G57からG720</span>
 ラベルの意味
 <span class="badge b-home">開発機</span>
 私が所有していて、リリースのたびにテストしているデバイスの1台です。
@@ -52,13 +52,14 @@ DroidDeckはAndroid上でLinux版のSteamクライアントを動かすアプリ
 <a class="btn" href="https://github.com/faux123/turnip-faux123-droiddeck/releases" rel="noopener">DroidDeck用をダウンロード</a><span class="ver" hidden>最新の公開版
 PanVK · Mali
 Mali向けPanVK
-Arm Mali搭載デバイス向け。私が持っている4台のデバイスで作っています：Google Pixel 7（Mali-G710）、GameForce Ace（Mali-G610）、Retroid Pocket 4 Pro（Mali-G77）、Anbernic RG556（Mali-G57）。
+Arm Mali搭載デバイス向け。私が持っている5台のデバイスで作っています：Google Pixel 7（Mali-G710）、GameForce Ace（Mali-G610）、Retroid Pocket 4 Pro（Mali-G77）、Anbernic RG556（Mali-G57）、Anbernic RG557（Mali-G615）。
 <a class="btn" href="https://github.com/faux123/panvk-faux123-driver-ace/releases" rel="noopener">ダウンロード</a><span class="ver" hidden>最新の公開版
-認識できるすべてのMaliチップに1つのファイルで対応します。動作中のチップを判別してそのチップに必要な修正だけを有効にし、リリースのたびに私の4台すべてでテストしています。プレイヤーの皆さんは、Pixel 8aとPixel 9のMali-G715や、POCO X7 ProのMali-G720など、私が持っていないチップでも動かしています。チップが同じなのは良い兆しですが、動作の保証ではありません。以下のプレイヤーの結果は、v1.0.0より前のチップ別ダウンロードによるものです。
+認識できるすべてのMaliチップに1つのファイルで対応します。動作中のチップを判別してそのチップに必要な修正だけを有効にし、リリースのたびに私の5台すべてでテストしています。プレイヤーの皆さんは、Pixel 8aとPixel 9のMali-G715や、POCO X7 ProのMali-G720など、私が持っていないチップでも動かしています。チップが同じなのは良い兆しですが、動作の保証ではありません。以下のプレイヤーの結果は、v1.0.0より前のチップ別ダウンロードによるものです。
 <span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1060">テスト結果</a></span>
 <span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1059">テスト結果</a></span>
 <span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1061">テスト結果</a></span>
 <span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1062">テスト結果</a></span>
+<span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/2425">テスト結果</a></span>
 <span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/744">テスト結果</a></span>
 <span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/560">テスト結果</a></span>
 <span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/227">テスト結果</a></span>

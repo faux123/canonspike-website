@@ -49,7 +49,7 @@
 <p class="sub">各ドライバーは、1つのグラフィックチップファミリーを対象にしています。数字は、そのファミリー内外を含め、これまでにこのドライバーの動作が確認されたチップの種類の数です。ドライバーをタップすると、チップと確認結果が見られます。</p>
 <div class="glance">
 <a class="card fam-adreno" href="#turnip"><span class="name">Adreno 600・700・800向けTurnip</span><span class="home">Qualcomm Snapdragonのグラフィック</span> <span class="count">5<small>種のチップ</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Adreno 660〜840</span></a>
-<a class="card fam-mali" href="#panvk"><span class="name">Mali向けPanVK</span><span class="home">Arm Maliのグラフィック</span> <span class="count">7<small>種のチップ</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Mali-G57からG720</span></a>
+<a class="card fam-mali" href="#panvk"><span class="name">Mali向けPanVK</span><span class="home">Arm Maliのグラフィック</span> <span class="count">8<small>種のチップ</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Mali-G57からG720</span></a>
 </div>
 
 <h2 id="badges">ラベルの意味</h2>
@@ -95,19 +95,20 @@
 </div></article>
 
 <!-- PANVK -->
-<article class="card driver fam-mali" id="panvk"><span id="pixel7"></span><span id="ace"></span><span id="rp4pro"></span><span id="rg556"></span>
+<article class="card driver fam-mali" id="panvk"><span id="pixel7"></span><span id="ace"></span><span id="rp4pro"></span><span id="rg556"></span><span id="rg557"></span>
 <div class="dhead"><div class="who"><p class="kicker">PanVK · Mali</p><h2>Mali向けPanVK</h2>
-<p>Arm Mali搭載デバイス向け。私が持っている4台のデバイスで作っています：Google Pixel 7（Mali-G710）、GameForce Ace（Mali-G610）、Retroid Pocket 4 Pro（Mali-G77）、Anbernic RG556（Mali-G57）。</p></div>
+<p>Arm Mali搭載デバイス向け。私が持っている5台のデバイスで作っています：Google Pixel 7（Mali-G710）、GameForce Ace（Mali-G610）、Retroid Pocket 4 Pro（Mali-G77）、Anbernic RG556（Mali-G57）、Anbernic RG557（Mali-G615）。</p></div>
 <div class="get"><a class="btn" href="https://github.com/faux123/panvk-faux123-driver-ace/releases" rel="noopener">ダウンロード</a><span class="ver" hidden>最新の公開版 <span class="tag" translate="no"></span></span></div></div>
 <div class="dbody">
-<p class="say">認識できるすべてのMaliチップに1つのファイルで対応します。動作中のチップを判別してそのチップに必要な修正だけを有効にし、リリースのたびに私の4台すべてでテストしています。プレイヤーの皆さんは、Pixel 8aとPixel 9のMali-G715や、POCO X7 ProのMali-G720など、私が持っていないチップでも動かしています。チップが同じなのは良い兆しですが、動作の保証ではありません。以下のプレイヤーの結果は、v1.0.0より前のチップ別ダウンロードによるものです。</p>
+<p class="say">認識できるすべてのMaliチップに1つのファイルで対応します。動作中のチップを判別してそのチップに必要な修正だけを有効にし、リリースのたびに私の5台すべてでテストしています。プレイヤーの皆さんは、Pixel 8aとPixel 9のMali-G715や、POCO X7 ProのMali-G720など、私が持っていないチップでも動かしています。チップが同じなのは良い兆しですが、動作の保証ではありません。以下のプレイヤーの結果は、v1.0.0より前のチップ別ダウンロードによるものです。</p>
 <div><p class="label">動作が確認されたグラフィックチップ</p>
-<div class="chips" translate="no"><span class="gpu home">Mali-G57</span><span class="gpu">Mali-G68</span><span class="gpu home">Mali-G77</span><span class="gpu home">Mali-G610</span><span class="gpu home">Mali-G710</span><span class="gpu">Mali-G715</span><span class="gpu">Mali-G720</span></div></div>
+<div class="chips" translate="no"><span class="gpu home">Mali-G57</span><span class="gpu">Mali-G68</span><span class="gpu home">Mali-G77</span><span class="gpu home">Mali-G610</span><span class="gpu home">Mali-G615</span><span class="gpu home">Mali-G710</span><span class="gpu">Mali-G715</span><span class="gpu">Mali-G720</span></div></div>
 <div><p class="label">デバイス</p><ul class="devs">
 <li class="is-home"><span class="dev" translate="no">Google Pixel 7</span><span class="chip-name" translate="no">Mali-G710</span><span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1060">テスト結果</a></span></li>
 <li class="is-home"><span class="dev" translate="no">GameForce Ace</span><span class="chip-name" translate="no">Mali-G610</span><span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1059">テスト結果</a></span></li>
 <li class="is-home"><span class="dev" translate="no">Retroid Pocket 4 Pro</span><span class="chip-name" translate="no">Mali-G77</span><span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1061">テスト結果</a></span></li>
 <li class="is-home"><span class="dev" translate="no">Anbernic RG556</span><span class="chip-name" translate="no">Mali-G57</span><span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1062">テスト結果</a></span></li>
+<li class="is-home"><span class="dev" translate="no">Anbernic RG557</span><span class="chip-name" translate="no">Mali-G615</span><span class="badge b-home">開発機</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/2425">テスト結果</a></span></li>
 <li><span class="dev" translate="no">Google Pixel 9</span><span class="chip-name" translate="no">Mali-G715</span><span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/744">テスト結果</a></span></li>
 <li><span class="dev" translate="no">Google Pixel 8a</span><span class="chip-name" translate="no">Mali-G715</span><span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/560">テスト結果</a></span></li>
 <li><span class="dev" translate="no">POCO X7 Pro</span><span class="chip-name" translate="no">Mali-G720</span><span class="badge b-ok">動作する</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/227">テスト結果</a></span></li>

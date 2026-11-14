@@ -11,7 +11,7 @@ Cette page indique, pour chaque pilote, la famille de puces graphiques visée et
 En un coup d'œil
 Chaque pilote cible une famille de puces graphiques. Le nombre indique combien de puces différentes, de cette famille et d'ailleurs, ont été vues en fonctionnement avec le pilote jusqu'ici. Touchez un pilote pour voir les puces et les preuves.
 <span class="name">Turnip pour Adreno 600, 700, 800</span><span class="home">Graphismes Qualcomm Snapdragon</span> <span class="count">5<small>puces</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Adreno 660 à 840</span>
-<span class="name">PanVK pour Mali</span><span class="home">Graphismes Arm Mali</span> <span class="count">7<small>puces</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Mali-G57 à G720</span>
+<span class="name">PanVK pour Mali</span><span class="home">Graphismes Arm Mali</span> <span class="count">8<small>puces</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Mali-G57 à G720</span>
 Ce que signifient les étiquettes
 <span class="badge b-home">Développé sur</span>
 Un appareil que je possède et sur lequel je teste chaque version.
@@ -52,13 +52,14 @@ DroidDeck fait tourner le client Steam pour Linux sur Android et a besoin de deu
 <a class="btn" href="https://github.com/faux123/turnip-faux123-droiddeck/releases" rel="noopener">Télécharger pour DroidDeck</a><span class="ver" hidden>Dernière version publique
 PanVK · Mali
 PanVK pour Mali
-Pour les appareils Arm Mali. Conçu sur quatre appareils que je possède : le Google Pixel 7 (Mali-G710), la GameForce Ace (Mali-G610), la Retroid Pocket 4 Pro (Mali-G77) et l'Anbernic RG556 (Mali-G57).
+Pour les appareils Arm Mali. Conçu sur cinq appareils que je possède : le Google Pixel 7 (Mali-G710), la GameForce Ace (Mali-G610), la Retroid Pocket 4 Pro (Mali-G77), l'Anbernic RG556 (Mali-G57) et l'Anbernic RG557 (Mali-G615).
 <a class="btn" href="https://github.com/faux123/panvk-faux123-driver-ace/releases" rel="noopener">Télécharger</a><span class="ver" hidden>Dernière version publique
-Un seul fichier pour chaque puce Mali qu'il connaît. Il détecte la puce sur laquelle il tourne et n'active que les correctifs dont elle a besoin, et je teste chaque version sur mes quatre appareils. Des joueurs l'ont aussi fait tourner sur des puces que je ne possède pas, comme la Mali-G715 des Pixel 8a et Pixel 9 et la Mali-G720 du POCO X7 Pro. Une puce identique est un bon signe, pas une promesse. Les résultats de joueurs ci-dessous viennent des téléchargements par puce d'avant la v1.0.0.
+Un seul fichier pour chaque puce Mali qu'il connaît. Il détecte la puce sur laquelle il tourne et n'active que les correctifs dont elle a besoin, et je teste chaque version sur mes cinq appareils. Des joueurs l'ont aussi fait tourner sur des puces que je ne possède pas, comme la Mali-G715 des Pixel 8a et Pixel 9 et la Mali-G720 du POCO X7 Pro. Une puce identique est un bon signe, pas une promesse. Les résultats de joueurs ci-dessous viennent des téléchargements par puce d'avant la v1.0.0.
 <span class="badge b-home">Développé sur</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1060">Résultat du test</a></span>
 <span class="badge b-home">Développé sur</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1059">Résultat du test</a></span>
 <span class="badge b-home">Développé sur</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1061">Résultat du test</a></span>
 <span class="badge b-home">Développé sur</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1062">Résultat du test</a></span>
+<span class="badge b-home">Développé sur</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/2425">Résultat du test</a></span>
 <span class="badge b-ok">Fonctionne</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/744">Résultat du test</a></span>
 <span class="badge b-ok">Fonctionne</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/560">Résultat du test</a></span>
 <span class="badge b-ok">Fonctionne</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/227">Résultat du test</a></span>

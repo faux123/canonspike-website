@@ -11,7 +11,7 @@ Halaman ini menampilkan, untuk tiap driver, keluarga chip grafis yang menjadi ta
 Sekilas
 Setiap driver menargetkan satu keluarga chip grafis. Angkanya menunjukkan berapa banyak chip berbeda, di dalam keluarga itu maupun di luarnya, yang sejauh ini pernah terlihat menjalankan driver tersebut. Ketuk sebuah driver untuk melihat chip dan buktinya.
 <span class="name">Turnip untuk Adreno 600, 700, 800</span><span class="home">Grafis Qualcomm Snapdragon</span> <span class="count">5<small>chip</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Adreno 660 sampai 840</span>
-<span class="name">PanVK untuk Mali</span><span class="home">Grafis Arm Mali</span> <span class="count">7<small>chip</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Mali-G57 hingga G720</span>
+<span class="name">PanVK untuk Mali</span><span class="home">Grafis Arm Mali</span> <span class="count">8<small>chip</small></span><span class="reach" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="word">Mali-G57 hingga G720</span>
 Arti label
 <span class="badge b-home">Dikembangkan di</span>
 Salah satu perangkat yang saya miliki dan saya uji di setiap rilis.
@@ -52,13 +52,14 @@ DroidDeck menjalankan klien Steam untuk Linux di Android dan butuh dua driver: s
 <a class="btn" href="https://github.com/faux123/turnip-faux123-droiddeck/releases" rel="noopener">Unduh untuk DroidDeck</a><span class="ver" hidden>Rilis publik terbaru
 PanVK · Mali
 PanVK untuk Mali
-Untuk perangkat Arm Mali. Dibuat di empat perangkat yang saya miliki: Google Pixel 7 (Mali-G710), GameForce Ace (Mali-G610), Retroid Pocket 4 Pro (Mali-G77), dan Anbernic RG556 (Mali-G57).
+Untuk perangkat Arm Mali. Dibuat di lima perangkat yang saya miliki: Google Pixel 7 (Mali-G710), GameForce Ace (Mali-G610), Retroid Pocket 4 Pro (Mali-G77), Anbernic RG556 (Mali-G57), dan Anbernic RG557 (Mali-G615).
 <a class="btn" href="https://github.com/faux123/panvk-faux123-driver-ace/releases" rel="noopener">Unduh</a><span class="ver" hidden>Rilis publik terbaru
-Satu file untuk setiap chip Mali yang dikenalnya. Driver ini mengenali chip tempatnya berjalan dan hanya menyalakan perbaikan yang dibutuhkan chip itu, dan saya menguji setiap rilis di keempat perangkat saya. Pemain juga sudah menjalankannya di chip yang tidak saya miliki, seperti Mali-G715 di Pixel 8a dan Pixel 9 serta Mali-G720 di POCO X7 Pro. Chip yang sama adalah pertanda baik, bukan janji. Hasil pemain di bawah berasal dari unduhan per chip sebelum v1.0.0.
+Satu file untuk setiap chip Mali yang dikenalnya. Driver ini mengenali chip tempatnya berjalan dan hanya menyalakan perbaikan yang dibutuhkan chip itu, dan saya menguji setiap rilis di kelima perangkat saya. Pemain juga sudah menjalankannya di chip yang tidak saya miliki, seperti Mali-G715 di Pixel 8a dan Pixel 9 serta Mali-G720 di POCO X7 Pro. Chip yang sama adalah pertanda baik, bukan janji. Hasil pemain di bawah berasal dari unduhan per chip sebelum v1.0.0.
 <span class="badge b-home">Dikembangkan di</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1060">Hasil tes</a></span>
 <span class="badge b-home">Dikembangkan di</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1059">Hasil tes</a></span>
 <span class="badge b-home">Dikembangkan di</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1061">Hasil tes</a></span>
 <span class="badge b-home">Dikembangkan di</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/1062">Hasil tes</a></span>
+<span class="badge b-home">Dikembangkan di</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/2425">Hasil tes</a></span>
 <span class="badge b-ok">Berfungsi</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/744">Hasil tes</a></span>
 <span class="badge b-ok">Berfungsi</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/560">Hasil tes</a></span>
 <span class="badge b-ok">Berfungsi</span><span class="src"><a href="https://fauxvkdb.canonspike.com/report/227">Hasil tes</a></span>
