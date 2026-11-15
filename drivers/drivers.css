@@ -236,3 +236,6 @@ background:radial-gradient(120% 90% at 0 0,color-mix(in oklab,var(--a1) 22%,tran
 @media (prefers-reduced-motion:reduce){.glance a,.appcard,.btn,.news{transition:none}}
 @media (forced-colors:active){.hero .grad,.brand b{background:none;color:CanvasText}.aurora{display:none}.card,.driver{border:1px solid CanvasText}}
 .legend.card{padding:1.1rem 1.25rem}
+/* The full-bleed hero is 100vw wide, which includes a classic (non-overlay) scrollbar on Windows and Linux;
+   clip the few extra pixels so the page never scrolls sideways. clip, not hidden, keeps the sticky header working. */
+body{overflow-x:clip}
