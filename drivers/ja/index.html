@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<meta name="text-scale" content="scale">
 <title>faux123のグラフィックドライバー：どのグラフィックチップで動くか</title>
 <meta name="description" content="faux123による2つのAndroid向けカスタムグラフィックドライバー（Adreno向けTurnip、Mali向けPanVK）。それぞれが対象とするグラフィックチップと、これまでに動作が確認されたすべてのチップを紹介します。">
 <meta name="theme-color" content="#0B1620">
@@ -11,6 +13,7 @@
 <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 <link rel="stylesheet" href="/drivers/drivers.css">
+<script type="module" src="/topbar.js"></script>
 <!-- i18n:alternates -->
 <link rel="alternate" hreflang="en" href="https://canonspike.com/drivers/">
 <link rel="alternate" hreflang="es" href="https://canonspike.com/drivers/es/">
@@ -26,7 +29,7 @@
 <!-- /i18n:alternates -->
 </head>
 <body>
-<header class="site"><div class="wrap">
+<header class="site topbar"><div class="wrap">
 <a class="brand" href="/drivers/ja/">faux123 <b>drivers</b></a>
 <nav aria-label="Main">
 <a href="#drivers">ドライバー</a>
@@ -37,7 +40,7 @@
 
 <main><div class="wrap">
 
-<section class="hero">
+<section class="hero"><div class="aurora" aria-hidden="true"></div>
 <h1>1つのドライバーで、<span class="grad">チップファミリーまるごと</span></h1>
 <p class="sub">グラフィックドライバーは、ゲームがデバイスのグラフィックチップに描画するためのソフトウェアです。私は自分が持っているデバイスで、それぞれのドライバーを作ってテストしています。その後、プレイヤーの皆さんが自分のスマートフォンやゲーム機で試してくれていて、そこで動いた機種もあります。</p>
 <p class="sub">このページでは、ドライバーごとに、対象のグラフィックチップファミリーと、これまでに動作が確認されたチップをすべて、確認結果へのリンク付きで紹介します。</p>

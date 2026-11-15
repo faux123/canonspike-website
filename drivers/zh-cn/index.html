@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<meta name="text-scale" content="scale">
 <title>faux123 图形驱动：每款驱动能在哪些图形芯片上运行</title>
 <meta name="description" content="faux123 的两款 Android 自定义图形驱动（面向 Adreno 的 Turnip、面向 Mali 的 PanVK）。查看每款驱动面向哪些图形芯片，以及已在哪些芯片上运行过。">
 <meta name="theme-color" content="#0B1620">
@@ -11,6 +13,7 @@
 <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 <link rel="stylesheet" href="/drivers/drivers.css">
+<script type="module" src="/topbar.js"></script>
 <!-- i18n:alternates -->
 <link rel="alternate" hreflang="en" href="https://canonspike.com/drivers/">
 <link rel="alternate" hreflang="es" href="https://canonspike.com/drivers/es/">
@@ -26,7 +29,7 @@
 <!-- /i18n:alternates -->
 </head>
 <body>
-<header class="site"><div class="wrap">
+<header class="site topbar"><div class="wrap">
 <a class="brand" href="/drivers/zh-cn/">faux123 <b>drivers</b></a>
 <nav aria-label="Main">
 <a href="#drivers">驱动</a>
@@ -37,7 +40,7 @@
 
 <main><div class="wrap">
 
-<section class="hero">
+<section class="hero"><div class="aurora" aria-hidden="true"></div>
 <h1>一个驱动，<span class="grad">适配一系列芯片</span></h1>
 <p class="sub">图形驱动是让游戏在设备的图形芯片上绘制画面的软件。我在自己拥有的设备上打造并测试每一款驱动。之后玩家会在自己的手机和掌机上试用，其中一些设备也能运行。</p>
 <p class="sub">本页按驱动列出它所针对的图形芯片系列，以及目前已确认能运行它的所有芯片，并附有相应的验证链接。</p>

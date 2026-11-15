@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<meta name="text-scale" content="scale">
 <title>Driver grafis faux123: berjalan di chip grafis mana saja</title>
 <meta name="description" content="Dua driver grafis Android kustom buatan faux123 (Turnip untuk Adreno, PanVK untuk Mali). Lihat chip grafis yang dituju masing-masing, dan setiap chip tempat driver itu pernah terlihat berjalan.">
 <meta name="theme-color" content="#0B1620">
@@ -11,6 +13,7 @@
 <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 <link rel="stylesheet" href="/drivers/drivers.css">
+<script type="module" src="/topbar.js"></script>
 <!-- i18n:alternates -->
 <link rel="alternate" hreflang="en" href="https://canonspike.com/drivers/">
 <link rel="alternate" hreflang="es" href="https://canonspike.com/drivers/es/">
@@ -26,7 +29,7 @@
 <!-- /i18n:alternates -->
 </head>
 <body>
-<header class="site"><div class="wrap">
+<header class="site topbar"><div class="wrap">
 <a class="brand" href="/drivers/id/">faux123 <b>drivers</b></a>
 <nav aria-label="Main">
 <a href="#drivers">Driver</a>
@@ -37,7 +40,7 @@
 
 <main><div class="wrap">
 
-<section class="hero">
+<section class="hero"><div class="aurora" aria-hidden="true"></div>
 <h1>Satu driver, <span class="grad">satu keluarga chip</span></h1>
 <p class="sub">Driver grafis adalah perangkat lunak yang memungkinkan game menggambar di chip grafis perangkat Anda. Saya membuat dan menguji setiap driver saya di perangkat yang saya miliki. Lalu para pemain mencobanya di ponsel dan handheld mereka sendiri, dan sebagian juga berfungsi di sana.</p>
 <p class="sub">Halaman ini menampilkan, untuk tiap driver, keluarga chip grafis yang menjadi targetnya dan semua chip tempat driver itu pernah terlihat berjalan, lengkap dengan tautan ke buktinya.</p>

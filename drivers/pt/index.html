@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<meta name="text-scale" content="scale">
 <title>Drivers gráficos da faux123: em quais chips gráficos cada um roda</title>
 <meta name="description" content="Dois drivers gráficos personalizados para Android de faux123 (Turnip para Adreno, PanVK para Mali). Veja para quais chips gráficos cada um foi feito e em quais chips ele já rodou.">
 <meta name="theme-color" content="#0B1620">
@@ -11,6 +13,7 @@
 <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 <link rel="stylesheet" href="/drivers/drivers.css">
+<script type="module" src="/topbar.js"></script>
 <!-- i18n:alternates -->
 <link rel="alternate" hreflang="en" href="https://canonspike.com/drivers/">
 <link rel="alternate" hreflang="es" href="https://canonspike.com/drivers/es/">
@@ -26,7 +29,7 @@
 <!-- /i18n:alternates -->
 </head>
 <body>
-<header class="site"><div class="wrap">
+<header class="site topbar"><div class="wrap">
 <a class="brand" href="/drivers/pt/">faux123 <b>drivers</b></a>
 <nav aria-label="Main">
 <a href="#drivers">Drivers</a>
@@ -37,7 +40,7 @@
 
 <main><div class="wrap">
 
-<section class="hero">
+<section class="hero"><div class="aurora" aria-hidden="true"></div>
 <h1>Um driver, <span class="grad">uma família inteira de chips</span></h1>
 <p class="sub">Um driver gráfico é o software que permite que os jogos desenhem no chip gráfico do seu aparelho. Eu crio e testo cada um dos meus drivers em aparelhos que tenho. Depois, os jogadores testam nos próprios celulares e portáteis, e em alguns deles também funciona.</p>
 <p class="sub">Esta página mostra, para cada driver, a família de chips gráficos para a qual ele é feito e todos os chips em que ele já foi visto rodando, com um link para a prova.</p>

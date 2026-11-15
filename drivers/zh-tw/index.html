@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<meta name="text-scale" content="scale">
 <title>faux123 繪圖驅動程式：各自能在哪些圖形晶片上執行</title>
 <meta name="description" content="faux123 的兩款 Android 自訂圖形驅動程式（適用 Adreno 的 Turnip、適用 Mali 的 PanVK）。查看每款驅動程式適用哪些圖形晶片，以及已在哪些晶片上執行過。">
 <meta name="theme-color" content="#0B1620">
@@ -11,6 +13,7 @@
 <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 <link rel="stylesheet" href="/drivers/drivers.css">
+<script type="module" src="/topbar.js"></script>
 <!-- i18n:alternates -->
 <link rel="alternate" hreflang="en" href="https://canonspike.com/drivers/">
 <link rel="alternate" hreflang="es" href="https://canonspike.com/drivers/es/">
@@ -26,7 +29,7 @@
 <!-- /i18n:alternates -->
 </head>
 <body>
-<header class="site"><div class="wrap">
+<header class="site topbar"><div class="wrap">
 <a class="brand" href="/drivers/zh-tw/">faux123 <b>drivers</b></a>
 <nav aria-label="Main">
 <a href="#drivers">驅動程式</a>
@@ -37,7 +40,7 @@
 
 <main><div class="wrap">
 
-<section class="hero">
+<section class="hero"><div class="aurora" aria-hidden="true"></div>
 <h1>一個驅動程式，<span class="grad">適用一整個晶片系列</span></h1>
 <p class="sub">圖形驅動程式是讓遊戲在裝置的圖形晶片上繪製畫面的軟體。我在自己擁有的裝置上打造並測試每一款驅動程式。之後玩家會在自己的手機和掌機上試用，其中一些裝置也能執行。</p>
 <p class="sub">本頁依驅動程式列出它所針對的圖形晶片系列，以及目前已確認能執行它的所有晶片，並附上對應的驗證連結。</p>

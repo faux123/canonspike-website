@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<meta name="text-scale" content="scale">
 <title>faux123-Grafiktreiber: auf welchen Grafikchips jeder läuft</title>
 <meta name="description" content="Zwei Custom-Treiber für Android-Grafik von faux123 (Turnip für Adreno, PanVK für Mali). Sieh, auf welche Grafikchips jeder Treiber zielt und auf welchen Chips er bisher gelaufen ist.">
 <meta name="theme-color" content="#0B1620">
@@ -11,6 +13,7 @@
 <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 <link rel="stylesheet" href="/drivers/drivers.css">
+<script type="module" src="/topbar.js"></script>
 <!-- i18n:alternates -->
 <link rel="alternate" hreflang="en" href="https://canonspike.com/drivers/">
 <link rel="alternate" hreflang="es" href="https://canonspike.com/drivers/es/">
@@ -26,7 +29,7 @@
 <!-- /i18n:alternates -->
 </head>
 <body>
-<header class="site"><div class="wrap">
+<header class="site topbar"><div class="wrap">
 <a class="brand" href="/drivers/de/">faux123 <b>drivers</b></a>
 <nav aria-label="Main">
 <a href="#drivers">Treiber</a>
@@ -37,7 +40,7 @@
 
 <main><div class="wrap">
 
-<section class="hero">
+<section class="hero"><div class="aurora" aria-hidden="true"></div>
 <h1>Ein Treiber, <span class="grad">eine ganze Chip-Familie</span></h1>
 <p class="sub">Ein Grafiktreiber ist die Software, mit der Spiele auf dem Grafikchip deines Geräts zeichnen. Ich baue und teste jeden meiner Treiber auf Geräten, die ich besitze. Danach probieren Spieler sie auf ihren eigenen Smartphones und Handhelds aus, und auf manchen davon laufen sie auch.</p>
 <p class="sub">Diese Seite zeigt für jeden Treiber, auf welche Grafikchip-Familie er zielt und auf welchen Chips er bisher gelaufen ist, jeweils mit Link zum Beleg.</p>
