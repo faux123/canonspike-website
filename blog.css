@@ -1,0 +1,40 @@
+/* Blog posts on canonspike.com. Loads after home.css and reuses its tokens, top bar, and footer. */
+
+article { padding-block: clamp(3rem, 8vw, 6rem) clamp(3rem, 7vw, 5rem); }
+
+.post-header {
+  /* Same column as the body text, so title and text share one left edge. */
+  max-width: calc(46rem + 2 * clamp(1.25rem, 4vw, 2.5rem)); margin-inline: auto; padding-inline: clamp(1.25rem, 4vw, 2.5rem);
+  padding-block-end: clamp(2rem, 5vw, 3.5rem);
+}
+.post-header-label { font-size: .8rem; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); }
+.post-header-label a { color: var(--gold-hi); text-decoration: none; display: inline-block; padding-block: .3rem; }
+.post-h1 {
+  font-size: clamp(3rem, 1.5rem + 5vw, 5.75rem); line-height: .95; font-weight: 500; letter-spacing: -.03em;
+  margin-block: 1rem 1.25rem;
+}
+.post-date { font-family: var(--serif); font-style: italic; font-size: 1.35rem; color: var(--gold); }
+
+.post-body {
+  max-width: calc(46rem + 2 * clamp(1.25rem, 4vw, 2.5rem)); margin-inline: auto; padding-inline: clamp(1.25rem, 4vw, 2.5rem);
+  font-size: 1.08rem; color: color-mix(in oklab, var(--text) 84%, var(--muted));
+}
+.post-body p + p { margin-block-start: 1.25rem; }
+.post-body .lead { font-size: clamp(1.45rem, 1.15rem + 1vw, 1.9rem); margin-block-end: 2rem; }
+.post-body h2 {
+  font-size: clamp(1.9rem, 1.5rem + 1.5vw, 2.6rem); font-weight: 500; line-height: 1.1; color: var(--text);
+  margin-block: 3rem 1rem;
+}
+.post-body h2::before { content: ""; display: block; inline-size: 2.5rem; block-size: 2px; background: var(--gold); margin-block-end: 1rem; }
+.post-body a { color: var(--gold-hi); }
+.post-body :is(ul, ol) { display: grid; gap: .5rem; margin-block: 1.25rem; padding-inline-start: 1.25rem; list-style: disc; }
+.post-body li::marker { color: var(--gold); }
+.post-divider { border: 0; block-size: 1px; background: linear-gradient(90deg in oklab, var(--gold), transparent); margin-block: 0 2.5rem; }
+.back-link { display: inline-flex; align-items: center; gap: .5rem; margin-block-start: 3rem; min-block-size: 2.75rem; padding-inline: 1.2rem; border: 1px solid color-mix(in oklab, var(--gold) 55%, transparent); border-radius: 999px; color: var(--text); text-decoration: none; font-weight: 500; }
+.back-link:hover { border-color: var(--gold-hi); color: var(--gold-hi); }
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .post-body > :is(p, h2, ul, ol) { animation: rise linear both; animation-timeline: view(); animation-range: entry 0% entry 35%; }
+  }
+}

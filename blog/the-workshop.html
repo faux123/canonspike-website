@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="color-scheme" content="dark"/>
+  <meta name="text-scale" content="scale"/>
   <meta name="description" content="On running a multi-node homelab, building AI agent infrastructure, and why personal projects deserve the same engineering rigor as production software — by Paul Reioux."/>
   <meta name="robots" content="index, follow"/>
   <link rel="icon" href="/favicon.ico" sizes="48x48"/>
@@ -10,29 +12,32 @@
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png"/>
   <meta name="theme-color" content="#0a0a0a"/>
   <title>The Workshop — Paul Reioux</title>
+  <link rel="stylesheet" href="/fonts/fonts.css"/>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
-
-  <link rel="stylesheet" href="../style.css"/>
+  <link rel="stylesheet" href="/home.css"/>
+  <link rel="stylesheet" href="/blog.css"/>
+  <script type="module" src="/topbar.js"></script>
 </head>
 <body>
 
   <div class="grain" aria-hidden="true"></div>
 
-  <svg class="svg-filters" aria-hidden="true" focusable="false">
-    <defs>
-      <filter id="grain-filter">
-        <feTurbulence type="fractalNoise" baseFrequency="0.68" numOctaves="4" stitchTiles="stitch" result="noise"/>
-        <feColorMatrix type="saturate" values="0" in="noise" result="mono"/>
-        <feBlend in="SourceGraphic" in2="mono" mode="overlay"/>
-      </filter>
-    </defs>
-  </svg>
+
+  <a class="skip" href="#post">Skip to the article</a>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Paul Reioux, home"><span class="mono" aria-hidden="true">PR</span><span class="brand-name">Paul Reioux</span></a>
+    <nav aria-label="Sections">
+      <a href="/#about">About</a>
+      <a href="/#career">Career</a>
+      <a href="/#advisory">Advisory</a>
+      <a href="/#apps">Apps</a>
+      <a href="/#writing">Writing</a>
+      <a class="pill" href="/#contact">Contact</a>
+    </nav>
+  </header>
 
   <main>
-  <article>
+  <article id="post" tabindex="-1">
 
     <header class="post-header">
       <div class="post-header-label"><a href="../">Paul Reioux</a> &nbsp;·&nbsp; Writing</div>
@@ -231,7 +236,7 @@
   </main>
 
   <footer class="site-footer">
-    <div class="footer-inner">
+    <div class="wrap footer-inner">
       <span class="footer-copy">&copy; <span id="year"></span> Paul Reioux</span>
       <span class="footer-ox" title="Year of the Ox" aria-label="Year of the Ox">&#29275;</span>
     </div>
